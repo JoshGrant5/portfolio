@@ -50,13 +50,13 @@ export const projects = [
     description: 'A single-page app for users to book interviews in a realtime experience.',
     image: '',
     stack: {
-      frontEnd: ['React', 'Axios', 'WebSockets', 'HTML5', 'SCSS'],
+      frontEnd: ['React', 'Axios', 'HTML5', 'SCSS'],
       backEnd: ['Node.js', 'PostgreSQL'],
       testing: ['Jest', 'Cypress', 'Storybook'],
-      other: []
+      other: ['WebSockets']
     },
     date: 'OCT 2020',
-    github: 'https://github.com/JoshGrant5/tinyapp',
+    github: 'https://github.com/JoshGrant5/interview-scheduler',
     deployment: 'https://lhl-scheduler-jg.netlify.app/'
   },
   {
@@ -80,10 +80,10 @@ export const projects = [
     description: 'A video chat platform for like-minded people to discuss podcasts.',
     image: '',
     stack: {
-      frontEnd: ['React', 'Axios', 'Simple-Peer', 'HTML5', 'SCSS'],
-      backEnd: ['Node.js', 'Express', 'Axios', 'Socket.io', 'PostgreSQL'],
+      frontEnd: ['React', 'Axios', 'HTML5', 'SCSS'],
+      backEnd: ['Node.js', 'Express', 'Axios', 'PostgreSQL'],
       testing: ['Cypress'],
-      other: ['Itunes API']
+      other: ['Socket.io', 'Simple-Peer', 'Itunes API']
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/symposium',
