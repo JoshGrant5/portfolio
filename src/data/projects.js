@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     name: 'TinyApp',
     description: 'A Bitly-style application allowing users to create shortened URLs.',
-    image: '',
+    image: 'tinyapp.png',
     stack: {
       frontEnd: ['EJS', 'HTML5', 'CSS', 'Bootstrap'],
       backEnd: ['Node.js', 'Express'],
@@ -18,7 +18,7 @@ export const projects = [
     id: 2,
     name: 'Tweeter',
     description: 'A single-page Twitter clone.',
-    image: '',
+    image: 'tweeter.png',
     stack: {
       frontEnd: ['JQuery', 'EJS', 'Ajax', 'HTML5', 'CSS'],
       backEnd: ['Node.js', 'Express'],
@@ -33,7 +33,7 @@ export const projects = [
     id: 3,
     name: 'QuizAndTell',
     description: 'A Buzzfeed-style quiz app for both trivia and personality quizzes.',
-    image: '',
+    image: 'quizandtell.png',
     stack: {
       frontEnd: ['JQuery', 'EJS', 'Ajax', 'HTML5', 'SCSS', 'Bootstrap'],
       backEnd: ['Node.js', 'Express', 'PostgreSQL'],
@@ -48,7 +48,7 @@ export const projects = [
     id: 4,
     name: 'LHL Scheduler',
     description: 'A single-page app for users to book interviews in a realtime experience.',
-    image: '',
+    image: 'scheduler.png',
     stack: {
       frontEnd: ['React', 'Axios', 'HTML5', 'SCSS'],
       backEnd: ['Node.js', 'PostgreSQL'],
@@ -63,7 +63,7 @@ export const projects = [
     id: 5,
     name: 'Jungle',
     description: 'A mini e-commerce app.',
-    image: '',
+    image: 'jungle.png',
     stack: {
       frontEnd: ['ERB', 'HTML5', 'SCSS'],
       backEnd: ['Ruby on Rails', 'PostgreSQL'],
@@ -78,7 +78,7 @@ export const projects = [
     id: 6,
     name: 'Symposium',
     description: 'A video chat platform for like-minded people to discuss podcasts.',
-    image: '',
+    image: 'symposium.png',
     stack: {
       frontEnd: ['React', 'Axios', 'HTML5', 'SCSS'],
       backEnd: ['Node.js', 'Express', 'Axios', 'PostgreSQL'],
