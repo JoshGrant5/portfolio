@@ -1,0 +1,22 @@
+// $background-color = 
+// $contrast-color = 
+// $font = 
+
+html {
+  background-color: black;
+  color: white;
+
+  .landing {
+    font-size: 3em;
+    text-align: center;
+    border: 2px solid white;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+

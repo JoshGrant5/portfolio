@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home';
 import Projects from './components/Projects';
-import './styles/App.scss';
+
+import './styles/index.scss';
 
 export default function App() {
   return (
