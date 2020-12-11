@@ -5,7 +5,8 @@ $font: 'Montserrat', sans-serif;
 html {
   background-color: black;
   color: white;
-
+  font-family: $font;
+  
   .landing {
     font-size: 3em;
     text-align: center;

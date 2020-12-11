@@ -1,0 +1,31 @@
+$font: 'Montserrat', sans-serif;
+
+nav {
+  #navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+  #logo {
+    margin: auto;
+    margin-right: 5vw;
+    margin-left: 2vw;
+    font-family: $font;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+  }
+  #tabs{
+    .PrivateTabIndicator-colorSecondary-3 {
+      background-color: white;
+    }
+  }
+  .nav-item {
+    font-family: $font;
+    font-size: 1em;
+
+    .MuiTouchRipple-root {
+      color: white;
+    }
+  }
+}
