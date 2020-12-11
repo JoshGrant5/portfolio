@@ -16,14 +16,22 @@ nav {
     text-decoration: none;
   }
   #tabs{
+    // width: 50vw;
+
     .PrivateTabIndicator-colorSecondary-3 {
       background-color: white;
+    }
+    .MuiTabs-fixed {
+      margin: auto;
     }
   }
   .nav-item {
     font-family: $font;
-    font-size: 1em;
-
+    font-size: 1.25em;
+    color: white;
+    text-decoration: none;
+    // margin: auto;
+    
     .MuiTouchRipple-root {
       color: white;
     }
