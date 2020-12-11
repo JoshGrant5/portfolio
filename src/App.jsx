@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home';
+import Projects from './components/Projects';
 import './styles/App.scss';
 
 export default function App() {
@@ -7,7 +8,7 @@ export default function App() {
      <BrowserRouter>
        <Switch>
          <Route path="/" exact component={Home} />
-
+         <Route path="/projects" exact component={Projects} />
        </Switch>
      </BrowserRouter>
   );
