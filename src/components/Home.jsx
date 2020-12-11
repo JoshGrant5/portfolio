@@ -14,7 +14,7 @@ export default function Home(props) {
   return (
     <main>
       <Landing />
-      <Nav />
+      <Nav history={props.history}/>
     </main>
   );
 };
