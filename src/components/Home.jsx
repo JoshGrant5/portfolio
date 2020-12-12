@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Landing from './Landing';
 import Transition from './Transition';
 import Bio from './Bio';
+import Projects from './Projects';
 
 export default function Home(props) {
 
@@ -17,6 +18,7 @@ export default function Home(props) {
       {page === 'LANDING' && <Landing setPage={setPage} />}
       {page === 'TRANSITION' && <Transition  setPage={setPage} />}
       {page === 'BIO' && <Bio />}
+      {page === 'PROJECTS' && <Projects />}
     </main>
   );
 };

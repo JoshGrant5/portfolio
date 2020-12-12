@@ -1,23 +1,24 @@
 import { projects } from '../data/projects.js';
+import '../styles/projects.scss'
 
 export default function Projects(props) {
 
   const projectList = projects.map(project => {
     return (
-      <ul>
-        <li>{project.name}</li>
-        <li>{project.description}</li>
-        <li>{project.image}</li>
-        {/* <li>{project.stack}</li> */}
-        <li>{project.date}</li>
-        <li>{project.github}</li>
-        <li>{project.deployment}</li>
-      </ul>
+      <div className='project'>
+        <h1>{project.name}</h1>
+        <p>{project.description}</p>
+        {/* <p>{project.stack}</p> */}
+        <p>{project.date}</p>
+        <p>{project.github}</p>
+        <p>{project.deployment}</p>
+        <img src={project.image} alt='project' />
+      </div>
     )
   })
 
   return (
-    <div className='projects'>
+    <div id='projects'>
       {projectList}
     </div>
   );
