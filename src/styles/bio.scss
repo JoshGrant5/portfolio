@@ -1,0 +1,25 @@
+$background-color: #18232f;
+$contrast-color: #273442;
+$highlight-color: #c9d3c9;
+$test-color: #28b78d;
+$font: 'Montserrat', sans-serif;
+
+#bio {
+  display: flex;
+  justify-content: center;
+
+  #backdrop {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: #c9d3c9;
+    position: absolute;
+    top: 15vh;
+  }
+  p {
+    width: 75vw;
+    margin: auto;
+    margin-top: 75vh;
+    z-index: 1;
+  }
+}
