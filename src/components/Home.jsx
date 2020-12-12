@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import Landing from './Landing';
 import Transition from './Transition';
+import Bio from './Bio';
 
 export default function Home(props) {
 
-  // const [transition, setTransition] = useState(false);
+  // State for determining whether to render the Landing, Transition, or Bio component. Default to Landing
+  const [page, setPage] = useState('LANDING');
 
   // window.addEventListener('load', event => {
   //   setsTransition(true);
@@ -12,8 +14,9 @@ export default function Home(props) {
 
   return (
     <main>
-      <Landing />
-      {/* <Transition />  */}
+      {page === 'LANDING' && <Landing setPage={setPage} />}
+      {page === 'TRANSITION' && <Transition  setPage={setPage} />}
+      {page === 'BIO' && <Bio />}
     </main>
   );
 };

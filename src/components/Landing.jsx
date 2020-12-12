@@ -11,7 +11,7 @@ export default function Landing(props) {
         <span id='title'>Full Stack Developer</span>
       </article>
 
-      <button class="bttn-stretch bttn-md bttn-success">View</button>
+      <button class="bttn-stretch bttn-md bttn-success" onClick={() => props.setPage('TRANSITION')}>View</button>
 
       <img src={cropped4} alt='profile-pic' id='profile-pic' />
    
