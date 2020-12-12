@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Landing from './Landing';
-import image1 from '../img/image1.jpg';
+import cropped2 from '../img/cropped2.jpg';
 // import Nav from './Nav';
 
 export default function Home(props) {
@@ -18,9 +18,14 @@ export default function Home(props) {
       <Landing />
       {/* <Bio /> */}
       
-      {/* <img src={image1} alt='profile-pic' id='profile-pic' /> */}
-   
+      <section id='sidebar'></section>
 
+      <article>
+        <p>this is a test</p>
+      </article>
+
+      <img src={cropped2} alt='profile-pic' id='profile-pic' />
+   
     </main>
   );
 };

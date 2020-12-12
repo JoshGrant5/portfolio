@@ -21,5 +21,20 @@ html {
     transform: translate(-50%, -50%);
   }
 
+  #sidebar {
+    background-color: $highlight-color;
+    height: 100%;
+    width: 15vw;
+    left: 0;
+    position: absolute;
+  }
+
+  #profile-pic {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 10%;
+  }
+
 }
 
