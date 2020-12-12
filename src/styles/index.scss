@@ -24,7 +24,7 @@ html {
   #sidebar {
     background-color: $highlight-color;
     height: 100%;
-    width: 15vw;
+    width: 12vw;
     left: 0;
     position: absolute;
   }
@@ -34,6 +34,12 @@ html {
     height: 100vh;
     object-fit: cover;
     opacity: 10%;
+  }
+
+  #heading {
+    top: 35vh;
+    position: absolute;
+    left: 20vw;
   }
 
 }
