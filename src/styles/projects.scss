@@ -1,4 +1,12 @@
 #projects {
   margin-top: 10vh;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  // grid-auto-rows: auto; // heights of each box
+
+  .project {
+    border: 1px solid white;
+  }
 }
+
