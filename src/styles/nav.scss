@@ -1,3 +1,6 @@
+$background-color: #18232f;
+$contrast-color: #273442;
+$highlight-color: #c9d3c9;
 $font: 'Montserrat', sans-serif;
 
 nav {
@@ -5,6 +8,7 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: row;
+    background-color: $contrast-color;
   }
   #logo {
     margin: auto;
@@ -19,7 +23,7 @@ nav {
     // width: 50vw;
 
     .PrivateTabIndicator-colorSecondary-3 {
-      background-color: white;
+      background-color: $highlight-color;
     }
     .MuiTabs-fixed {
       margin: auto;
