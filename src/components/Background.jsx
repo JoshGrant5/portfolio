@@ -1,4 +1,4 @@
-import experience from '../data/experience.js';
+import { experience } from '../data/experience.js';
 
 export default function Background(props) {
 
