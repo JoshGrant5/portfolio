@@ -19,10 +19,11 @@ export default function Nav(props) {
     <nav>
       <AppBar id='navbar'>
         <Tabs value={value} onChange={handleChange} id='tabs'>
+          <Tab label="Projects" className='nav-item' />
+          <Tab label="Skills" className='nav-item' />
           <Tab label="JG" id='logo' />
-          <Tab label="My Work" className='nav-item' />
-          <Tab label="My Background" className='nav-item' />
-          <Tab label="Get In Touch" className='nav-item' />
+          <Tab label="Background" className='nav-item' />
+          <Tab label="Contact" className='nav-item' />
         </Tabs>
       </AppBar>
     </nav>

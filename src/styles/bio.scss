@@ -13,7 +13,7 @@ $font: 'Montserrat', sans-serif;
     width: 500px;
     border-radius: 50%;
     background: #c9d3c9;
-    position: absolute;
+    position: fixed;
     top: 15vh;
   }
   p {
@@ -23,6 +23,7 @@ $font: 'Montserrat', sans-serif;
     margin-top: 75vh;
     z-index: 1;
     border-radius: 25px;
+    background: $background-color;
     box-shadow:  5px 5px 10px #121b24, 
                 -5px -5px 10px #121b24;  
   }

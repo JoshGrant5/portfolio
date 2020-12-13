@@ -8,12 +8,13 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: $contrast-color;
   }
   #logo {
     margin: auto;
-    margin-right: 5vw;
-    margin-left: 2vw;
+    // margin-right: 5vw;
+    // margin-left: 2vw;;
     font-family: $font;
     font-size: 2em;
     color: white;
@@ -28,6 +29,9 @@ nav {
     .MuiTabs-fixed {
       margin: auto;
     }
+    .MuiTabs-flexContainer {
+      width: 100vw;
+    }
   }
   .nav-item {
     font-family: $font;
@@ -35,6 +39,7 @@ nav {
     color: white;
     text-decoration: none;
     // margin: auto;
+    margin: auto;
     
     .MuiTouchRipple-root {
       color: white;
