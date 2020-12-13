@@ -50,8 +50,8 @@ export default function Projects(props) {
   })
 
   return (
-    <div id='projects'>
+    <section id='projects'>
       {projectList.reverse()}
-    </div>
+    </section>
   );
 };
