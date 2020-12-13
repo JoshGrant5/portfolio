@@ -17,9 +17,13 @@ $font: 'Montserrat', sans-serif;
     top: 15vh;
   }
   p {
+    padding: 2em;
     width: 75vw;
     margin: auto;
     margin-top: 75vh;
     z-index: 1;
+    border-radius: 25px;
+    box-shadow:  5px 5px 10px #121b24, 
+                -5px -5px 10px #121b24;  
   }
 }
