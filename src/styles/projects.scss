@@ -1,12 +1,43 @@
 #projects {
   margin-top: 10vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 1em;
+  border: 1px solid red; 
   // grid-auto-rows: auto; // heights of each box
 
-  .project {
-    border: 1px solid white;
+  .container {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: 2fr 1fr 2fr; 
+    grid-gap: 1em;
+    border: 1px solid blue; 
+
+    .project {
+      border: 1px solid white;  
+
+      h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        span {
+          align-items: end;
+          font-size: 0.5em;
+        }
+      }
+    }
+
+    .stack {
+      border: 1px solid white;  
+    }
+  
+    .project-img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+    }
   }
 }
+
 
