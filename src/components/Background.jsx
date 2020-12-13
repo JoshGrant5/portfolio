@@ -1,4 +1,5 @@
 import { experience } from '../data/experience.js';
+import '../styles/background.scss';
 
 export default function Background(props) {
 
@@ -8,8 +9,8 @@ export default function Background(props) {
 
     return (
       <section className='role'>
-        <h1>role.role</h1>
-        <h3>role.company <span>role.dates</span> </h3>
+        <h1>{role.role} <span>{role.dates}</span> </h1>
+        <h3>{role.company}</h3>
         <ul>
           {responsibilities}
         </ul>
