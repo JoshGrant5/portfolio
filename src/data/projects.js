@@ -5,10 +5,10 @@ export const projects = [
     description: 'A Bitly-style application allowing users to create shortened URLs.',
     image: 'tinyapp.png',
     stack: {
-      frontEnd: ['EJS', 'HTML5', 'CSS', 'Bootstrap'],
-      backEnd: ['Node.js', 'Express'],
-      testing: ['Mocha', 'Chai'],
-      other: []
+      frontEnd: 'EJS, HTML5, CSS, Bootstrap',
+      backEnd: 'Node.js, Express',
+      testing: 'Mocha, Chai',
+      other: ''
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/tinyapp',
@@ -20,10 +20,10 @@ export const projects = [
     description: 'A single-page Twitter clone.',
     image: 'tweeter.png',
     stack: {
-      frontEnd: ['JQuery', 'EJS', 'Ajax', 'HTML5', 'CSS'],
-      backEnd: ['Node.js', 'Express'],
-      testing: [],
-      other: []
+      frontEnd: 'JQuery, EJS, Ajax, HTML5, CSS',
+      backEnd: 'Node.js, Express',
+      testing: '',
+      other: ''
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/tweeter',
@@ -35,10 +35,10 @@ export const projects = [
     description: 'A Buzzfeed-style quiz app for both trivia and personality quizzes.',
     image: 'quizandtell.png',
     stack: {
-      frontEnd: ['JQuery', 'EJS', 'Ajax', 'HTML5', 'SCSS', 'Bootstrap'],
-      backEnd: ['Node.js', 'Express', 'PostgreSQL'],
-      testing: [],
-      other: []
+      frontEnd: 'JQuery, EJS, Ajax, HTML5, SCSS, Bootstrap',
+      backEnd: 'Node.js, Express, PostgreSQL',
+      testing: '',
+      other: ''
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/quiz-app',
@@ -50,10 +50,10 @@ export const projects = [
     description: 'A single-page app for users to book interviews in a realtime experience.',
     image: 'scheduler.png',
     stack: {
-      frontEnd: ['React', 'Axios', 'HTML5', 'SCSS'],
-      backEnd: ['Node.js', 'PostgreSQL'],
-      testing: ['Jest', 'Cypress', 'Storybook'],
-      other: ['WebSockets']
+      frontEnd: 'React, Axios, HTML5, SCSS',
+      backEnd: 'Node.js, PostgreSQL',
+      testing: 'Jest, Cypress, Storybook',
+      other: 'WebSockets'
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/interview-scheduler',
@@ -65,10 +65,10 @@ export const projects = [
     description: 'A mini e-commerce app.',
     image: 'jungle.png',
     stack: {
-      frontEnd: ['ERB', 'HTML5', 'SCSS'],
-      backEnd: ['Ruby on Rails', 'PostgreSQL'],
-      testing: ['RSpec', 'Capybara'],
-      other: ['Stripe API']
+      frontEnd: 'ERB, HTML5, SCSS',
+      backEnd: 'Ruby on Rails, PostgreSQL',
+      testing: 'RSpec, Capybara',
+      other: 'Stripe API'
     },
     date: 'NOV 2020',
     github: 'https://github.com/JoshGrant5/jungle',
@@ -80,10 +80,10 @@ export const projects = [
     description: 'A video chat platform for like-minded people to discuss podcasts.',
     image: 'symposium.png',
     stack: {
-      frontEnd: ['React', 'Axios', 'HTML5', 'SCSS'],
-      backEnd: ['Node.js', 'Express', 'Axios', 'PostgreSQL'],
-      testing: ['Cypress'],
-      other: ['Socket.io', 'Simple-Peer', 'Itunes API']
+      frontEnd: 'React, Axios, HTML5, SCSS',
+      backEnd: 'Node.js, Express, Axios, PostgreSQL',
+      testing: 'Cypress',
+      other: 'Socket.io, Simple-Peer, Itunes API'
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/symposium',

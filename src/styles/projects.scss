@@ -8,8 +8,8 @@
 
   .container {
     display: grid;
-    // grid-template-columns: repeat(3, 1fr); 
-    grid-template-columns: 2fr 1fr 2fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    // grid-template-columns: 2fr 1fr 2fr; 
     grid-gap: 1em;
     border: 1px solid blue; 
 
@@ -24,6 +24,7 @@
         span {
           align-items: end;
           font-size: 0.5em;
+          margin-right: 0.25em;
         }
       }
     }

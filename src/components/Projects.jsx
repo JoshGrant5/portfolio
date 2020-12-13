@@ -6,17 +6,27 @@ export default function Projects(props) {
   const projectList = projects.map(project => {
     let image = require(`../img/${project.image}`);
 
-    const frontEnd = project.stack.frontEnd;
-    frontEnd.map(item => <p>{item}</p>);
+    const other = () => {
+      if (project.stack.other) { 
+        return  (
+          <div>
+            <h3>Other</h3>
+            {project.stack.other}
+          </div>
+        )
+      }
+    };
 
-    const backEnd = project.stack.backEnd;
-    backEnd.map(item => <p>{item}</p>);
-
-    const other = project.stack.other;
-    frontEnd.map(item => <p>{item}</p>);
-
-    const testing = project.stack.testing;
-    backEnd.map(item => <p>{item}</p>);
+    const testing = () => {
+      if (project.stack.testing) { 
+        return  (
+          <div>
+            <h3>Testing</h3>
+            {project.stack.testing}
+          </div>
+        )
+      }
+    }
 
     return (
       <div className='container'>
@@ -28,13 +38,11 @@ export default function Projects(props) {
         </div>
         <div className='stack'>
           <h3>Front End</h3>
-            {frontEnd}
+            {project.stack.frontEnd}
           <h3>Back End</h3>
-            {backEnd}
-          <h3>Other</h3>
-            {other}
-          <h3>Testing</h3>
-            {testing}
+            {project.stack.backEnd}
+          {other()}
+          {testing()}
         </div>
         <img src={image.default} alt='project' className='project-img' />
       </div>
