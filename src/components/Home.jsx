@@ -14,11 +14,16 @@ export default function Home(props) {
   // });
 
   return (
-    <main>
-      {page === 'LANDING' && <Landing setPage={setPage} />}
-      {page === 'TRANSITION' && <Transition  setPage={setPage} />}
-      {page === 'BIO' && <Bio />}
-      {page === 'PROJECTS' && <Projects />}
-    </main>
+    <div>
+      <main>
+        {page === 'LANDING' && <Landing setPage={setPage} />}
+        {page === 'TRANSITION' && <Transition  setPage={setPage} />}
+        {page === 'BIO' && <Bio />}
+        {page === 'PROJECTS' && <Projects />}
+      </main>
+      <footer>
+        View Source Code @ 
+      </footer>
+    </div>
   );
 };
