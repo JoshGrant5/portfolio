@@ -1,4 +1,5 @@
 import { experience } from '../data/experience.js';
+import Education from './Education';
 import '../styles/background.scss';
 
 export default function Background(props) {
@@ -19,8 +20,11 @@ export default function Background(props) {
   });
 
   return (
-    <div id='background'>
-      {roles}
-    </div>
+    <section>
+      <div id='background'>
+        {roles}
+      </div>
+      <Education />
+    </section>
   )
 };

@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Bio from './components/Bio';
 import Projects from './components/Projects';
 import Background from './components/Background';
-import Education from './components/Education';
+// import Education from './components/Education';
 import Contact from './components/Contact';
 
 import './styles/index.scss';
@@ -18,7 +18,7 @@ export default function App(props) {
         <Route path="/bio" exact component={Bio} />
         <Route path="/projects" exact component={Projects} />
         <Route path="/background" exact component={Background} />
-        <Route path="/education" exact component={Education} />
+        {/* <Route path="/education" exact component={Education} /> */}
         <Route path="/contact" exact component={Contact} />
       </Switch>
      </BrowserRouter>
