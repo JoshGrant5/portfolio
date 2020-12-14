@@ -1,7 +1,8 @@
-$background-color: #18232f;
+// $background-color: #18232f;
+$background-color: #10141a;
 $contrast-color: #273442;
 $highlight-color: #c9d3c9;
-$test-color: #28b78d;
+$focus-color: rgb(162, 216, 162);
 $font: 'Montserrat', sans-serif;
 
 html {
@@ -23,7 +24,7 @@ html {
   }
 
   #sidebar {
-    background-color: $highlight-color;
+    background-color: $background-color;
     height: 100%;
     width: 12vw;
     left: 0;
@@ -34,7 +35,7 @@ html {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 10%;
+    opacity: 7%;
   }
 
   #heading {
@@ -63,6 +64,7 @@ html {
     width: 15vw;
     font-size: 2em;
     outline: none;
+    color: $focus-color;
   }
 
   footer {
