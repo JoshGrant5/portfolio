@@ -1,5 +1,7 @@
 import cropped4 from '../img/cropped4.jpg';
 
+
+
 export default function Landing(props) {
 
   return (

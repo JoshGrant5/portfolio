@@ -35,7 +35,7 @@ html {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 7%;
+    opacity: 10%;
   }
 
   #heading {
@@ -50,6 +50,7 @@ html {
 
     #name {
       font-size: 3em;
+      color: $focus-color;
     }
     #title {
       font-size: 2em;
@@ -69,8 +70,9 @@ html {
 
   footer {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    // margin-top: 1em;
+    // margin-bottom: 1em;
+    bottom: 0;
   }
 }
 
