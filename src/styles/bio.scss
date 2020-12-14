@@ -16,7 +16,8 @@ $font: 'Montserrat', sans-serif;
     position: fixed;
     top: 15vh;
   }
-  p {
+  #summary {
+    position: absolute;
     padding: 2em;
     width: 75vw;
     margin: auto;

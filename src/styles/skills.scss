@@ -1,7 +1,16 @@
+$background-color: #18232f;
+
 #skills {
   margin-top: 10vh;
+  padding: 2em;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1em;
-
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+  width: 33%;
+  height: 33%;
+  z-index: 1;
+  border-radius: 25px;
+  background: $background-color;
+  box-shadow:  5px 5px 10px #121b24, 
+              -5px -5px 10px #121b24;  
 }

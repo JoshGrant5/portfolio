@@ -15,7 +15,7 @@ export default function Nav(props) {
       <AppBar id='navbar'>
         <NavLink to="/projects" className='nav-item'>Projects</NavLink>
         <NavLink to="/skills" className='nav-item'>Skills</NavLink>
-        <NavLink to="/" id='logo'>JG</NavLink>
+        <NavLink to="/bio" id='logo'>JG</NavLink>
         <NavLink to="/background" className='nav-item'>Background</NavLink>
         <NavLink to="/contact" className='nav-item'>Contact</NavLink>
       </AppBar>
