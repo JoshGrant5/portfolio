@@ -37,6 +37,7 @@ $font: 'Montserrat', sans-serif;
       object-fit: cover;
       object-position: -20px -70px;
       // opacity: 10%;
+      filter: inherit(10px);
       border-radius: 50%;
       background-color: $highlight-color;
 
@@ -46,40 +47,55 @@ $font: 'Montserrat', sans-serif;
     }
   }
 
-  #summary {
+  section {
     position: absolute;
-    margin-top: 70vh;
-    margin-right: 2vw;
-    padding: 2em;
-    width: 50vw;
-    z-index: 1;
-    border-radius: 25px;
-    background: linear-gradient(225deg, #0e1217, #11151c);
-    box-shadow:  -21px 21px 42px #0e1117, 
-                21px -21px 42px #12171d;
-  }
-
-  #skills {
-    margin-top: 20vh;
-    margin-right: 2vw;
-    padding: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5em;
-    width: 50vw;
+    margin-top: 10vh;
+    margin-right: 10vw;
     // z-index: 1;
-    // border-radius: 25px;
-    // background: $background-color;
-    // box-shadow:  5px 5px 10px #121b24, 
-    //             -5px -5px 10px #121b24;  
 
-    border-radius: 25px;
-    background: linear-gradient(225deg, #0e1217, #11151c);
-    box-shadow:  -21px 21px 42px #0e1117, 
-                21px -21px 42px #12171d;
+    #summary {
+      text-align: center;
+      padding: 1em;
+      border-radius: 25px;
+      background: linear-gradient(225deg, #0e1217, #11151c);
+      box-shadow:  -21px 21px 42px #0e1117, 
+                  21px -21px 42px #12171d;
+      font-size: 3em;
   
-    .container > h3 {
-      color: $highlight-color;
+      span {
+        color: $highlight-color;
+      }
+    }
+
+    #feature-project {
+
+      p {
+        font-size: 2em;
+      }
+    }
+  
+    #skills {
+      // margin-top: 70vh;
+      // margin-right: 2vw;
+      padding: 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.5em;
+      width: 50vw;
+      // z-index: 1;
+      // border-radius: 25px;
+      // background: $background-color;
+      // box-shadow:  5px 5px 10px #121b24, 
+      //             -5px -5px 10px #121b24;  
+  
+      border-radius: 25px;
+      background: linear-gradient(225deg, #0e1217, #11151c);
+      box-shadow:  -21px 21px 42px #0e1117, 
+                  21px -21px 42px #12171d;
+    
+      .container > h3 {
+        color: $highlight-color;
+      }
     }
   }
 }
