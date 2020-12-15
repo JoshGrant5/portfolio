@@ -5,8 +5,7 @@ $highlight-color: rgb(162, 216, 162);
 $font: 'Montserrat', sans-serif;
 
 //* Styles inspired by and modified off of design by Jeff Glen https://codepen.io/jeffglenn/pen/KNYoKa/
-
-#timeline {
+#about-tl {
   display: flex;
   background-color: $background-color;
 
@@ -88,7 +87,7 @@ $font: 'Montserrat', sans-serif;
   }
 }
 
-.tl-year {
+.tl-header {
   position: absolute;
   top: 50%;
   left: 50%;

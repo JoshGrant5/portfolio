@@ -8,12 +8,12 @@ export default function about(props) {
 
   return (
     //* Styles inspired by and modified off of design by Jeff Glen https://codepen.io/jeffglenn/pen/KNYoKa/
-    <section id='timeline'> 
+    <section id='about-tl'> 
       <div className='tl-item'>
         <div className='tl-bg' >
           <img src={ottawa} alt='ottawa' className='tl-bg-img' />
         </div>
-        <div className='tl-year'>
+        <div className='tl-header'>
           <p>Carleton University</p>
         </div>
         <div className='tl-content'>
@@ -27,7 +27,7 @@ export default function about(props) {
       <div className='tl-bg' >
           <img src={lumber} alt='lumber' className='tl-bg-img' />
         </div>
-        <div className='tl-year'>
+        <div className='tl-header'>
           <p>Lumber Industry</p>
         </div>
         <div className='tl-content'>
@@ -41,7 +41,7 @@ export default function about(props) {
         <div className='tl-bg' >
           <img src={lighthouse} alt='lighthouse' className='tl-bg-img' />
         </div>
-        <div className='tl-year'>
+        <div className='tl-header'>
           <p>Lighthouse Labs</p>
           {/* <p>2020</p> */}
         </div>
@@ -56,7 +56,7 @@ export default function about(props) {
        <div className='tl-bg' >
           <img src={coding} alt='coding' className='tl-bg-img' />
         </div>
-        <div className='tl-year'>
+        <div className='tl-header'>
           <p>Present Day</p>
         </div>
         <div className='tl-content'>
