@@ -1,3 +1,6 @@
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 import cropped4 from '../img/cropped4.jpg';
 
 export default function Landing(props) {
@@ -15,6 +18,18 @@ export default function Landing(props) {
 
       <div id='img-container'>
         <img src={cropped4} alt='profile-pic' id='profile-pic' />
+      </div>
+
+      <div id='landing-icons'>
+        <a href='https://github.com/JoshGrant5'> 
+          <GitHubIcon /> 
+        </a> 
+        <a href='https://www.linkedin.com/in/josh-grant-44240a151/'> 
+          <LinkedInIcon /> 
+        </a> 
+        <a href='mailto: joshgg@icloud.com'>
+          <EmailIcon /> 
+        </a>
       </div>
    
     </div>
