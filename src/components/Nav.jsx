@@ -18,7 +18,7 @@ export default function Nav(props) {
         </div>
         <div id="right-nav">
           <NavLink to="/projects" className='nav-item'>Projects</NavLink>
-          <NavLink to="/background" className='nav-item'>About</NavLink>
+          <NavLink to="/about" className='nav-item'>About</NavLink>
           <NavLink to="/resume" className='nav-item'>Resume</NavLink>
           <NavLink to="/contact" className='nav-item'>Contact</NavLink>
           {/* <NavLink to="/resume" className='nav-item'>Resume</NavLink> */}

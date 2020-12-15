@@ -1,4 +1,4 @@
-import Background from './Background';
+import About from './About';
 import Skills from './Skills';
 import '../styles/bio.scss';
 import test from '../img/test.png';
