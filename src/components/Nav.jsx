@@ -14,11 +14,10 @@ export default function Nav(props) {
     <nav>
       {/* <AppBar id='navbar'> */}
         <div id='left-nav'>
-          <NavLink to="/bio" id='logo'>JG</NavLink>
+          <NavLink to="/" id='logo'>JG</NavLink>
         </div>
         <div id="right-nav">
           <NavLink to="/projects" className='nav-item'>Projects</NavLink>
-          <NavLink to="/skills" className='nav-item'>Skills</NavLink>
           <NavLink to="/background" className='nav-item'>About</NavLink>
           <NavLink to="/contact" className='nav-item'>Contact</NavLink>
           {/* <NavLink to="/resume" className='nav-item'>Resume</NavLink> */}

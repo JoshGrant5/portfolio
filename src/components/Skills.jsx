@@ -1,5 +1,4 @@
 import { skills } from '../data/skills';
-import '../styles/skills.scss';
 
 export default function Skills(props) {
 

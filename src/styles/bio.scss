@@ -1,37 +1,85 @@
+// $background-color: #18232f;
 $background-color: #10141a;
 $contrast-color: #273442;
-$highlight-color: #c9d3c9;
-$focus-color: rgb(162, 216, 162);
+$text-color: #c9d3c9;
+$highlight-color: rgb(162, 216, 162);
 $font: 'Montserrat', sans-serif;
 
 #bio {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
-  #backdrop {
-    height: 600px;
-    width: 600px;
+  // #backdrop {
+  //   height: 600px;
+  //   width: 600px;
+  //   border-radius: 50%;
+  //   background: #c9d3c9;
+  //   position: fixed;
+  //   top: 10vh;
+  // }
+
+  #bio-img-container {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
     border-radius: 50%;
-    background: #c9d3c9;
-    position: fixed;
-    top: 10vh;
+    width: 500px;
+    height: 500px;
+    // opacity: 50%;
+
+    // &:hover {
+    //   opacity: 100%;
+    // }
+    
+    #bio-profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: -20px -70px;
+      // opacity: 10%;
+      border-radius: 50%;
+      background-color: $highlight-color;
+
+      // &:hover {
+      //   background-color: $highlight-color;
+      // }
+    }
   }
+
   #summary {
     position: absolute;
+    margin-top: 70vh;
+    margin-right: 2vw;
     padding: 2em;
-    width: 75vw;
-    margin: auto;
-    margin-top: 75vh;
+    width: 50vw;
     z-index: 1;
     border-radius: 25px;
-    background: $background-color;
-    box-shadow:  5px 5px 10px #121b24, 
-                -5px -5px 10px #121b24;  
+    background: linear-gradient(225deg, #0e1217, #11151c);
+    box-shadow:  -21px 21px 42px #0e1117, 
+                21px -21px 42px #12171d;
   }
 
-  img {
-    z-index: 1;
-    margin-top: 10vh;
-    height: 700px;
+  #skills {
+    margin-top: 20vh;
+    margin-right: 2vw;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    width: 50vw;
+    // z-index: 1;
+    // border-radius: 25px;
+    // background: $background-color;
+    // box-shadow:  5px 5px 10px #121b24, 
+    //             -5px -5px 10px #121b24;  
+
+    border-radius: 25px;
+    background: linear-gradient(225deg, #0e1217, #11151c);
+    box-shadow:  -21px 21px 42px #0e1117, 
+                21px -21px 42px #12171d;
+  
+    .container > h3 {
+      color: $highlight-color;
+    }
   }
 }
