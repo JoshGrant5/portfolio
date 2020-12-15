@@ -21,9 +21,9 @@ export default function Home(props) {
         {page === 'BIO' && <Bio />}
         {page === 'PROJECTS' && <Projects />}
       </main>
-      <footer>
+      {/* <footer>
         View Source Code @ 
-      </footer>
+      </footer> */}
     </div>
   );
 };
