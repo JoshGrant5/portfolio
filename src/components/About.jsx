@@ -35,7 +35,9 @@ export default function about(props) {
 
     <section id='timeline'> 
       <div className='tl-item'>
-        <div className='tl-bg' style={{backgroundImage: `url(${ottawa})`}}></div>
+        <div className='tl-bg' >
+          <img src={ottawa} alt='ottawa' className='tl-bg-img' />
+        </div>
         <div className='tl-year'>
           <p>2011</p>
         </div>
@@ -46,7 +48,9 @@ export default function about(props) {
       </div>
 
       <div className='tl-item'>
-        <div className='tl-bg' style={{backgroundImage: `url(${lumber})`}}></div>
+      <div className='tl-bg' >
+          <img src={lumber} alt='lumber' className='tl-bg-img' />
+        </div>
         <div className='tl-year'>
           <p>2013</p>
         </div>
@@ -57,7 +61,9 @@ export default function about(props) {
       </div>
 
       <div className='tl-item'>
-        <div className='tl-bg' style={{backgroundImage: `url(${lighthouse})`}}></div>
+        <div className='tl-bg' >
+          <img src={lighthouse} alt='lighthouse' className='tl-bg-img' />
+        </div>
         <div className='tl-year'>
           <p>2014</p>
         </div>
@@ -68,7 +74,9 @@ export default function about(props) {
       </div>
 
       <div className='tl-item'>
-        <div className='tl-bg' style={{backgroundImage: `url(${coding})`}}></div>
+       <div className='tl-bg' >
+          <img src={coding} alt='coding' className='tl-bg-img' />
+        </div>
         <div className='tl-year'>
           <p>2016</p>
         </div>
