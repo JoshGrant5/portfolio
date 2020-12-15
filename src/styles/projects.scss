@@ -31,13 +31,17 @@ $font: 'Montserrat', sans-serif;
           transform: translate3d(0, 0, 0) translateX(0);
           transition: opacity 1s ease, transform 1s ease 0.25s;
         }
-        
-        .tl-content {
-          opacity: 1;
-          transform: translateX(0);
-          transition: all 0.75s ease 0.5s;
-        }
 
+        .line-container > .text-container {
+          height: min-content;
+      
+          .tl-content {
+            opacity: 1;
+            transform: translateX(0);
+            transition: all 0.75s ease 0.5s;
+          }
+        }
+        
         .line-container > .project-img-container > .project-img {
           opacity: 90%;
         }
@@ -52,25 +56,29 @@ $font: 'Montserrat', sans-serif;
       .line-container {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
+        // max-height: min-content;
+        align-items: center;
 
         .text-container {
+          height: min-content;
+          margin-left: 10vw;
           display: flex;
           flex-direction: column;
-          justify-content: start;
-  
+          justify-content: space-evenly;
+
           .tl-header {
-            left: 15vw;
-            font-size: 1.5em;
-          }
-    
-          .tl-content {
-            transform: translate3d(0, 0, 0) translateX(-25px);
             position: relative;
-            margin-top: 5vh;
-          
-            // display: flex;
-            // flex-direction: column;
-            // align-items: flex-start;
+            margin-bottom: 0;
+            font-size: 2.5em;
+            color: $highlight-color;
+            border-top: none;
+            border-bottom: none;
+          }
+
+          .tl-content {
+            transform: translate3d(0, 0, 0) translateX(0);
+            text-align: start;
+            font-size: 1.5em;
           }
         }
   
