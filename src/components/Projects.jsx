@@ -34,14 +34,20 @@ export default function Projects(props) {
       <div id='project-tl'>
         <div className='tl-item'>
           <div className='tl-bg' >
-            {/* <img src={image.default} alt={image.default} className='tl-bg-img' /> */}
+            <img src={image.default} alt={image.default} className='tl-bg-img' />
           </div>
-          <div className='tl-header'>
-            <h1>{project.name}</h1>
-          </div>
-          <div className='tl-content'>
-            <p>{project.description}</p>
-            {/* <p>Living in the Nation's Capital, I earned my Bachelor of Arts degree studying criminology at Carleton University.</p> */}
+          <div className='line-container'>
+            <div className='text-container'>
+              <div className='tl-header'>
+                <h1>{project.name}</h1>
+              </div>
+              <div className='tl-content'>
+                <p>{project.description}</p>
+              </div>
+            </div>
+            <div className='project-img-container'>
+              <img src={image.default} alt='project' className='project-img' /> 
+            </div> 
           </div>
         </div>
 
