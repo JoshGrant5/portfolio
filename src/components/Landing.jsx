@@ -3,6 +3,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import cropped4 from '../img/cropped4.jpg';
 import bw from '../img/bw.png';
+import color from '../img/color.png'
 
 export default function Landing(props) {
 
@@ -18,7 +19,7 @@ export default function Landing(props) {
       <button class="bttn-stretch bttn-md bttn-success" onClick={() => props.setPage('TRANSITION')}>View</button> */}
 
       <div id='img-container'>
-        <img src={bw} alt='profile-pic' id='profile-pic' />
+        <img src={color} alt='profile-pic' id='profile-pic' />
       </div>
 
       <div id='landing-icons'>

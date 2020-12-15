@@ -38,11 +38,11 @@ html {
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    opacity: 50%;
+    // opacity: 50%;
 
-    &:hover {
-      opacity: 100%;
-    }
+    // &:hover {
+    //   opacity: 100%;
+    // }
     
     #profile-pic {
       width: 100%;
@@ -52,11 +52,11 @@ html {
       // opacity: 10%;
       overflow: hidden;
       border-radius: 50%;
-      background-color: $text-color;
+      background-color: $highlight-color;
 
-      &:hover {
-        background-color: $highlight-color;
-      }
+      // &:hover {
+      //   background-color: $highlight-color;
+      // }
     }
   }
 
