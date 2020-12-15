@@ -2,6 +2,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import cropped4 from '../img/cropped4.jpg';
+import bw from '../img/bw.png';
 
 export default function Landing(props) {
 
@@ -13,11 +14,11 @@ export default function Landing(props) {
         <span id='name'>Josh Grant</span>
         <span id='title'>Full Stack Developer</span>
       </article>
-
-      <button class="bttn-stretch bttn-md bttn-success" onClick={() => props.setPage('TRANSITION')}>View</button>
+{/* 
+      <button class="bttn-stretch bttn-md bttn-success" onClick={() => props.setPage('TRANSITION')}>View</button> */}
 
       <div id='img-container'>
-        <img src={cropped4} alt='profile-pic' id='profile-pic' />
+        <img src={bw} alt='profile-pic' id='profile-pic' />
       </div>
 
       <div id='landing-icons'>
