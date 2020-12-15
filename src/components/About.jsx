@@ -39,7 +39,8 @@ export default function about(props) {
           <img src={ottawa} alt='ottawa' className='tl-bg-img' />
         </div>
         <div className='tl-year'>
-          <p>2011</p>
+          <p>Carleton University</p>
+          <p>2013 - 2017</p>
         </div>
         <div className='tl-content'>
           <h1>Lorem ipsum dolor sit</h1>
@@ -52,7 +53,8 @@ export default function about(props) {
           <img src={lumber} alt='lumber' className='tl-bg-img' />
         </div>
         <div className='tl-year'>
-          <p>2013</p>
+          <p>Lumber Industry</p>
+          <p>2017 - 2020</p>
         </div>
         <div className='tl-content'>
           <h1 className='f3 text--accent ttu'>Vestibulum laoreet lorem</h1>
@@ -65,7 +67,8 @@ export default function about(props) {
           <img src={lighthouse} alt='lighthouse' className='tl-bg-img' />
         </div>
         <div className='tl-year'>
-          <p>2014</p>
+          <p>Lighthouse Labs</p>
+          <p>2020</p>
         </div>
         <div className='tl-content'>
           <h1 className='f3 text--accent ttu'>Phasellus mauris elit</h1>
@@ -78,7 +81,7 @@ export default function about(props) {
           <img src={coding} alt='coding' className='tl-bg-img' />
         </div>
         <div className='tl-year'>
-          <p>2016</p>
+          <p>Present Day</p>
         </div>
         <div className='tl-content'>
           <h1 className='f3 text--accent ttu'>Mauris vitae nunc elem</h1>
