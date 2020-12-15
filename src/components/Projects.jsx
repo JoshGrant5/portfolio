@@ -36,15 +36,18 @@ export default function Projects(props) {
           <p>{project.github}</p>
           <p>{project.deployment}</p>
         </div>
-        <div className='stack'>
+        {/* <div className='stack'>
           <h3>Front End</h3>
             {project.stack.frontEnd}
           <h3>Back End</h3>
             {project.stack.backEnd}
           {other()}
           {testing()}
+        </div> */}
+        <div className='project-img'>
+         <img src={image.default} alt='project' className='project-img' /> 
         </div>
-        <img src={image.default} alt='project' className='project-img' />
+        
       </div>
     )
   })

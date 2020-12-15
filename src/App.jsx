@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Bio from './components/Bio';
-import Skills from './components/Skills';
+import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Background from './components/Background';
 // import Education from './components/Education';
@@ -18,7 +18,7 @@ export default function App(props) {
         <Route path="/" exact component={Home} />
         <Route path="/bio" exact component={Bio} />
         <Route path="/projects" exact component={Projects} />
-        <Route path="/skills" exact component={Skills} />
+        <Route path="/resume" exact component={Resume} />
         <Route path="/background" exact component={Background} />
         {/* <Route path="/education" exact component={Education} /> */}
         <Route path="/contact" exact component={Contact} />
