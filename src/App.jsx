@@ -34,7 +34,7 @@ function Routes() {
   return (
     transitions.map(({ item, props, key}) => (
       <animated.div 
-        style={props}
+        style={{...props, position: 'absolute', width: '100%'}}
         key={key}>
         <Switch location={item}>
         <Route path="/" exact component={Home} />
