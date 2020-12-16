@@ -68,6 +68,7 @@ $font: 'Montserrat', sans-serif;
 
           .tl-header {
             position: relative;
+            margin-top: 0;
             margin-bottom: 0;
             font-size: 2.5em;
             color: $highlight-color;
@@ -79,13 +80,39 @@ $font: 'Montserrat', sans-serif;
             transform: translate3d(0, 0, 0) translateX(0);
             text-align: start;
             font-size: 1.5em;
+
+            .project-icons {
+              display: flex;
+              align-items: center;
+
+              span {
+                margin-right: 1em;
+              }
+              img{
+                width: 2em;
+                height: 2em;
+              }
+              .MuiSvgIcon-root {
+                width: 2em;
+                height: 2em;
+                color: $text-color;
+                padding-right: 4em;
+              }
+            }
           }
+
+          
         }
-  
-        .project-img-container > .project-img {
+
+        .project-img-container {
           width: 100%;
           height: 100%;
-          opacity: 0%;
+
+          .project-img {
+            width: 100%;
+            height: 100%;
+            opacity: 0%;
+          }
         }
       }
   

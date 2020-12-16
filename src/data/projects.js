@@ -12,7 +12,8 @@ export const projects = [
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/tinyapp',
-    deployment: ''
+    deployment: '',
+    host: ''
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ export const projects = [
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/tweeter',
-    deployment: ''
+    deployment: '',
+    host: ''
   },
   {
     id: 3,
@@ -42,7 +44,8 @@ export const projects = [
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/quiz-app',
-    deployment: 'https://quizandtell.herokuapp.com/'
+    deployment: 'https://quizandtell.herokuapp.com/',
+    host: 'Heroku'
   },
   {
     id: 4,
@@ -57,7 +60,8 @@ export const projects = [
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/interview-scheduler',
-    deployment: 'https://lhl-scheduler-jg.netlify.app/'
+    deployment: 'https://lhl-scheduler-jg.netlify.app/',
+    host: 'Netlify'
   },
   {
     id: 5,
@@ -72,7 +76,8 @@ export const projects = [
     },
     date: 'NOV 2020',
     github: 'https://github.com/JoshGrant5/jungle',
-    deployment: ''
+    deployment: '',
+    host: ''
   },
   {
     id: 6,
@@ -87,6 +92,7 @@ export const projects = [
     },
     date: 'OCT 2020',
     github: 'https://github.com/JoshGrant5/symposium',
-    deployment: 'https://the-symposium.herokuapp.com/'
+    deployment: 'https://the-symposium.herokuapp.com/',
+    host: 'Heroku'
   },
 ];
