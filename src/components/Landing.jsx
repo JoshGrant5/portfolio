@@ -1,32 +1,22 @@
-import { useState } from 'react';
-import { animated } from 'react-spring';
+import MediaIcons from './MediaIcons';
 import cropped4 from '../img/cropped4.jpg';
+import bw from '../img/bw.png';
+import color from '../img/color.png'
 
 export default function Landing(props) {
 
-  const animatePage = ()=> {
-    props.setView(true)
-    // setTimeout(() => {
-    //   props.setPage('BIO');
-    // }, 500);
-  };
-
-  
-  
-
   return (
     <div>
-      <animated.aside id='sidebar' style={props.showSideBar}></animated.aside>
-
       <article id='heading'>
         <span id='name'>Josh Grant</span>
         <span id='title'>Full Stack Developer</span>
       </article>
+    
+     <button className="bttn-stretch bttn-md bttn-success" id='view-bttn' onClick={() => props.setPage('BIO')}>View Portfolio</button> 
 
-      <button class="bttn-stretch bttn-md bttn-success" onClick={() => animatePage()} onmouseover={() => props.setView(true)} onmouseout={() => props.setView(false)}>View</button>
+    
 
-      <img src={cropped4} alt='profile-pic' id='profile-pic' />
-   
+      <MediaIcons />
     </div>
   );
 };

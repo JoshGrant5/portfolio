@@ -1,0 +1,37 @@
+$text-color: #c9d3c9;
+$highlight-color: rgb(162, 216, 162);
+
+#resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #cv {
+    height: 85vh;
+    margin: 4em;
+    margin-top: 10vh;
+  }
+
+  .cv-bttn {
+    width: auto;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    .MuiSvgIcon-root {
+      margin-left: 1em;
+      width: 2em;
+      height: 2em;
+    }
+  }
+
+  #download {
+    color: $highlight-color;
+  }
+
+  #canva {
+    color: $text-color;
+  }
+}

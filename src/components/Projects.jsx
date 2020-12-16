@@ -1,53 +1,54 @@
 import { projects } from '../data/projects.js';
-import '../styles/projects.scss'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import heroku from '../img/heroku.svg';
+import netlify from '../img/netlify.svg';
+import '../styles/about.scss';
+import '../styles/projects.scss';
 
 export default function Projects(props) {
 
   const projectList = projects.map(project => {
-    let image = require(`../img/${project.image}`);
+    const image = require(`../img/${project.image}`);
 
-    const other = () => {
-      if (project.stack.other) { 
-        return  (
-          <div>
-            <h3>Other</h3>
-            {project.stack.other}
-          </div>
-        )
-      }
-    };
-
-    const testing = () => {
-      if (project.stack.testing) { 
-        return  (
-          <div>
-            <h3>Testing</h3>
-            {project.stack.testing}
-          </div>
-        )
-      }
+    let icon;
+    if (project.host) {
+      icon = project.host === 'Netlify' ? netlify : heroku;
     }
 
-    return (
-      <div className='container'>
-        <div className='project'>
-          <h1>{project.name} <span>{project.date}</span> </h1>
-          <p>{project.description}</p>
-          <p>{project.github}</p>
-          <p>{project.deployment}</p>
-        </div>
-        <div className='stack'>
-          <h3>Front End</h3>
-            {project.stack.frontEnd}
-          <h3>Back End</h3>
-            {project.stack.backEnd}
-          {other()}
-          {testing()}
-        </div>
-        <img src={image.default} alt='project' className='project-img' />
+    return (      
+      <div id='project-tl'>
+        <div className='tl-item'>
+          <div className='tl-bg' >
+            <img src={image.default} alt={image.default} className='tl-bg-img' />
+          </div>
+          <div className='line-container'>
+            <div className='text-container'>
+              <p className='tl-header'>{project.name}</p>
+              <div className='tl-content'>
+                <p>{project.description}</p>
+                <br></br>
+                { project.host ? (
+                  <div className='project-icons'>
+                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
+                    <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment}>View Site <img src={icon} alt='icon' /></a> 
+                  </div>
+                ) : 
+                  <div className='project-icons'>
+                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
+                  </div>
+                }   
+              </div>
+            </div>
+            <div className='project-img-container'>
+              <img src={image.default} alt='project' className='project-img' /> 
+            </div> 
+          </div>
+        </div>      
       </div>
-    )
-  })
+    );
+  });
+
+
 
   return (
     <section id='projects'>

@@ -1,74 +1,100 @@
-$background-color: #18232f;
+// $background-color: #18232f;
+$background-color: #10141a;
 $contrast-color: #273442;
-$highlight-color: #c9d3c9;
-$test-color: #28b78d;
+$text-color: #c9d3c9;
+$highlight-color: rgb(162, 216, 162);
 $font: 'Montserrat', sans-serif;
 
 html {
   background-color: $background-color;
-  color: white;
+  color: $text-color;
   font-family: $font;
-  
-  .transition {
-    font-size: 3em;
-    text-align: center;
-    border-top: 2px solid $highlight-color;
-    border-bottom: 2px solid $highlight-color;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
 
-  #sidebar {
-    background-color: $highlight-color;
-    height: 100%;
-    width: 12vw;
-    left: 0;
+  #img-container {
     position: absolute;
-  }
+    top: 20vh;
+    right: 10vw;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    // opacity: 50%;
 
-  #profile-pic {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    opacity: 10%;
+    // &:hover {
+    //   opacity: 100%;
+    // }
+    
+    #profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: -20px -70px;
+      // opacity: 10%;
+      overflow: hidden;
+      border-radius: 50%;
+      background-color: $highlight-color;
+
+      // &:hover {
+      //   background-color: $highlight-color;
+      // }
+    }
   }
 
   #heading {
     top: 35vh;
     position: absolute;
-    left: 15vw;
-    color: $highlight-color;
+    left: 10vw;
+    color: $text-color;
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    border-bottom: 2px solid $highlight-color;
+    width: 45vw;
+    border-bottom: 2px solid $text-color;
 
     #name {
-      font-size: 3em;
+      font-size: 5em;
+      color: $highlight-color;
     }
     #title {
-      font-size: 2em;
+      font-size: 3em;
     }
   }
 
-  .bttn-stretch.bttn-md {
+  #view-bttn {
     position: absolute;
     z-index: 1;
-    top: 50vh;
-    left: 25vw;
-    width: 15vw;
-    font-size: 2em;
+    top: 60vh;
+    left: 10vw;
+    font-size: 3em;
     outline: none;
+    color: $highlight-color;
+  }
+
+  .media-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+    justify-content: center;
+    // margin-top: 10vh;
+    
+    a > .MuiSvgIcon-root {
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 2vw;
+      padding-top: 1em;
+      color: $text-color;
+
+      &:hover {
+        color: $highlight-color;
+      }
+    }
   }
 
   footer {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    // margin-top: 1em;
+    // margin-bottom: 1em;
+    bottom: 0;
   }
+
 }
 

@@ -1,27 +1,43 @@
-$background-color: #18232f;
+$background-color: #10141a;
 $contrast-color: #273442;
-$highlight-color: #c9d3c9;
-$test-color: #28b78d;
-$font: 'Montserrat', sans-serif;
+$text-color: #c9d3c9;
+$highlight-color: rgb(162, 216, 162);
 
 #contact-info {
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
+  height: 80vh;
+  // align-items: center;
 
-  a {
-    color: $highlight-color;
-    font-size: 1.25em;
-    display: flex;
-    align-items: center;
+  #contact-container {
+    margin: auto;
+
+    h1 {
+      color: $highlight-color;
+      font-size: 5em;
+    }
+
+    a {
+      color: $text-color;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      padding: 0.25em;
+  
+      &:hover {
+        color: $highlight-color;
+  
+        .MuiSvgIcon-root {
+          color: $highlight-color;
+        }
+      }
+    }
+  
+    a > .MuiSvgIcon-root {
+      width: 2em;
+      height: 2em;
+      padding-right: 1em;
+      color: $text-color;
+    }
   }
-
-  a > .MuiSvgIcon-root {
-    width: 2em;
-    height: 2em;
-    padding-right: 1em;
-    color: $highlight-color;
-  }
-
-
 }

@@ -1,10 +1,9 @@
 import { skills } from '../data/skills';
-import '../styles/skills.scss';
 
 export default function Skills(props) {
 
   return (
-    <section id='skills'>
+    <div id='skills'>
       <div className='container'>
         <h3>Languages</h3>
         <p>{skills.languages}</p>
@@ -25,6 +24,6 @@ export default function Skills(props) {
         <h3>Testing</h3>
         {skills.testing}
       </div>
-  </section>
+  </div>
   );
 };

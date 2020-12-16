@@ -1,42 +1,34 @@
-import { AppBar, Tabs, Tab, Link } from '@material-ui/core';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/nav.scss';
 
 export default function Nav(props) {
-  const [value, setValue] = useState(); // tracks which Tab has been selected
+  const [value, setValue] = useState(''); // tracks which nav option has been selected
+  const textColor = '#c9d3c9';
+  const highlightColor =  'rgb(162, 216, 162)';
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  const tabs = ['Home', 'About', 'Projects', 'Resume', 'Contaact'];
 
-  // Make Tabs act as anchor tags, using props.history to redirect routes
-  // useEffect(() => {
-  //   const paths = ['/projects', '/background', '/contact'];
-  //   props.history.push(paths[value]);
-  // }, [value, props.history])
-
+  useEffect(() => {
+    const items = Array.from(document.getElementsByClassName('nav-item'));
+    items.forEach(item => {
+      item.style.color = item.innerHTML === tabs[value] ? highlightColor : textColor;
+    });
+  }, [value, setValue]);
+  
   return (
     <nav>
-      <AppBar id='navbar'>
-        <Tabs value={value} onChange={handleChange} id='tabs'>
-          <Tab label="Projects" className='nav-item' />
-          <Tab label="Skills" className='nav-item' />
-          <Tab label="JG" id='logo' />
-          <Tab label="Background" className='nav-item' />
-          <Tab label="Contact" className='nav-item' />
-        </Tabs>
-      </AppBar>
+        <div id='left-nav'>
+          <NavLink to="/" id='logo'>JG</NavLink>
+          <p id='nav-current'>{`<${value}/>`}</p>
+        </div>
+        <div id="right-nav">
+          <NavLink to="/bio" className='nav-item' onClick={() => setValue(0)}>Home</NavLink>
+          <NavLink to="/about" className='nav-item' onClick={() => setValue(1)}>About</NavLink>
+          <NavLink to="/projects" className='nav-item' onClick={() => setValue(2)}>Projects</NavLink>
+          <NavLink to="/resume" className='nav-item' onClick={() => setValue(3)}>Resume</NavLink>
+          <NavLink to="/contact" className='nav-item' onClick={() => setValue(4)}>Contact</NavLink>
+        </div>
     </nav>
-
-// <nav>
-// <AppBar id='navbar'>
-//   <a href='/' id='logo'> JG </a>
-//   <Tabs value={value} onChange={handleChange} id='tabs'>
-//     <a href='/projects' className='nav-item'> Projects </a>
-//     <a href='/background' className='nav-item'> Background </a>
-//     <a href='/contact' className='nav-item'> Contact </a> 
-//   </Tabs>
-// </AppBar>
-// </nav>
   )
 };

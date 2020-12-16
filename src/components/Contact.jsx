@@ -6,18 +6,22 @@ import '../styles/contact.scss';
 export default function Contact(props) {
   return (
     <section id='contact-info'>
-      <a href='https://github.com/JoshGrant5'> 
-        <GitHubIcon /> 
-        https://github.com/JoshGrant5
-      </a> 
-      <a href='https://www.linkedin.com/in/josh-grant-44240a151/'> 
-        <LinkedInIcon /> 
-        https://www.linkedin.com/in/josh-grant-44240a151/
-      </a> 
-      <a href='mailto: joshgg@icloud.com'>
-        <EmailIcon /> 
-        joshgg@icloud.com
-      </a>
+      <div id='contact-container'>
+        <h1>I'd love to connect!</h1>
+        <a href='https://github.com/JoshGrant5'> 
+          <GitHubIcon /> 
+          https://github.com/JoshGrant5
+        </a> 
+        <a href='https://www.linkedin.com/in/josh-grant-44240a151/'> 
+          <LinkedInIcon /> 
+          https://www.linkedin.com/in/josh-grant-44240a151/
+        </a> 
+        <a href='mailto: joshgg@icloud.com'>
+          <EmailIcon /> 
+          joshgg@icloud.com
+        </a>
+        {/* <iframe title='thumbs-up' src="https://giphy.com/embed/111ebonMs90YLu" width="480" height="360" frameBorder="0" class="giphy-embed"></iframe> */}
+      </div>
     </section>
   );
 };
