@@ -91,17 +91,13 @@ $font: 'Montserrat', sans-serif;
                 text-decoration: none;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                
-                
+                align-items: center; 
               }
 
               .bttn-stretch.bttn-success {
                 color: $text-color;
-
                 &:hover {
                   color: $highlight-color;
-
                   .MuiSvgIcon-root {
                     color: $highlight-color;
                   }
@@ -119,7 +115,10 @@ $font: 'Montserrat', sans-serif;
                 height: 2em;
                 color: $text-color;
                 padding-left: 1em;
-                padding-right: 4em;
+              }
+
+              .host-bttn {
+                margin-left: 4em;
               }
             }
           }

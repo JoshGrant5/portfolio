@@ -33,7 +33,9 @@ export default function Projects(props) {
                     <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment}>View Site <img src={icon} alt='icon' /></a> 
                   </div>
                 ) : 
-                  <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
+                  <div className='project-icons'>
+                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
+                  </div>
                 }   
               </div>
             </div>
