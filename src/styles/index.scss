@@ -9,27 +9,6 @@ html {
   background-color: $background-color;
   color: $text-color;
   font-family: $font;
-  
-  .transition {
-    font-size: 3em;
-    text-align: center;
-    border-top: 2px solid $text-color;
-    border-bottom: 2px solid $text-color;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #sidebar {
-    background-color: $text-color;
-    height: 100%;
-    width: 12vw;
-    left: 0;
-    position: absolute;
-  }
 
   #img-container {
     position: absolute;

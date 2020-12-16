@@ -8,9 +8,7 @@ nav {
   top: 2vh;
   position: fixed;
   display: flex;
-  // flex-direction: row;
-  // justify-content: center;
-  // background-color: $contrast-color;
+
   width: 100%;
   justify-content: space-between;
   align-items: baseline;
@@ -18,10 +16,10 @@ nav {
 
   #left-nav {
     margin-left: 2vw;
+    // display: flex;
+    // align-items: center;
 
     #logo {
-      // margin-right: 5vw;
-      // margin-left: 2vw;;
       font-family: $font;
       font-size: 2em;
       color: $text-color;
@@ -32,6 +30,12 @@ nav {
         color: $highlight-color;
       }
     }
+
+    // #nav-current {
+    //   margin-left: 5vw;
+    //   font-size: 1.75em;
+    //   color: $highlight-color;
+    // }
   }
 
   
