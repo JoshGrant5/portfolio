@@ -5,7 +5,7 @@ $highlight-color: rgb(162, 216, 162);
 $font: 'Montserrat', sans-serif;
 
 nav {
-  top: 2vh;
+  top: 0;
   position: fixed;
   display: flex;
 
@@ -16,12 +16,12 @@ nav {
 
   #left-nav {
     margin-left: 2vw;
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 
     #logo {
       font-family: $font;
-      font-size: 2em;
+      font-size: 2.5em;
       color: $text-color;
       text-decoration: none;
       border-bottom: 2px solid $highlight-color;
@@ -31,34 +31,19 @@ nav {
       }
     }
 
-    // #nav-current {
-    //   margin-left: 5vw;
-    //   font-size: 1.75em;
-    //   color: $highlight-color;
-    // }
+    #nav-current {
+      margin-left: 10vw;
+      font-size: 1.75em;
+      color: $highlight-color;
+    }
   }
-
-  
-  // #tabs{
-  //   // width: 50vw;
-
-  //   .PrivateTabIndicator-colorSecondary-3 {
-  //     background-color: $highlight-color;
-  //   }
-  //   .MuiTabs-fixed {
-  //     margin: auto;
-  //   }
-  //   .MuiTabs-flexContainer {
-  //     width: 100vw;
-  //   }
-  // }
 
   #right-nav {
     margin-right: 2vw;
 
     .nav-item {
       font-family: $font;
-      font-size: 1.25em;
+      font-size: 1.5em;
       color: white;
       text-decoration: none;
       margin-left: 2em;

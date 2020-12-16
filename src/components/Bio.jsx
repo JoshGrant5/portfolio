@@ -21,7 +21,7 @@ export default function Bio(props) {
           <p>Featured Project</p>
         </div>
 
-        <Skills />
+        {/* <Skills /> */}
       </section>
 
       <MediaIcons />
