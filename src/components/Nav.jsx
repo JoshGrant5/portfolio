@@ -23,11 +23,11 @@ export default function Nav(props) {
           <p id='nav-current'>{`<${value}/>`}</p>
         </div>
         <div id="right-nav">
-          <NavLink to="/bio" className='nav-item' onClick={() => setValue(0)}>Home</NavLink>
-          <NavLink to="/about" className='nav-item' onClick={() => setValue(1)}>About</NavLink>
-          <NavLink to="/projects" className='nav-item' onClick={() => setValue(2)}>Projects</NavLink>
-          <NavLink to="/resume" className='nav-item' onClick={() => setValue(3)}>Resume</NavLink>
-          <NavLink to="/contact" className='nav-item' onClick={() => setValue(4)}>Contact</NavLink>
+          <NavLink to="/home" className='nav-item' onClick={() => setValue('Home')}>Home</NavLink>
+          <NavLink to="/about" className='nav-item' onClick={() => setValue('About')}>About</NavLink>
+          <NavLink to="/projects" className='nav-item' onClick={() => setValue('Projects')}>Projects</NavLink>
+          <NavLink to="/resume" className='nav-item' onClick={() => setValue('Resume')}>Resume</NavLink>
+          <NavLink to="/contact" className='nav-item' onClick={() => setValue('Contact')}>Contact</NavLink>
         </div>
     </nav>
   )

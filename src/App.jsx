@@ -16,7 +16,7 @@ export default function App(props) {
       <Nav />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/bio" exact component={Bio} />
+        <Route path="/home" exact component={Bio} />
         <Route path="/projects" exact component={Projects} />
         <Route path="/resume" exact component={Resume} />
         <Route path="/about" exact component={About} />
