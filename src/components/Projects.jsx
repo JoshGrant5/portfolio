@@ -26,18 +26,15 @@ export default function Projects(props) {
               <p className='tl-header'>{project.name}</p>
               <div className='tl-content'>
                 <p>{project.description}</p>
-
+                <br></br>
                 { project.host ? (
                   <div className='project-icons'>
-                    <span>View Repository</span> <GitHubIcon />
-                    <span>View Site</span> <img src={icon} alt='icon' />
+                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
+                    <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment}>View Site <img src={icon} alt='icon' /></a> 
                   </div>
                 ) : 
-                  <div className='project-icons'>
-                    <span>View Repository</span> <GitHubIcon />
-                  </div>
+                  <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
                 }   
-
               </div>
             </div>
             <div className='project-img-container'>

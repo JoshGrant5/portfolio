@@ -85,17 +85,40 @@ $font: 'Montserrat', sans-serif;
               display: flex;
               align-items: center;
 
-              span {
+              a {
                 margin-right: 1em;
+                font-size: 1em;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
               }
+
+              .bttn-stretch.bttn-success {
+                color: $text-color;
+
+                &:hover {
+                  color: $highlight-color;
+
+                  .MuiSvgIcon-root {
+                    color: $highlight-color;
+                  }
+                }
+              }
+
               img{
                 width: 2em;
                 height: 2em;
+                padding-left: 1em;
               }
+
               .MuiSvgIcon-root {
                 width: 2em;
                 height: 2em;
                 color: $text-color;
+                padding-left: 1em;
                 padding-right: 4em;
               }
             }
