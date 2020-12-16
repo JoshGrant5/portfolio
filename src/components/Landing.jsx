@@ -1,6 +1,4 @@
 import MediaIcons from './MediaIcons';
-import cropped4 from '../img/cropped4.jpg';
-import bw from '../img/bw.png';
 import color from '../img/color.png'
 
 export default function Landing(props) {
