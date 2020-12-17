@@ -2,6 +2,7 @@ $background-color: #10141a;
 $contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 //* Styles inspired by and modified off of design by Jeff Glen https://codepen.io/jeffglenn/pen/KNYoKa/
@@ -41,14 +42,14 @@ $font: 'Montserrat', sans-serif;
   }
 
   &:before {
-    background: linear-gradient(to bottom, $highlight-color 0%, $background-color 100%);
+    background: linear-gradient(to bottom, $highlight-color, $background-color, $background-color);
     opacity: 0;
     transform: translate3d(0, 0, 0) translateY(50%);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   &:hover {
-    width: 30% !important;
+    width: 35% !important;
     
     &:after {
       opacity: 0;
@@ -81,9 +82,24 @@ $font: 'Montserrat', sans-serif;
   opacity: 0;
   
   h1 {
+    margin-left: 5%;
+    margin-right: 5%;
     text-transform: uppercase;
-    color: $highlight-color;
+    color: $focus-color;
     font-size: 1.5em;
+  }
+
+  p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .tl-year {
+    border-top: 1px solid $highlight-color;
+    border-bottom: 1px solid $highlight-color;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
@@ -93,8 +109,10 @@ $font: 'Montserrat', sans-serif;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
-  border-top: 1px solid $highlight-color;
-  border-bottom: 1px solid $highlight-color;
+  color: $focus-color;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
 }
 
 .tl-bg {
