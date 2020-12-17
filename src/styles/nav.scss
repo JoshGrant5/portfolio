@@ -47,6 +47,10 @@ nav {
         color: $focus-color;
       }
     }
+
+    .is-selected {
+      color: $focus-color;
+    }
   }
 }
 
