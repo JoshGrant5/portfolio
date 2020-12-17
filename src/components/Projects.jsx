@@ -16,7 +16,7 @@ export default function Projects(props) {
     }
 
     return (      
-      <div id='project-tl'>
+      <div id='project-tl' key={project.name}>
         <div className='tl-item'>
           <div className='tl-bg' >
             <img src={image.default} alt={image.default} className='tl-bg-img' />

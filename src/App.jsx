@@ -4,7 +4,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
 import Nav from './components/Nav';
-import Landing from './components/Landing';
+import Index from './components/Index';
 import Home from './components/Home';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
@@ -37,8 +37,8 @@ function Routes() {
         style={{...props, position: 'absolute', width: '100%'}}
         key={key}>
         <Switch location={item}>
-        <Route path="/" exact component={Home} />
-          <Route path="/home" exact component={Bio} />
+        <Route path="/" exact component={Index} />
+          <Route path="/home" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/resume" exact component={Resume} />
           <Route path="/about" exact component={About} />
