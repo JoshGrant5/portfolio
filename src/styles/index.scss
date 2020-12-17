@@ -90,14 +90,16 @@ html {
   #view-bttn {
     position: absolute;
     z-index: 1;
-    top: 65vh;
+    // top: 65vh;
+    top: 55vh;
     left: 10vw;
     font-size: 4em;
     outline: none;
     text-decoration: none;
     color: $focus-color;
-    visibility: hidden;
-    transition: top 2s;
+    opacity: 0;
+    // transition: top 2s;
+    transition: opacity 2s;
   }
 
   .media-icons {

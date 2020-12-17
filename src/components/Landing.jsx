@@ -26,10 +26,10 @@ export default function Landing(props) {
     ref.current.map(clearTimeout);
     ref.current = [];
     setItems([]);
-    document.getElementById('view-bttn').style.visibility = 'hidden';
-    document.getElementById('view-bttn').style.top = '65vh';
+    document.getElementById('view-bttn').style.opacity = 0;
+    // document.getElementById('view-bttn').style.top = '65vh';
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 2000));
-    setTimeout(() => document.getElementById('view-bttn').style.visibility = 'visible', 2000);
+    // setTimeout(() => document.getElementById('view-bttn').style.visibility = 'visible', 2000);
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Baseball Lover', 'Full Stack Developer']), 4000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 6000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Fun Guy', 'Full Stack Developer']), 8000));
@@ -46,7 +46,8 @@ export default function Landing(props) {
   useEffect(() => swapOut(), []);
 
   const colorFinal = () => {
-    document.getElementById('view-bttn').style.top = '55vh';
+    // document.getElementById('view-bttn').style.top = '55vh';
+    document.getElementById('view-bttn').style.opacity = 1;
     Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
       if (item.innerHTML === 'Josh Grant') {
         item.style.transition = 'color 3s';
