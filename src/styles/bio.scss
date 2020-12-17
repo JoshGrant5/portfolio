@@ -3,20 +3,12 @@ $background-color: #10141a;
 $contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 #bio {
   display: flex;
   justify-content: flex-end;
-
-  // #backdrop {
-  //   height: 600px;
-  //   width: 600px;
-  //   border-radius: 50%;
-  //   background: #c9d3c9;
-  //   position: fixed;
-  //   top: 10vh;
-  // }
 
   #bio-img-container {
     position: absolute;
@@ -39,7 +31,7 @@ $font: 'Montserrat', sans-serif;
       // opacity: 10%;
       filter: inherit(10px);
       border-radius: 50%;
-      background-color: $highlight-color;
+      background-color: $focus-color;
 
       // &:hover {
       //   background-color: $highlight-color;
@@ -63,30 +55,19 @@ $font: 'Montserrat', sans-serif;
       font-size: 3em;
   
       span {
-        color: $highlight-color;
+        color: $focus-color;
       }
     }
 
-    #feature-project {
-
-      p {
-        font-size: 2em;
-      }
-    }
   
     #skills {
       // margin-top: 70vh;
       // margin-right: 2vw;
       padding: 2em;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 0.5em;
-      width: 50vw;
-      // z-index: 1;
-      // border-radius: 25px;
-      // background: $background-color;
-      // box-shadow:  5px 5px 10px #121b24, 
-      //             -5px -5px 10px #121b24;  
+      grid-template-columns: 1fr;
+      // grid-gap: 0.5em;
+      width: 35vw;
   
       border-radius: 25px;
       background: linear-gradient(225deg, #0e1217, #11151c);
@@ -94,7 +75,7 @@ $font: 'Montserrat', sans-serif;
                   21px -21px 42px #12171d;
     
       .container > h3 {
-        color: $highlight-color;
+        color: $focus-color;
       }
     }
   }

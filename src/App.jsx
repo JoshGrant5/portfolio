@@ -1,4 +1,8 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useContext } from 'react';
+import { useTransition, animated } from 'react-spring'
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { __RouterContext } from 'react-router';
+
 import Nav from './components/Nav';
 import Landing from './components/Landing';
 import Home from './components/Home';
@@ -9,18 +13,38 @@ import Contact from './components/Contact';
 
 import './styles/index.scss';
 
-export default function App(props) {
+export default function App() {
   return (
-     <BrowserRouter>
+    <BrowserRouter>
       <Nav />
-      <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/home" exact component={Home} />
-        <Route path="/projects" exact component={Projects} />
-        <Route path="/resume" exact component={Resume} />
-        <Route path="/about" exact component={About} />
-        <Route path="/contact" exact component={Contact} />
-      </Switch>
-     </BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
+}
+
+function Routes() {
+  const { location } = useContext(__RouterContext);
+
+  const transitions = useTransition(location, location => location.pathname, {
+    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
+  });
+    
+  return (
+    transitions.map(({ item, props, key}) => (
+      <animated.div 
+        style={{...props, position: 'absolute', width: '100%'}}
+        key={key}>
+        <Switch location={item}>
+        <Route path="/" exact component={Home} />
+          <Route path="/home" exact component={Bio} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/resume" exact component={Resume} />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
+        </Switch>
+      </animated.div>
+    ))
   );
 }

@@ -1,7 +1,7 @@
 $background-color: #10141a;
-$contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 #projects {
@@ -18,7 +18,7 @@ $font: 'Montserrat', sans-serif;
       min-height: 200px;
   
       &:before {
-        background: linear-gradient(to left, $highlight-color 0%, $background-color 100%);
+        background: linear-gradient(to left, $highlight-color, $background-color);
         transform: translate3d(0, 0, 0) translateX(-50%);
       }
   
@@ -71,7 +71,7 @@ $font: 'Montserrat', sans-serif;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 2.5em;
-            color: $highlight-color;
+            color: $focus-color;
             border-top: none;
             border-bottom: none;
           }
@@ -97,9 +97,9 @@ $font: 'Montserrat', sans-serif;
               .bttn-stretch.bttn-success {
                 color: $text-color;
                 &:hover {
-                  color: $highlight-color;
+                  color: $focus-color;
                   .MuiSvgIcon-root {
-                    color: $highlight-color;
+                    color: $focus-color;
                   }
                 }
               }

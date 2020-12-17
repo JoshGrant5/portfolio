@@ -1,5 +1,6 @@
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 
 #resume {
   display: flex;
@@ -28,7 +29,7 @@ $highlight-color: rgb(162, 216, 162);
   }
 
   #download {
-    color: $highlight-color;
+    color: $focus-color;
   }
 
   #canva {

@@ -9,7 +9,7 @@ export default function Skills(props) {
         <p>{skills.languages}</p>
       </div>
       <div className='container'>
-        <h3>Frameworks & Libraries</h3>
+        <h3>Frameworks, Libraries & Environments</h3>
         <p>{skills.frameworks}</p>
       </div>
       <div className='container'>

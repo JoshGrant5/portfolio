@@ -1,30 +1,19 @@
+import { useState } from 'react';
 import MediaIcons from './MediaIcons';
-import Skills from './Skills';
-import '../styles/bio.scss';
-import test from '../img/test.png';
-import color from '../img/color.png'
+import Landing from './Landing';
+import Bio from './Bio';
 
-export default function Home(props) {
+export default function Home() {
+
+  const [page, setPage] = useState('LANDING');
 
   return (
-    <div id='bio'>
-      {/* <div id='backdrop'></div> */}
-
-      <div id='bio-img-container'>
-        <img src={color} alt='bio-profile-pic' id='bio-profile-pic' />
-      </div>
-
-      <section>
-        <p id='summary'>Hi, I'm <span>Josh</span>. I build cool things.</p>
-
-        <div id="feature-project">
-          <p>Featured Project</p>
-        </div>
-
-        {/* <Skills /> */}
-      </section>
-
-      <MediaIcons />
+    <div>
+      <main>
+        {page === 'LANDING' && <Landing setPage={setPage} />}
+        {page === 'BIO' && <Bio />}
+        <MediaIcons />
+      </main>
     </div>
   );
 };
