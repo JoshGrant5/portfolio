@@ -9,8 +9,13 @@ $focus-color: rgb(40, 215, 159);
 
   #cv {
     height: 85vh;
+    transition: height 2s;
     margin: 4em;
     margin-top: 10vh;
+
+    &:hover {
+      height: 125vh;
+    }
   }
 
   .cv-bttn {

@@ -2,6 +2,7 @@ $background-color: #10141a;
 $contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 
 #contact-info {
   display: flex;
@@ -13,7 +14,7 @@ $highlight-color: rgb(162, 216, 162);
     margin: auto;
 
     h1 {
-      color: $highlight-color;
+      color: $focus-color;
       font-size: 5em;
     }
 
@@ -25,10 +26,10 @@ $highlight-color: rgb(162, 216, 162);
       padding: 0.25em;
   
       &:hover {
-        color: $highlight-color;
+        color: $focus-color;
   
         .MuiSvgIcon-root {
-          color: $highlight-color;
+          color: $focus-color;
         }
       }
     }

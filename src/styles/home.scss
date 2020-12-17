@@ -7,58 +7,64 @@ $focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 #bio {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1.25fr 2fr;
+  height: 50vh;
 
   #bio-img-container {
-    position: absolute;
-    top: 20vh;
-    left: 5vw;
+    margin-top: 15vh;
+    margin-left: 5vw;
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
-    // opacity: 50%;
+    width: 30vw;
+    height: 30vw;
+    border: 2px solid $focus-color;
 
-    // &:hover {
-    //   opacity: 100%;
-    // }
+    &:hover {
+      #bio-profile-pic {
+        background-color: $focus-color;
+      } 
+    }
     
     #bio-profile-pic {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: -20px -70px;
-      // opacity: 10%;
-      filter: inherit(10px);
+      object-position: -1vw -4vw;
       border-radius: 50%;
-      background-color: $focus-color;
-
-      // &:hover {
-      //   background-color: $highlight-color;
-      // }
+      background-color: $background-color;
+      transition: 5s;
     }
   }
 
   section {
-    position: absolute;
-    margin-top: 10vh;
-    margin-right: 10vw;
-    // z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    padding-left: 0;
+    padding-top: 50vh;
+    // margin-top: 5vh;
 
-    #summary {
-      text-align: center;
-      padding: 1em;
-      border-radius: 25px;
-      background: linear-gradient(225deg, #0e1217, #11151c);
-      box-shadow:  -21px 21px 42px #0e1117, 
-                  21px -21px 42px #12171d;
-      font-size: 3em;
+    height: 40%;
+    overflow: scroll;
+    }
+
+    .summary {
+      // text-align: center;
+      padding: 0.5em;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      width: 100%;
+      // border-radius: 25px;
+      // background: linear-gradient(225deg, #0e1217, #11151c);
+      // box-shadow:  -21px 21px 42px #0e1117, 
+      //             21px -21px 42px #12171d;
+      font-size: 2.5vw;
   
       span {
         color: $focus-color;
       }
-    }
-
   
     #skills {
       // margin-top: 70vh;
@@ -69,10 +75,10 @@ $font: 'Montserrat', sans-serif;
       // grid-gap: 0.5em;
       width: 35vw;
   
-      border-radius: 25px;
-      background: linear-gradient(225deg, #0e1217, #11151c);
-      box-shadow:  -21px 21px 42px #0e1117, 
-                  21px -21px 42px #12171d;
+      // border-radius: 25px;
+      // background: linear-gradient(225deg, #0e1217, #11151c);
+      // box-shadow:  -21px 21px 42px #0e1117, 
+      //             21px -21px 42px #12171d;
     
       .container > h3 {
         color: $focus-color;
