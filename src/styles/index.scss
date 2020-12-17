@@ -97,17 +97,15 @@ html {
   }
 
   .media-icons {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    height: 100vh;
-    justify-content: center;
-    // margin-top: 10vh;
+    right: 2vw;
+    top: 25vh;
     
     a > .MuiSvgIcon-root {
       width: 1.5em;
       height: 1.5em;
-      margin-right: 2vw;
       padding-top: 1em;
       color: $text-color;
 

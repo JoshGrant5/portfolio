@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
 import Nav from './components/Nav';
+import MediaIcons from './components/MediaIcons';
 import Home from './components/Home';
 import Bio from './components/Bio';
 import Resume from './components/Resume';
@@ -18,6 +19,7 @@ export default function App() {
     <BrowserRouter>
       <Nav />
       <Routes />
+      <MediaIcons />
     </BrowserRouter>
   );
 }

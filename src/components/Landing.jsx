@@ -1,6 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring'
-import MediaIcons from './MediaIcons';
 
 export default function Landing() {
 
@@ -14,14 +13,13 @@ export default function Landing() {
   const transitions = useTransition(items, null, {
     // unique: true,
     // reset: true, 
-    from: { opacity: 0.5, height: 50, innerHeight: 50, transform: 'rotateX(0deg)', color: otherColor },
+    from: { opacity: 0.5, height: 50, innerHeight: 50, transform: 'rotateX(0deg)', color: textColor },
     enter: [
-      { opacity: 1, height: 100, innerHeight: 100 }, { transform: 'rotateX(180deg)', color: textColor },
-      { transform: 'rotateX(0deg)', color: otherColor }
+      { opacity: 1, height: 100, innerHeight: 100, color: otherColor }, { transform: 'rotateX(180deg)' },
+      { transform: 'rotateX(0deg)', color: textColor }
     ],
     leave: { opacity: 0.5, height: 0, innerHeight: 0, ease: '0.5s' }
   })
-
 
   const swapOut = useCallback(() => {
     ref.current.map(clearTimeout);
@@ -38,41 +36,30 @@ export default function Landing() {
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 18000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Your Next Hire?', 'Full Stack Developer']), 20000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 22000));
+    setTimeout(() => colorFinal(), 23000);
   }, []);
 
   useEffect(() => swapOut(), []);
 
+  const colorFinal = () => {
+    Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
+      if (item.innerHTML === 'Full Stack Developer') {
+        item.style.transition = 'color 3s';
+        item.style.color = otherColor;
+      }
+    });
+  }
+
   return (
     <div>
-      {/* <article id='heading'>
-        <span id='name'>Josh Grant</span>
-        <span id='title'>Full Stack Developer</span>
-      </article> */}
-
-    {/* <animated.h1 style={multiAnimation}>This is a test</animated.h1> */}
-
-    {/* <div id='heading'>
-      <p>Josh Grant</p>
-    
-      {transitions.map(({ item, key, props }) => (
-        <animated.div className="transitions-item" key={key} style={props} onClick={swapOut}>
-          <animated.div>{item}</animated.div>
-        </animated.div>
-      ))}
-    </div> */}
-
     <div id='heading'>
       {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
         <animated.div className="transitions-item" key={key} style={rest} onClick={swapOut}>
-          <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+          <animated.div className='heading-item' style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
         </animated.div>
       ))}
     </div>
-    
      {/* <button className="bttn-stretch bttn-md bttn-success" id='view-bttn' onClick={() => props.setPage('BIO')}>View Portfolio</button>  */}
-
-
-      <MediaIcons />
     </div>
   );
 };
