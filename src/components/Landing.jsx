@@ -15,7 +15,7 @@ export default function Landing() {
     // reset: true, 
     from: { opacity: 0.5, height: 50, innerHeight: 50, transform: 'rotateX(0deg)', color: textColor },
     enter: [
-      { opacity: 1, height: 100, innerHeight: 100, color: otherColor }, { transform: 'rotateX(180deg)' },
+      { opacity: 1, height: 100, innerHeight: 100, color: highlightColor }, { transform: 'rotateX(180deg)' },
       { transform: 'rotateX(0deg)', color: textColor }
     ],
     leave: { opacity: 0.5, height: 0, innerHeight: 0, ease: '0.5s' }
@@ -45,7 +45,7 @@ export default function Landing() {
     Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
       if (item.innerHTML === 'Full Stack Developer') {
         item.style.transition = 'color 3s';
-        item.style.color = otherColor;
+        item.style.color = highlightColor;
       }
     });
   }

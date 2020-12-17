@@ -93,7 +93,7 @@ html {
     left: 10vw;
     font-size: 3em;
     outline: none;
-    color: $highlight-color;
+    color: $focus-color;
   }
 
   .media-icons {
@@ -110,7 +110,7 @@ html {
       color: $text-color;
 
       &:hover {
-        color: $highlight-color;
+        color: $focus-color;
       }
     }
   }

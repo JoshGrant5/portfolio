@@ -3,6 +3,7 @@ $background-color: #10141a;
 $contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 #bio {
@@ -39,7 +40,7 @@ $font: 'Montserrat', sans-serif;
       // opacity: 10%;
       filter: inherit(10px);
       border-radius: 50%;
-      background-color: $highlight-color;
+      background-color: $focus-color;
 
       // &:hover {
       //   background-color: $highlight-color;
@@ -63,7 +64,7 @@ $font: 'Montserrat', sans-serif;
       font-size: 3em;
   
       span {
-        color: $highlight-color;
+        color: $focus-color;
       }
     }
 
@@ -79,9 +80,9 @@ $font: 'Montserrat', sans-serif;
       // margin-right: 2vw;
       padding: 2em;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 0.5em;
-      width: 50vw;
+      grid-template-columns: 1fr;
+      // grid-gap: 0.5em;
+      width: 35vw;
       // z-index: 1;
       // border-radius: 25px;
       // background: $background-color;
@@ -94,7 +95,7 @@ $font: 'Montserrat', sans-serif;
                   21px -21px 42px #12171d;
     
       .container > h3 {
-        color: $highlight-color;
+        color: $focus-color;
       }
     }
   }
