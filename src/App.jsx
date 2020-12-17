@@ -4,13 +4,13 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
 import Nav from './components/Nav';
-import MediaIcons from './components/MediaIcons';
 import Home from './components/Home';
 import Bio from './components/Bio';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import './styles/index.scss';
 
@@ -19,7 +19,10 @@ export default function App() {
     <BrowserRouter>
       <Nav />
       <Routes />
-      <MediaIcons />
+      <a id='footer' href='https://github.com/JoshGrant5/portfolio'>
+        View Source Code
+        <GitHubIcon />
+      </a>
     </BrowserRouter>
   );
 }

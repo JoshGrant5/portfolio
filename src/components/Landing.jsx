@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring'
 
-export default function Landing() {
+export default function Landing(props) {
 
   const textColor = '#c9d3c9';
   const highlightColor =  'rgb(162, 216, 162)';
@@ -59,7 +59,7 @@ export default function Landing() {
         </animated.div>
       ))}
     </div>
-     {/* <button className="bttn-stretch bttn-md bttn-success" id='view-bttn' onClick={() => props.setPage('BIO')}>View Portfolio</button>  */}
+      <button className="bttn-stretch bttn-md bttn-success" id='view-bttn' onClick={() => props.setPage('BIO')}>View Portfolio</button> 
     </div>
   );
 };

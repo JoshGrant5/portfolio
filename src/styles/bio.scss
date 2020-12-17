@@ -10,15 +10,6 @@ $font: 'Montserrat', sans-serif;
   display: flex;
   justify-content: flex-end;
 
-  // #backdrop {
-  //   height: 600px;
-  //   width: 600px;
-  //   border-radius: 50%;
-  //   background: #c9d3c9;
-  //   position: fixed;
-  //   top: 10vh;
-  // }
-
   #bio-img-container {
     position: absolute;
     top: 20vh;
@@ -68,12 +59,6 @@ $font: 'Montserrat', sans-serif;
       }
     }
 
-    #feature-project {
-
-      p {
-        font-size: 2em;
-      }
-    }
   
     #skills {
       // margin-top: 70vh;
@@ -83,11 +68,6 @@ $font: 'Montserrat', sans-serif;
       grid-template-columns: 1fr;
       // grid-gap: 0.5em;
       width: 35vw;
-      // z-index: 1;
-      // border-radius: 25px;
-      // background: $background-color;
-      // box-shadow:  5px 5px 10px #121b24, 
-      //             -5px -5px 10px #121b24;  
   
       border-radius: 25px;
       background: linear-gradient(225deg, #0e1217, #11151c);
