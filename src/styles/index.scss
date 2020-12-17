@@ -1,8 +1,9 @@
-// $background-color: #18232f;
+// // $background-color: #18232f;
 $background-color: #10141a;
 $contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
+$focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 html {
@@ -11,24 +12,50 @@ html {
   font-family: $font;
 
   body {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
   }
 
-  
+  #heading {
+    // overflow: hidden;
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin-left: 10vw;
+    margin-top: 30vh;
+   
+    width: 50%;
+  }
+
+  // #root > #heading > div {
+  //   width: 400px;
+  // }
+
   .transitions-item {
-    color: $highlight-color;
+    overflow: hidden;
+
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 5em;
+
     will-change: transform, opacity, height;
     white-space: nowrap;
     cursor: pointer;
+    line-height: 80px;
   }
+ 
+  
 
   #img-container {
     position: absolute;
@@ -57,26 +84,6 @@ html {
       //   background-color: $highlight-color;
       // }
     }
-  }
-
-  #heading {
-    top: 35vh;
-    position: absolute;
-    left: 10vw;
-    color: $text-color;
-    display: flex;
-    flex-direction: column;
-    // width: 50vw;
-    // border-bottom: 2px solid $text-color;
-    font-size: 5em;
-
-    // #name {
-    //   font-size: 5em;
-    //   color: $highlight-color;
-    // }
-    // #title {
-    //   font-size: 3em;
-    // }
   }
 
   #view-bttn {
@@ -117,5 +124,6 @@ html {
   //   bottom: 0;
   // }
 }
+
 
 
