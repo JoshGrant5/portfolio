@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 export default function Landing(props) {
 
@@ -47,7 +48,9 @@ export default function Landing(props) {
 
   const colorFinal = () => {
     // document.getElementById('view-bttn').style.top = '55vh';
-    document.getElementById('view-bttn').style.opacity = 1;
+    if (document.getElementById('view-bttn')) {
+      document.getElementById('view-bttn').style.opacity = 1;
+    }
     Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
       if (item.innerHTML === 'Josh Grant') {
         item.style.transition = 'color 3s';
@@ -65,7 +68,10 @@ export default function Landing(props) {
         </animated.div>
       ))}
     </div>
-      <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn' >View Portfolio</NavLink>
+      <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
+        View Portfolio
+        <ArrowForwardIcon />
+      </NavLink>
     </div>
   );
 };

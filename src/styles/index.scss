@@ -90,7 +90,6 @@ html {
   #view-bttn {
     position: absolute;
     z-index: 1;
-    // top: 65vh;
     top: 55vh;
     left: 10vw;
     font-size: 4em;
@@ -98,8 +97,15 @@ html {
     text-decoration: none;
     color: $focus-color;
     opacity: 0;
-    // transition: top 2s;
     transition: opacity 2s;
+    display: flex;
+    align-items: center;
+
+    .MuiSvgIcon-root {
+      padding-left: 1em;
+      width: 3em;
+      height: 3em;
+    }
   }
 
   .media-icons {
