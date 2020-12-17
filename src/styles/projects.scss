@@ -61,7 +61,8 @@ $font: 'Montserrat', sans-serif;
 
         .text-container {
           height: min-content;
-          margin-left: 10vw;
+          margin-left: 8vw;
+          padding-right: 2vw;
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
@@ -79,7 +80,7 @@ $font: 'Montserrat', sans-serif;
           .tl-content {
             transform: translate3d(0, 0, 0) translateX(0);
             text-align: start;
-            font-size: 1.5em;
+            font-size: 1.25em;
 
             .project-icons {
               display: flex;
@@ -134,12 +135,14 @@ $font: 'Montserrat', sans-serif;
             width: 100%;
             height: 100%;
             opacity: 0%;
+            transition: opacity 2s;
           }
         }
       }
   
       .tl-bg > .tl-bg-img {
         opacity: 50%;
+        transition: opacity 2s;
       }
     }
   }
