@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring'
 
 export default function Landing(props) {
@@ -15,7 +16,7 @@ export default function Landing(props) {
     // reset: true, 
     from: { opacity: 0.5, height: 50, innerHeight: 50, transform: 'rotateX(0deg)', color: textColor },
     enter: [
-      { opacity: 1, height: 100, innerHeight: 100, color: highlightColor }, { transform: 'rotateX(180deg)' },
+      { opacity: 1, height: 100, innerHeight: 100, color: otherColor }, { transform: 'rotateX(180deg)' },
       { transform: 'rotateX(0deg)', color: textColor }
     ],
     leave: { opacity: 0.5, height: 0, innerHeight: 0, ease: '0.5s' }
@@ -25,7 +26,10 @@ export default function Landing(props) {
     ref.current.map(clearTimeout);
     ref.current = [];
     setItems([]);
+    document.getElementById('view-bttn').style.visibility = 'hidden';
+    document.getElementById('view-bttn').style.top = '65vh';
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 2000));
+    setTimeout(() => document.getElementById('view-bttn').style.visibility = 'visible', 2000);
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Baseball Lover', 'Full Stack Developer']), 4000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 6000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Fun Guy', 'Full Stack Developer']), 8000));
@@ -42,10 +46,11 @@ export default function Landing(props) {
   useEffect(() => swapOut(), []);
 
   const colorFinal = () => {
+    document.getElementById('view-bttn').style.top = '55vh';
     Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
-      if (item.innerHTML === 'Full Stack Developer') {
+      if (item.innerHTML === 'Josh Grant') {
         item.style.transition = 'color 3s';
-        item.style.color = highlightColor;
+        item.style.color = otherColor;
       }
     });
   }
@@ -59,7 +64,7 @@ export default function Landing(props) {
         </animated.div>
       ))}
     </div>
-      <button className="bttn-stretch bttn-md bttn-success" id='view-bttn' onClick={() => props.setPage('BIO')}>View Portfolio</button> 
+      <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn' >View Portfolio</NavLink>
     </div>
   );
 };

@@ -10,7 +10,6 @@ import Resume from './components/Resume';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
-import GitHubIcon from '@material-ui/icons/GitHub';
 
 import './styles/index.scss';
 
@@ -19,10 +18,6 @@ export default function App() {
     <BrowserRouter>
       <Nav />
       <Routes />
-      <a id='footer' href='https://github.com/JoshGrant5/portfolio'>
-        View Source Code
-        <GitHubIcon />
-      </a>
     </BrowserRouter>
   );
 }
@@ -33,7 +28,7 @@ function Routes() {
   const transitions = useTransition(location, location => location.pathname, {
     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
+    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
   });
     
   return (
