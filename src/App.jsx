@@ -1,79 +1,66 @@
-import { useContext, useEffect, useState } from 'react';
-import { useTransition, useSpring, animated } from 'react-spring'
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import { __RouterContext } from 'react-router';
+import { useState, useCallback, useRef } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 import Nav from './components/Nav';
 import ProfilePic from './components/ProfilePic';
 import MediaIcons from './components/MediaIcons';
-import Landing from './components/Landing';
-import Home from './components/Home';
-import Resume from './components/Resume';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import Routes from './Routes';
 
 import './styles/index.scss';
 
 export default function App() {
 
+  const otherColor = 'rgb(40, 215, 159)';
+
   const [onHome, setOnHome] = useState(false);
   const [onLanding, setOnLanding] = useState(false);
+  const ref = useRef([]);
+  const [animations, setAnimations] = useState(ref);
+  const [items, setItems] = useState([]);
+
+  const swapOut = useCallback(() => {
+    ref.current.map(clearTimeout);
+    ref.current = [];
+    setItems([]);
+    document.getElementById('view-bttn').style.opacity = 0;
+    // document.getElementById('view-bttn').style.top = '65vh';
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 2000));
+    // setTimeout(() => document.getElementById('view-bttn').style.visibility = 'visible', 2000);
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Baseball Lover', 'Full Stack Developer']), 4000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 6000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Fun Guy', 'Full Stack Developer']), 8000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 10000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Blueberry Addict', 'Full Stack Developer']), 12000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 14000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Canucks Diehard', 'Full Stack Developer']), 16000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 18000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Your Next Hire?', 'Full Stack Developer']), 20000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 22000));
+    ref.current.push(setTimeout(() => colorFinal(), 23000));
+    setAnimations(ref.current);
+  }, []);
+
+  const colorFinal = () => {
+    // document.getElementById('view-bttn').style.top = '55vh';
+    if (document.getElementById('view-bttn')) {
+      document.getElementById('view-bttn').style.opacity = 1;
+    }
+    Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
+      if (item.innerHTML === 'Josh Grant') {
+        item.style.transition = 'color 3s';
+        item.style.color = otherColor;
+      }
+    });
+  }
 
   return (
     <BrowserRouter>
-      <Nav />
+      <Nav animations={animations} />
       { onHome && <ProfilePic /> }
       { onHome && <MediaIcons /> }
       { onLanding && <MediaIcons /> }
       
-      <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} />
+      <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} items={items} swapOut={swapOut} />
     </BrowserRouter>
-  );
-}
-
-function Routes(props) {
-
-  const { location } = useContext(__RouterContext);
-
-  useEffect(() => {
-    location.pathname === '/home' ? props.setOnHome(true) : props.setOnHome(false);
-    location.pathname === '/' ? props.setOnLanding(true) : props.setOnLanding(false);
-    location.pathname === '/' ? document.getElementById('route-animations').style.height = '100%' : document.getElementById('route-animations').style.height = '';
-  }, [location]);
-  
-  const transitions = useTransition(location, location => location.pathname, {
-    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
-  });
-
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0, transition: 'opacity 1s' },
-    delay: 500
-  });
-    
-  return (
-    transitions.map(({ item, props, key}) => (
-      <animated.div
-        id='route-animations' 
-        style={{...props, position: 'absolute', width: '100%' }}
-        key={key}>
-        <Switch location={item}>
-        <Route path="/" exact component={Landing} />
-          <Route path="/home" exact component={Home} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/resume" exact component={Resume} />
-          <Route path="/about" exact component={About} />
-          <Route path="/contact" exact component={Contact} />
-        </Switch>
-        <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' style={fade}>
-          View Source Code 
-          <GitHubIcon />
-        </animated.a>
-      </animated.div>
-    ))
   );
 }
