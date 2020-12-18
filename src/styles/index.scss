@@ -40,24 +40,40 @@ html {
     line-height: 80px;
   }
 
-  #view-bttn {
-    position: absolute;
-    z-index: 1;
-    top: 55vh;
-    left: 10vw;
-    font-size: 4em;
-    outline: none;
-    text-decoration: none;
-    color: $focus-color;
-    opacity: 0;
-    transition: opacity 2s;
-    display: flex;
-    align-items: center;
-
-    .MuiSvgIcon-root {
-      padding-left: 1em;
-      width: 3em;
-      height: 3em;
+  #test {
+    #view-bttn {
+      position: absolute;
+      z-index: 1;
+      top: 55vh;
+      left: 10vw;
+      font-size: 4em;
+      outline: none;
+      text-decoration: none;
+      color: $focus-color;
+      opacity: 0;
+      transition: opacity 2s;
+      display: flex;
+      align-items: center;
+  
+      .MuiSvgIcon-root {
+        padding-left: 1em;
+        width: 3em;
+        height: 3em;
+      }
+    }
+    #logo1 {
+      position: fixed;
+      top: 15vh;
+      right: 8vw;
+      margin: 0;
+      width: 30vw;
+      filter: grayscale(100) ;
+      transition: 3s;
+    }
+    #view-bttn:hover + #logo1 {
+      width: 35vw;
+      top: 10vh;
+      right: 5vw;
     }
   }
 
@@ -83,27 +99,6 @@ html {
 
   #landing-container {
     height: 70vh;
-  }
-
-  #logo1 {
-    position: fixed;
-    top: 12vh;
-    right: 5vw;
-    margin: 0;
-    width: 30vw;
-    // opacity: 0;
-    filter: grayscale(100);
-    transition: filter 8s;
-    transition: opacity 3s;
-
-    &:hover {
-      opacity: 1;
-      filter: grayscale(0);
-    }
-  }
-
-  #logo-styled {
-    fill: red;
   }
 
   #footer {
