@@ -69,3 +69,44 @@ $font: 'Montserrat', sans-serif;
     background-color: $background-color;
   }
 }
+
+// @media (max-width: 1125px) {
+//   #bio-img-container {
+//     width: 20em;
+//     height: 20em;
+//   }
+// }
+
+// Responsive view for mobile
+@media (max-width: 750px) {
+  #bio {
+    grid-template-columns: 1fr;
+    margin-top: 20em;
+    overflow-x: hidden;
+
+    section > .summary {
+      font-size: 1.5em;
+      margin-bottom: 2vh;
+    }
+
+    #skills {
+      font-size: 1em;
+    }
+  }
+
+  #bio-img-container {
+    position: absolute;
+    margin-top: 20vh;
+    margin-right: 0;
+    width: 20em;
+    height: 20em;
+
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    #bio-profile-pic {
+      object-position: -1em -2em;
+    }
+    
+  }  
+}

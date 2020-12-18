@@ -54,11 +54,12 @@ nav {
 
 // Responsive view for mobile
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   nav {
     bottom: 0;
     z-index: 2;
     background-color: $contrast-color;
+
 
     #left-nav {
       display: none;
@@ -68,13 +69,14 @@ nav {
       margin: auto;
       margin-top: 1vh;
       margin-bottom: 1vh;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
 
       .nav-item {
         font-size: 1em;
         margin-left: 0;
-        padding: 0.5em;
       }
-      
     }
   }
 
