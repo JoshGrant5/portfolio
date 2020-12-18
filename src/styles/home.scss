@@ -8,62 +8,24 @@ $font: 'Montserrat', sans-serif;
 
 #bio {
   display: grid;
-  grid-template-columns: 1.25fr 2fr;
+  grid-template-columns: 1fr 2fr;
   height: 50vh;
-
-  
-   
-
-  #bio-img-container {
-    margin-top: 15vh;
-    margin-left: 5vw;
-    border-radius: 50%;
-    width: 30vw;
-    height: 30vw;
-    border: 2px solid $focus-color;
-    // position: sticky;
-    // top: 10vh;
-
-    // &:hover {
-    //   #bio-profile-pic {
-    //     background-color: $focus-color;
-    //   } 
-    // }
-    
-    #bio-profile-pic {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: -1vw -4vw;
-      border-radius: 50%;
-      background-color: $background-color;
-    }
-  }
 
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5em;
-    padding-left: 0;
-    // padding-top: 120vh;
-    // margin-top: 5vh;
-
-    // height: 0%;
-    // overflow: scroll;
+    padding: 6vw;
+   
+    margin-top: 5vh;
   }
 
   .summary {
-    // text-align: center;
     padding: 0.5em;
     padding-bottom: 0;
     margin-top: 0;
     width: 100%;
-    // border-radius: 25px;
-    // background: linear-gradient(225deg, #0e1217, #11151c);
-    // box-shadow:  -21px 21px 42px #0e1117, 
-    //             21px -21px 42px #12171d;
     font-size: 2.5vw;
 
     span {
@@ -71,17 +33,13 @@ $font: 'Montserrat', sans-serif;
     }
   }
 
-  
-
   #skills {
-
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     padding: 0;
     font-size: 1.5vw;
     grid-gap: 0;
-    // width: 35vw;
 
     .container {
       h3 {
@@ -93,5 +51,25 @@ $font: 'Montserrat', sans-serif;
         margin: 0;
       }
     }
+  }
+}
+
+#bio-img-container {
+  margin-top: 15vh;
+  margin-left: 4vw;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  border: 2px solid $focus-color;
+  position: fixed;
+
+  
+  #bio-profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -1vw -4vw;
+    border-radius: 50%;
+    background-color: $background-color;
   }
 }

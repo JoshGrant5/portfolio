@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
 import Nav from './components/Nav';
+import ProfilePic from './components/ProfilePic';
 import Index from './components/Index';
 import Home from './components/Home';
 import Resume from './components/Resume';
@@ -14,10 +15,14 @@ import Contact from './components/Contact';
 import './styles/index.scss';
 
 export default function App() {
+
+  const [onBio, setOnBio] = useState(false);
+
   return (
     <BrowserRouter>
       <Nav />
-      <Routes />
+      { onBio && <ProfilePic /> }
+      <Routes setOnBio={setOnBio} />
     </BrowserRouter>
   );
 }
@@ -25,6 +30,10 @@ export default function App() {
 function Routes(props) {
 
   const { location } = useContext(__RouterContext);
+
+  useEffect(() => {
+    location.pathname === '/home' ? props.setOnBio(true) : props.setOnBio(false);
+  }, [location]);
   
   const transitions = useTransition(location, location => location.pathname, {
     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
