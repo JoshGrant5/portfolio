@@ -19,9 +19,9 @@ nav {
     display: flex;
     align-items: center;
 
-    #logo2 {
+    .logo2 {
       img {
-        width: 5vw;
+        width: 5em;
         filter: grayscale(100);
 
         &:hover {
@@ -53,7 +53,6 @@ nav {
 }
 
 // Responsive view for mobile
-
 @media (max-width: 750px) {
   nav {
     bottom: 0;
@@ -79,6 +78,4 @@ nav {
       }
     }
   }
-
-
 }

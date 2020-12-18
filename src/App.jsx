@@ -1,10 +1,11 @@
 import { useState, useCallback, useRef } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, NavLink } from 'react-router-dom';
 
 import Nav from './components/Nav';
 import ProfilePic from './components/ProfilePic';
 import MediaIcons from './components/MediaIcons';
 import Routes from './Routes';
+import jg from './img/jg.svg';
 
 import './styles/index.scss';
 
@@ -56,8 +57,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Nav animations={animations} />
-      { onHome && <ProfilePic /> }
-      { onHome && <MediaIcons /> }
+      { onHome && (
+        <div>
+          <NavLink to="/" className='logo2 hidden'> <img src={jg} alt='svg' /> </NavLink>
+          <ProfilePic /> 
+          <MediaIcons />
+        </div>
+      )}
       { onLanding && <MediaIcons /> }
       <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} items={items} swapOut={swapOut} />
     </BrowserRouter>

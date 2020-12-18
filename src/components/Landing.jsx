@@ -38,7 +38,7 @@ export default function Landing(props) {
           </animated.div>
         ))}
       </div>
-      <div id='test'>
+      <div id='view-container'>
         <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
           View Portfolio
           <ArrowForwardIcon />

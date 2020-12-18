@@ -13,6 +13,7 @@ $font: 'Montserrat', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
     padding: 6vw;
     padding-right: 7vw;
   }
@@ -70,12 +71,11 @@ $font: 'Montserrat', sans-serif;
   }
 }
 
-// @media (max-width: 1125px) {
-//   #bio-img-container {
-//     width: 20em;
-//     height: 20em;
-//   }
-// }
+@media (max-width: 1200px) {
+  #bio > section {
+    margin-top: 3em;
+  }
+}
 
 // Responsive view for mobile
 @media (max-width: 750px) {
@@ -83,9 +83,13 @@ $font: 'Montserrat', sans-serif;
     grid-template-columns: 1fr;
     margin-top: 22em;
 
-    section > .summary {
-      font-size: 1.5em;
-      margin-bottom: 2vh;
+    section {
+      margin-top: 1em;
+
+      .summary {
+        font-size: 1.5em;
+        margin-bottom: 2vh;
+      }
     }
 
     #skills {

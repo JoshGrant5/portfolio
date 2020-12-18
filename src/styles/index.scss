@@ -40,7 +40,7 @@ html {
     line-height: 80px;
   }
 
-  #test {
+  #view-container {
     #view-bttn {
       position: absolute;
       z-index: 1;
@@ -75,6 +75,11 @@ html {
       top: 10vh;
       right: 5vw;
     }
+  }
+
+  .hidden {
+    visibility: hidden;
+    position: absolute;
   }
 
   .media-icons {
@@ -130,10 +135,7 @@ html {
 
 // Responsive view for mobile
 @media (max-width: 750px) {
-
   #root {
-    
-
     .media-icons {
       position: absolute;
       display: flex;
@@ -146,6 +148,22 @@ html {
         padding: 0.5em;
       }
     }
-
+    .hidden {
+      visibility: visible;
+      z-index: 1;
+      img {
+        width: 5em;
+        filter: grayscale(100);
+  
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+      @media (max-width: 400px) {
+        img {
+          width: 4em;
+        }
+      }
+    }
   }
 }
