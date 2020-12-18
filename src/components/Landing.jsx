@@ -23,6 +23,12 @@ export default function Landing(props) {
 
   useEffect(() => props.swapOut(), []);
 
+  const logoAnimation = useSpring({
+    to: { opacity: 1, filter: 'grayscale(0)' },
+    from: { opacity: 0, filter: 'grayscale(100)', transition: '5s' },
+    delay: 1900,
+  });
+
   return (
     <div id='landing-container'>
       <div id='heading'>
@@ -37,7 +43,7 @@ export default function Landing(props) {
           View Portfolio
           <ArrowForwardIcon />
         </NavLink>
-        <img src={jg} alt='svg' id='logo1' />
+        <animated.img src={jg} alt='svg' id='logo1' style={logoAnimation} />
       </div>
     </div>
   );

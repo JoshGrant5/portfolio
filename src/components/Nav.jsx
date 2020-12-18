@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import jg from '../img/jg.svg';
 import '../styles/nav.scss';
 
 export default function Nav(props) {
@@ -12,7 +13,7 @@ export default function Nav(props) {
   return (
     <nav>
         <div id='left-nav'>
-          <NavLink to="/" id='logo2' onClick={clearAnimations}>JG</NavLink>
+          <NavLink to="/" id='logo2' onClick={clearAnimations}> <img src={jg} alt='svg' /> </NavLink>
         </div>
         <div id="right-nav">
           <NavLink to="/home" activeClassName='is-selected' className='nav-item' onClick={clearAnimations}>Home</NavLink>
