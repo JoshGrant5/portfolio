@@ -18,7 +18,6 @@ export default function Routes(props) {
   useEffect(() => {
     location.pathname === '/home' ? props.setOnHome(true) : props.setOnHome(false);
     location.pathname === '/' ? props.setOnLanding(true) : props.setOnLanding(false);
-    // location.pathname === '/' ? document.getElementById('route-animations').style.height = '100%' : document.getElementById('route-animations').style.height = '';
   }, [location.pathname]);
   
   const transitions = useTransition(location, location => location.pathname, {
