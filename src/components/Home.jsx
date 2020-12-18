@@ -1,7 +1,7 @@
 import Skills from './Skills';
 import '../styles/home.scss';
 
-export default function Home(props) {
+export default function Home() {
 
   return (
     <div id='bio'>

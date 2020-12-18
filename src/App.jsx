@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { useTransition, animated } from 'react-spring'
+import { useTransition, useSpring, animated } from 'react-spring'
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
@@ -40,6 +40,7 @@ function Routes(props) {
   useEffect(() => {
     location.pathname === '/home' ? props.setOnHome(true) : props.setOnHome(false);
     location.pathname === '/' ? props.setOnLanding(true) : props.setOnLanding(false);
+    location.pathname === '/' ? document.getElementById('route-animations').style.height = '100%' : document.getElementById('route-animations').style.height = '';
   }, [location]);
   
   const transitions = useTransition(location, location => location.pathname, {
@@ -47,11 +48,18 @@ function Routes(props) {
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
   });
+
+  const fade = useSpring({
+    opacity: 1,
+    from: { opacity: 0, transition: 'opacity 1s' },
+    delay: 500
+  });
     
   return (
     transitions.map(({ item, props, key}) => (
-      <animated.div 
-        style={{...props, position: 'absolute', width: '100%'}}
+      <animated.div
+        id='route-animations' 
+        style={{...props, position: 'absolute', width: '100%' }}
         key={key}>
         <Switch location={item}>
         <Route path="/" exact component={Landing} />
@@ -61,10 +69,10 @@ function Routes(props) {
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
-        <a id='footer' href='https://github.com/JoshGrant5/portfolio'>
+        <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' style={fade}>
           View Source Code 
           <GitHubIcon />
-        </a>
+        </animated.a>
       </animated.div>
     ))
   );
