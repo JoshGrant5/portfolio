@@ -7,11 +7,11 @@ $focus-color: rgb(40, 215, 159);
 #contact-info {
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  // align-items: center;
+  height: 100vh;
 
   #contact-container {
     margin: auto;
+    margin-top: 20vh;
 
     h1 {
       color: $focus-color;
