@@ -85,6 +85,27 @@ html {
     height: 70vh;
   }
 
+  #logo1 {
+    position: fixed;
+    top: 12vh;
+    right: 5vw;
+    margin: 0;
+    width: 30vw;
+    // opacity: 0;
+    filter: grayscale(100);
+    transition: filter 8s;
+    transition: opacity 3s;
+
+    &:hover {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+  }
+
+  #logo-styled {
+    fill: red;
+  }
+
   #footer {
     position: fixed;
     bottom: 2vh;

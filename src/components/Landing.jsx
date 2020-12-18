@@ -32,13 +32,11 @@ export default function Landing(props) {
           </animated.div>
         ))}
       </div>
-      <div>
-        <img src={jg} alt='svg' />
-      </div>
-        <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
-          View Portfolio
-          <ArrowForwardIcon />
-        </NavLink>
+      <img src={jg} alt='svg' id='logo1' />
+      <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
+        View Portfolio
+        <ArrowForwardIcon />
+      </NavLink>
     </div>
   );
 };
