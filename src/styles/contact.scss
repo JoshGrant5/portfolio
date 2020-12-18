@@ -42,3 +42,23 @@ $focus-color: rgb(40, 215, 159);
     }
   }
 }
+
+// Responsive viewport adjustments
+@media (max-width: 900px) {
+  #contact-info > #contact-container {
+    margin-left: 8vw;
+
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+}
+@media (max-width: 725px) {
+  #contact-info > #contact-container {
+    margin-left: 5vw;
+
+    a {
+      font-size: 4vw;
+    }
+  }
+}

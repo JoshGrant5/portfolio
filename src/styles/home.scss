@@ -70,14 +70,13 @@ $font: 'Montserrat', sans-serif;
     background-color: $background-color;
   }
 }
-
+// Responsive viewport adjustments
 @media (max-width: 1200px) {
   #bio > section {
     margin-top: 3em;
   }
 }
 
-// Responsive view for mobile
 @media (max-width: 750px) {
   #bio {
     grid-template-columns: 1fr;
