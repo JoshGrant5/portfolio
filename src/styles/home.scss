@@ -1,6 +1,4 @@
-// $background-color: #18232f;
 $background-color: #10141a;
-$contrast-color: #273442;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
 $focus-color: rgb(40, 215, 159);
@@ -9,7 +7,6 @@ $font: 'Montserrat', sans-serif;
 #bio {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 50vh;
 
   section {
     display: flex;
@@ -23,8 +20,8 @@ $font: 'Montserrat', sans-serif;
 
   .summary {
     padding: 0.5em;
-    padding-bottom: 0;
     margin-top: 0;
+    margin-bottom: 1vh;
     width: 100%;
     font-size: 2.5vw;
 
