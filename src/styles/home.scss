@@ -81,8 +81,7 @@ $font: 'Montserrat', sans-serif;
 @media (max-width: 750px) {
   #bio {
     grid-template-columns: 1fr;
-    margin-top: 20em;
-    overflow-x: hidden;
+    margin-top: 22em;
 
     section > .summary {
       font-size: 1.5em;
