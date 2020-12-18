@@ -6,13 +6,11 @@ $focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
 nav {
-  top: 2vh;
   position: fixed;
   display: flex;
-
   width: 100%;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   z-index: 1;
 
   #left-nav {
@@ -20,15 +18,19 @@ nav {
     display: flex;
     align-items: center;
 
-    #logo {
+    #logo2 {
       font-family: $font;
       font-size: 2.5em;
       color: $text-color;
       text-decoration: none;
-      border-bottom: 2px solid $focus-color;
 
-      &:hover {
-        color: $focus-color;
+      img {
+        width: 5vw;
+        filter: grayscale(100);
+
+        &:hover {
+          filter: grayscale(0);
+        }
       }
     }
   }
