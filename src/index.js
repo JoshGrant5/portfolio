@@ -6,11 +6,6 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-
-    <a id='footer' href='https://github.com/JoshGrant5/portfolio'>
-      View Source Code
-    </a>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

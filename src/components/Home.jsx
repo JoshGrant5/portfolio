@@ -1,4 +1,3 @@
-import MediaIcons from './MediaIcons';
 import Skills from './Skills';
 import '../styles/home.scss';
 

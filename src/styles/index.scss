@@ -130,16 +130,19 @@ html {
 
   #footer {
     position: fixed;
-    bottom:0;
+    bottom: 2vh;
     width: 100%;
     text-decoration: none;
     color: $text-color;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1vw;
 
     .MuiSvgIcon-root {
       padding-left: 0.5em;
+      width: 1.5vw;
+      height: 1.5vw;
     }
 
     &:hover {

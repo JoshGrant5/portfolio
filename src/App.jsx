@@ -12,6 +12,7 @@ import Resume from './components/Resume';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import './styles/index.scss';
 
@@ -26,6 +27,7 @@ export default function App() {
       { onHome && <ProfilePic /> }
       { onHome && <MediaIcons /> }
       { onLanding && <MediaIcons /> }
+      
       <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} />
     </BrowserRouter>
   );
@@ -59,6 +61,10 @@ function Routes(props) {
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
+        <a id='footer' href='https://github.com/JoshGrant5/portfolio'>
+          View Source Code 
+          <GitHubIcon />
+        </a>
       </animated.div>
     ))
   );
