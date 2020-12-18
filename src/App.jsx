@@ -36,7 +36,7 @@ export default function App() {
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 18000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Your Next Hire?', 'Full Stack Developer']), 20000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 22000));
-    ref.current.push(setTimeout(() => colorFinal(), 23000));
+    ref.current.push(setTimeout(() => colorFinal(), 24000));
     setAnimations(ref.current);
   }, []);
 
