@@ -4,13 +4,15 @@ import '../styles/nav.scss';
 export default function Nav(props) {
 
   const clearAnimations = () => {
-    if ( props.animations.length > 1) { props.animations.map(clearTimeout) }
+    if ( props.animations.length > 1) { 
+      props.animations.map(clearTimeout) 
+    }
   };
 
   return (
     <nav>
         <div id='left-nav'>
-          <NavLink to="/" id='logo'>JG</NavLink>
+          <NavLink to="/" id='logo' onClick={clearAnimations}>JG</NavLink>
         </div>
         <div id="right-nav">
           <NavLink to="/home" activeClassName='is-selected' className='nav-item' onClick={clearAnimations}>Home</NavLink>

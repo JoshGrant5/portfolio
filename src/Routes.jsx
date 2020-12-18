@@ -30,7 +30,6 @@ export default function Routes(props) {
   const fade = useSpring({
     opacity: 1,
     from: { opacity: 0, transition: 'opacity 1s' },
-    delay: 500
   });
 
   const landingItems = props.items;

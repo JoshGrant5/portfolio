@@ -21,18 +21,18 @@ export default function Landing(props) {
   useEffect(() => props.swapOut(), []);
 
   return (
-    <div>
-    <div id='heading'>
-      {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-        <animated.div className="transitions-item" key={key} style={rest} onClick={props.swapOut}>
-          <animated.div className='heading-item' style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
-        </animated.div>
-      ))}
-    </div>
-      <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
-        View Portfolio
-        <ArrowForwardIcon />
-      </NavLink>
+    <div id='landing-container'>
+      <div id='heading'>
+        {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+          <animated.div className="transitions-item" key={key} style={rest} onClick={props.swapOut}>
+            <animated.div className='heading-item' style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+          </animated.div>
+        ))}
+      </div>
+        <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
+          View Portfolio
+          <ArrowForwardIcon />
+        </NavLink>
     </div>
   );
 };

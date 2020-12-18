@@ -59,7 +59,6 @@ export default function App() {
       { onHome && <ProfilePic /> }
       { onHome && <MediaIcons /> }
       { onLanding && <MediaIcons /> }
-      
       <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} items={items} swapOut={swapOut} />
     </BrowserRouter>
   );
