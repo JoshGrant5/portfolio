@@ -11,6 +11,9 @@ $font: 'Montserrat', sans-serif;
   grid-template-columns: 1.25fr 2fr;
   height: 50vh;
 
+  
+   
+
   #bio-img-container {
     margin-top: 15vh;
     margin-left: 5vw;
@@ -18,12 +21,14 @@ $font: 'Montserrat', sans-serif;
     width: 30vw;
     height: 30vw;
     border: 2px solid $focus-color;
+    // position: sticky;
+    // top: 10vh;
 
-    &:hover {
-      #bio-profile-pic {
-        background-color: $focus-color;
-      } 
-    }
+    // &:hover {
+    //   #bio-profile-pic {
+    //     background-color: $focus-color;
+    //   } 
+    // }
     
     #bio-profile-pic {
       width: 100%;
@@ -32,7 +37,6 @@ $font: 'Montserrat', sans-serif;
       object-position: -1vw -4vw;
       border-radius: 50%;
       background-color: $background-color;
-      transition: 5s;
     }
   }
 
@@ -43,45 +47,50 @@ $font: 'Montserrat', sans-serif;
     align-items: center;
     padding: 5em;
     padding-left: 0;
-    padding-top: 50vh;
+    // padding-top: 120vh;
     // margin-top: 5vh;
 
-    height: 40%;
-    overflow: scroll;
-    }
+    // height: 0%;
+    // overflow: scroll;
+  }
 
-    .summary {
-      // text-align: center;
-      padding: 0.5em;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      width: 100%;
-      // border-radius: 25px;
-      // background: linear-gradient(225deg, #0e1217, #11151c);
-      // box-shadow:  -21px 21px 42px #0e1117, 
-      //             21px -21px 42px #12171d;
-      font-size: 2.5vw;
+  .summary {
+    // text-align: center;
+    padding: 0.5em;
+    padding-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+    // border-radius: 25px;
+    // background: linear-gradient(225deg, #0e1217, #11151c);
+    // box-shadow:  -21px 21px 42px #0e1117, 
+    //             21px -21px 42px #12171d;
+    font-size: 2.5vw;
+
+    span {
+      color: $focus-color;
+    }
+  }
+
   
-      span {
-        color: $focus-color;
+
+  #skills {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+    font-size: 1.5vw;
+    grid-gap: 0;
+    // width: 35vw;
+
+    .container {
+      h3 {
+        color: $highlight-color;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
       }
-  
-    #skills {
-      // margin-top: 70vh;
-      // margin-right: 2vw;
-      padding: 2em;
-      display: grid;
-      grid-template-columns: 1fr;
-      // grid-gap: 0.5em;
-      width: 35vw;
-  
-      // border-radius: 25px;
-      // background: linear-gradient(225deg, #0e1217, #11151c);
-      // box-shadow:  -21px 21px 42px #0e1117, 
-      //             21px -21px 42px #12171d;
-    
-      .container > h3 {
-        color: $focus-color;
+      p {
+        margin: 0;
       }
     }
   }
