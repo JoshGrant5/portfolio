@@ -10,13 +10,15 @@ export default function Landing(props) {
   const textColor = '#c9d3c9';
   const otherColor = 'rgb(40, 215, 159)';
 
+
+
   const transitions = useTransition(props.items, null, {
     from: { opacity: 0.5, height: 25, innerHeight: 25, transform: 'rotateX(0deg)', color: textColor },
     enter: [
       { 
         opacity: 1, 
-        height: document.documentElement.clientWidth < 525 ? 125 : 100, 
-        innerHeight: document.documentElement.clientWidth < 525 ? 125 : 100, 
+        height: document.documentElement.clientWidth < 575 ? 130 : 100, 
+        innerHeight: document.documentElement.clientWidth < 575 ? 130 : 100, 
         color: otherColor 
       }, 
       { transform: 'rotateX(180deg)' },
@@ -31,7 +33,7 @@ export default function Landing(props) {
 
   const logoAnimation = useSpring({
     to: { opacity: 1, filter: 'grayscale(0)' },
-    from: { opacity: 0, filter: 'grayscale(100)', transition: '0.5s' },
+    from: { opacity: 0, filter: 'grayscale(100)', transition: '1s' },
     delay: 1900,
   });
 
@@ -39,8 +41,24 @@ export default function Landing(props) {
     <div id='landing-container'>
       <div id='heading'>
         {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-          <animated.div className="transitions-item" key={key} style={rest} onClick={props.swapOut}>
-            <animated.div className='heading-item' style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+          <animated.div 
+            className="transitions-item" 
+            key={key} 
+            style={{...rest, height: item === 'Josh Grant' ? 60 : innerHeight }}
+            onClick={props.swapOut}
+          >
+            <animated.div 
+              className='heading-item' 
+              style={
+                { 
+                  overflow: 'hidden', 
+                  height: item.length < 15 ? 60 : innerHeight,
+                  textAlign: document.documentElement.clientWidth < 525 ? 'center' : 'start'
+                }
+              }
+            >
+              {item}
+            </animated.div>
           </animated.div>
         ))}
       </div>

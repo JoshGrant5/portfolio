@@ -35,7 +35,7 @@ html {
     align-items: center;
     font-size: 5em;
     will-change: transform, opacity, height;
-    white-space: nowrap;
+    // white-space: nowrap;
     cursor: pointer;
   }
 
@@ -57,6 +57,7 @@ html {
       display: flex;
       align-items: center;
       top: 15vh;
+      margin-left: 5vw;
   
       .MuiSvgIcon-root {
         padding-left: 1em;
@@ -125,22 +126,27 @@ html {
   }
 }
 
-@media (max-width: 525px) {
-  #header {
+@media (max-width: 575px) {
+  #heading {
     word-wrap: break-word !important;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
   }
   #view-container {
     #logo1 {
-      width: 20em !important;
+      width: 28em !important;
     }
-    #view-bttn {
-      font-size: 2em !important;
+    #view-bttn > .MuiSvgIcon-root {
+      width: 2em !important;
+      height: 2em !important;
+    }
+  }
+}
 
-      .MuiSvgIcon-root {
-        width: 2em !important;
-        height: 2em !important;
-      }
-    }
+@media (max-width: 690px) {
+  #heading > .transitions-item {
+    font-size: 3.5em !important;
   }
 }
 
@@ -187,9 +193,6 @@ html {
           padding-left: 0 !important;
         }
       }
-    }
-    .transitions-item {
-      font-size: 3em !important;
     }
     #footer {
       display: none;
@@ -242,7 +245,8 @@ html {
   }
   #view-container {
     #view-bttn {
-      font-size: 3em !important;
+      font-size: 2.25em !important;
+      // margin-right: 5vw;
     }
   }
 }
