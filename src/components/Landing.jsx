@@ -44,7 +44,7 @@ export default function Landing(props) {
           <animated.div 
             className="transitions-item" 
             key={key} 
-            style={{...rest, height: item === 'Josh Grant' ? 60 : innerHeight }}
+            style={{...rest, height: item === 'Josh Grant' && document.documentElement.clientWidth < 575 ? 60 : innerHeight }}
             onClick={props.swapOut}
           >
             <animated.div 
@@ -52,7 +52,7 @@ export default function Landing(props) {
               style={
                 { 
                   overflow: 'hidden', 
-                  height: item.length < 15 ? 60 : innerHeight,
+                  height: item.length < 12 && document.documentElement.clientWidth < 575 ? 60 : innerHeight,
                   textAlign: document.documentElement.clientWidth < 525 ? 'center' : 'start'
                 }
               }

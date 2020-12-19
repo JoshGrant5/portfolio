@@ -16,12 +16,12 @@ export default function Home() {
         <p className='summary'>I haven't been programming long, but I've finally found what I <span>love</span> to do.</p>
         <p className='summary'>I build <span>awesome things</span> from the ground up, and that's pretty damn cool.</p>
         <div className='home-bttns'>
-          <NavLink to="/about" activeClassName='is-selected' className='bttn-stretch bttn-md bttn-success about-bttn'>
-            Get to know me a bit more! 
-            <TouchAppIcon />
-          </NavLink>
           <NavLink to="/projects" activeClassName='is-selected' className='bttn-stretch bttn-md bttn-success project-bttn'>
             Check out what I've built so far!
+            <TouchAppIcon />
+          </NavLink>
+          <NavLink to="/about" activeClassName='is-selected' className='bttn-stretch bttn-md bttn-success about-bttn'>
+            Get to know me a bit more! 
             <TouchAppIcon />
           </NavLink>
         </div>
