@@ -35,6 +35,7 @@ $focus-color: rgb(40, 215, 159);
           height: min-content;
       
           .tl-content {
+            position: initial;
             opacity: 1;
             transform: translateX(0);
             transition: all 0.75s ease 0.5s;
@@ -73,6 +74,7 @@ $focus-color: rgb(40, 215, 159);
           justify-content: space-evenly;
 
           .tl-header {
+            top: 0;
             position: relative;
             margin-bottom: 0;
             font-size: 2.5em;
@@ -94,6 +96,7 @@ $focus-color: rgb(40, 215, 159);
 
           .tl-content {
             transform: translate3d(0, 0, 0) translateX(0);
+            -webkit-transform: translate3d(0, 0, 0) translateX(0);;
             text-align: start;
             font-size: 1.25em;
 
@@ -176,11 +179,15 @@ $focus-color: rgb(40, 215, 159);
       grid-template-columns: 1fr !important;
 
       .text-container {
+        margin-left: 0;
+        padding-left: 2vw;
+
         .tl-header {
           text-align: center;
         } 
         .tl-content > p {
           text-align: center;
+          margin-right: 0;
         } 
         .tl-date {
           margin: auto;
