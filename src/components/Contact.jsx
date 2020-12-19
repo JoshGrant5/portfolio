@@ -20,7 +20,6 @@ export default function Contact(props) {
           <EmailIcon /> 
           joshgg@icloud.com
         </a>
-        {/* <iframe title='thumbs-up' src="https://giphy.com/embed/111ebonMs90YLu" width="480" height="360" frameBorder="0" class="giphy-embed"></iframe> */}
       </div>
     </section>
   );

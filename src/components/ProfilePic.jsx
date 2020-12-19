@@ -1,5 +1,4 @@
 import { useSpring, animated } from 'react-spring';
-
 import me from '../img/me.png'
 
 export default function ProfilePic(props) {
