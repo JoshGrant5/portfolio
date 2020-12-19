@@ -30,10 +30,39 @@ $font: 'Montserrat', sans-serif;
     }
   }
 
+  .home-bttns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+      background-color: $background-color;
+      color: $text-color;
+      border-color: $focus-color;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: $focus-color;
+      }
+
+      .MuiSvgIcon-root {
+        color: $focus-color;
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+
   .stack {
     text-align: center;
-    border-top: 1px solid $highlight-color;
-    border-bottom: 1px solid $highlight-color;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
   }
 
   #skills {
@@ -84,6 +113,9 @@ $font: 'Montserrat', sans-serif;
     }
     .summary {
       margin-right: 1.5em;
+    }
+    .home-bttns > a {
+      font-size: 1.5em;
     }
   }
 }
