@@ -51,6 +51,10 @@ $font: 'Montserrat', sans-serif;
             opacity: 0;
           }
         }
+
+        .project-icons {
+          margin-bottom: 2vh;
+        }
       }
 
       .line-container {
@@ -69,7 +73,7 @@ $font: 'Montserrat', sans-serif;
 
           .tl-header {
             position: relative;
-            margin-top: 0;
+            // margin-top: 0;
             margin-bottom: 0;
             font-size: 2.5em;
             color: $focus-color;
@@ -129,8 +133,6 @@ $font: 'Montserrat', sans-serif;
               }
             }
           }
-
-          
         }
 
         .project-img-container {
@@ -152,4 +154,58 @@ $font: 'Montserrat', sans-serif;
       }
     }
   }
-}  
+}
+
+@media (max-width: 750px) {
+  #projects {
+    margin-top: 0 !important;
+  }
+
+  #projects > #project-tl > .tl-item > .line-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  #projects > #project-tl > .tl-item {
+    &:before {
+      background: linear-gradient(to top, $highlight-color, $background-color) !important;
+    }
+  }
+
+  .project-icons { 
+    flex-direction: row !important;
+
+    .host-bttn {
+      padding-top: 0.25em !important;
+    }
+
+    .MuiSvgIcon-root {
+      width: 1.25em !important;
+      height: 1.25em !important;
+    }
+  }
+
+  .tl-content {
+    font-size: 1em !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  #projects > #project-tl > .tl-item > .line-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-icons { 
+    flex-direction: column;
+
+    .host-bttn {
+      margin-left: 0 !important;
+      padding-top: 1em;
+    }
+  }
+
+  .project-img-container {
+    .project-img {
+      object-fit: contain;
+    }
+  }
+}
