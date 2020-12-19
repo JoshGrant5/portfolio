@@ -1,4 +1,3 @@
-// // $background-color: #18232f;
 $background-color: #10141a;
 $contrast-color: #273442;
 $text-color: #c9d3c9;
@@ -24,7 +23,8 @@ html {
   }
 
   #heading {
-    margin-left: 10vw;
+    position: absolute;
+    margin-left: 8vw;
     margin-top: 30vh;
   }
 
@@ -35,25 +35,29 @@ html {
     align-items: center;
     font-size: 5em;
     will-change: transform, opacity, height;
-    white-space: nowrap;
+    // white-space: nowrap;
     cursor: pointer;
-    line-height: 80px;
   }
 
-  #test {
+  #view-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 95vh;
+
     #view-bttn {
-      position: absolute;
       z-index: 1;
-      top: 55vh;
-      left: 10vw;
       font-size: 4em;
       outline: none;
       text-decoration: none;
-      color: $focus-color;
+      color: #28d79f;
       opacity: 0;
       transition: opacity 2s;
       display: flex;
       align-items: center;
+      top: 15vh;
+      margin-left: 5vw;
   
       .MuiSvgIcon-root {
         padding-left: 1em;
@@ -62,19 +66,13 @@ html {
       }
     }
     #logo1 {
-      position: fixed;
-      top: 15vh;
-      right: 8vw;
-      margin: 0;
-      width: 30vw;
-      // filter: grayscale(100) ;
-      transition: 2s;
+      margin-bottom: 2em;
     }
-    #view-bttn:hover + #logo1 {
-      width: 35vw;
-      top: 10vh;
-      right: 5vw;
-    }
+  }
+
+  .hidden {
+    visibility: hidden;
+    position: absolute;
   }
 
   .media-icons {
@@ -98,7 +96,7 @@ html {
   }
 
   #landing-container {
-    height: 70vh;
+    height: 100vh;
   }
 
   #footer {
@@ -110,12 +108,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25vw;
+    font-size: 1em;
 
     .MuiSvgIcon-root {
       padding-left: 0.5em;
-      width: 1.75vw;
-      height: 1.75vw;
+      width: 1em;
+      height: 1em;
     }
 
     &:hover {
@@ -128,5 +126,127 @@ html {
   }
 }
 
+@media (max-width: 575px) {
+  #heading {
+    word-wrap: break-word !important;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  #view-container {
+    #logo1 {
+      width: 28em !important;
+    }
+    #view-bttn > .MuiSvgIcon-root {
+      width: 2em !important;
+      height: 2em !important;
+    }
+  }
+}
 
+@media (max-width: 690px) {
+  #heading > .transitions-item {
+    font-size: 3.5em !important;
+  }
+}
 
+@media (max-width: 780px) {
+  #root {
+    .media-icons {
+      display: none;
+    }
+    #route-animations {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .hidden {
+      visibility: visible;
+      z-index: 1;
+      img {
+        width: 5em;
+        filter: grayscale(100);
+  
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+      @media (max-width: 400px) {
+        img {
+          width: 4em;
+        }
+      }
+    }
+    #heading {
+      margin-left: 0 !important;
+      margin-top: 5vh !important;
+    }
+    #view-container {
+      #logo1 {
+        position: initial !important;
+        width: 30em;
+      }
+      #view-bttn {
+        .MuiSvgIcon-root {
+          padding-left: 0 !important;
+        }
+      }
+    }
+    #footer {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  #landing-container {
+    display: flex;
+    justify-content: center;
+  }
+  #heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh !important;
+  }
+  #view-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20vh;
+
+    #logo1 {
+      margin-left: 0 !important;
+    }
+    #view-bttn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 1275px) {
+  #view-container > #logo1 {
+    width: 25em;
+    margin-left: 5vw;
+  }
+  #heading {
+    margin-left: 4vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .transitions-item {
+    font-size: 4em !important;
+  }
+  #view-container {
+    #view-bttn {
+      font-size: 2.25em !important;
+      // margin-right: 5vw;
+    }
+  }
+}

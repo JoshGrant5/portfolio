@@ -24,9 +24,9 @@ export default function Projects(props) {
           <div className='line-container'>
             <div className='text-container'>
               <p className='tl-header'>{project.name}</p>
+              <p className='tl-date'>{project.date}</p>
               <div className='tl-content'>
                 <p>{project.description}</p>
-                <br></br>
                 { project.host ? (
                   <div className='project-icons'>
                     <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
@@ -47,8 +47,6 @@ export default function Projects(props) {
       </div>
     );
   });
-
-
 
   return (
     <section id='projects'>

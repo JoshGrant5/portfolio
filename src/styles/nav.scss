@@ -9,6 +9,7 @@ nav {
   position: fixed;
   display: flex;
   width: 100%;
+  // height: 10vh;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -18,14 +19,9 @@ nav {
     display: flex;
     align-items: center;
 
-    #logo2 {
-      font-family: $font;
-      font-size: 2.5em;
-      color: $text-color;
-      text-decoration: none;
-
+    .logo2 {
       img {
-        width: 5vw;
+        width: 5em;
         filter: grayscale(100);
 
         &:hover {
@@ -56,3 +52,30 @@ nav {
   }
 }
 
+// Responsive view for mobile
+@media (max-width: 780px) {
+  nav {
+    bottom: 0;
+    z-index: 2;
+    background-color: $contrast-color;
+
+
+    #left-nav {
+      display: none;
+    }
+
+    #right-nav {
+      margin: auto;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+
+      .nav-item {
+        font-size: 1em;
+        margin-left: 0;
+      }
+    }
+  }
+}

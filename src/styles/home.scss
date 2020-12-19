@@ -13,6 +13,7 @@ $font: 'Montserrat', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
     padding: 6vw;
     padding-right: 7vw;
   }
@@ -29,6 +30,41 @@ $font: 'Montserrat', sans-serif;
     }
   }
 
+  .home-bttns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+      background-color: $background-color;
+      color: $highlight-color;
+      border-color: $focus-color;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: $focus-color;
+      }
+
+      .MuiSvgIcon-root {
+        color: $focus-color;
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+
+  .stack {
+    text-align: center;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+  }
+
   #skills {
     display: grid;
     grid-template-columns: 1fr;
@@ -38,7 +74,7 @@ $font: 'Montserrat', sans-serif;
     grid-gap: 0;
 
     .container {
-      h3 {
+      .tech-title {
         color: $highlight-color;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -51,14 +87,13 @@ $font: 'Montserrat', sans-serif;
 }
 
 #bio-img-container {
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-left: 4vw;
   border-radius: 50%;
   width: 30vw;
   height: 30vw;
   border: 2px solid $focus-color;
   position: fixed;
-
   
   #bio-profile-pic {
     width: 100%;
@@ -67,5 +102,50 @@ $font: 'Montserrat', sans-serif;
     object-position: -1vw -4vw;
     border-radius: 50%;
     background-color: $background-color;
+  }
+}
+
+// Responsive viewport adjustments
+@media (max-width: 780px) {
+  #bio {
+    grid-template-columns: 1fr;
+    margin-top: 20em;
+
+    section > .summary {
+      font-size: 1.5em;
+      margin-bottom: 1vh;
+      margin-left: 2.5em;
+      margin-right: 2.5em;
+    }
+
+    #skills {
+      font-size: 1em;
+      margin-bottom: 5vh;
+    }
+  }
+
+  #bio-img-container {
+    position: absolute;
+    margin-top: 21vh;
+    margin-right: 0;
+    width: 20em;
+    height: 20em;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    #bio-profile-pic {
+      object-position: -1em -2em;
+    }
+  }  
+}
+
+@media (max-width: 1200px) {
+  #bio {
+    .summary {
+      margin-right: 1.5em;
+    }
+    .home-bttns > a {
+      font-size: 1.5em;
+    }
   }
 }

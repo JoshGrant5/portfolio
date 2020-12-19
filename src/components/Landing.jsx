@@ -10,10 +10,18 @@ export default function Landing(props) {
   const textColor = '#c9d3c9';
   const otherColor = 'rgb(40, 215, 159)';
 
+
+
   const transitions = useTransition(props.items, null, {
-    from: { opacity: 0.5, height: 50, innerHeight: 50, transform: 'rotateX(0deg)', color: textColor },
+    from: { opacity: 0.5, height: 25, innerHeight: 25, transform: 'rotateX(0deg)', color: textColor },
     enter: [
-      { opacity: 1, height: 100, innerHeight: 100, color: otherColor }, { transform: 'rotateX(180deg)' },
+      { 
+        opacity: 1, 
+        height: document.documentElement.clientWidth < 575 ? 130 : 100, 
+        innerHeight: document.documentElement.clientWidth < 575 ? 130 : 100, 
+        color: otherColor 
+      }, 
+      { transform: 'rotateX(180deg)' },
       { transform: 'rotateX(0deg)', color: textColor }
     ],
     leave: [
@@ -25,7 +33,7 @@ export default function Landing(props) {
 
   const logoAnimation = useSpring({
     to: { opacity: 1, filter: 'grayscale(0)' },
-    from: { opacity: 0, filter: 'grayscale(100)', transition: '5s' },
+    from: { opacity: 0, filter: 'grayscale(100)', transition: '1s' },
     delay: 1900,
   });
 
@@ -33,12 +41,28 @@ export default function Landing(props) {
     <div id='landing-container'>
       <div id='heading'>
         {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-          <animated.div className="transitions-item" key={key} style={rest} onClick={props.swapOut}>
-            <animated.div className='heading-item' style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+          <animated.div 
+            className="transitions-item" 
+            key={key} 
+            style={{...rest, height: item === 'Josh Grant' && document.documentElement.clientWidth < 575 ? 60 : innerHeight }}
+            onClick={props.swapOut}
+          >
+            <animated.div 
+              className='heading-item' 
+              style={
+                { 
+                  overflow: 'hidden', 
+                  height: item.length < 12 && document.documentElement.clientWidth < 575 ? 60 : innerHeight,
+                  textAlign: document.documentElement.clientWidth < 525 ? 'center' : 'start'
+                }
+              }
+            >
+              {item}
+            </animated.div>
           </animated.div>
         ))}
       </div>
-      <div id='test'>
+      <div id='view-container'>
         <NavLink to="/home" className='bttn-stretch bttn-md bttn-success' id='view-bttn'>
           View Portfolio
           <ArrowForwardIcon />
