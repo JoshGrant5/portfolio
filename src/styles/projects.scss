@@ -2,7 +2,6 @@ $background-color: #10141a;
 $text-color: #c9d3c9;
 $highlight-color: rgb(162, 216, 162);
 $focus-color: rgb(40, 215, 159);
-$font: 'Montserrat', sans-serif;
 
 #projects {
   margin-top: 10vh;
@@ -60,7 +59,6 @@ $font: 'Montserrat', sans-serif;
       .line-container {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        // max-height: min-content;
         align-items: center;
 
         .text-container {
@@ -73,7 +71,6 @@ $font: 'Montserrat', sans-serif;
 
           .tl-header {
             position: relative;
-            // margin-top: 0;
             margin-bottom: 0;
             font-size: 2.5em;
             color: $focus-color;
@@ -174,6 +171,10 @@ $font: 'Montserrat', sans-serif;
   .project-icons { 
     flex-direction: row !important;
 
+    a {
+      margin-right: 0 !important;
+    }
+
     .host-bttn {
       padding-top: 0.25em !important;
     }
@@ -186,6 +187,10 @@ $font: 'Montserrat', sans-serif;
 
   .tl-content {
     font-size: 1em !important;
+
+    p {
+      margin-right: 10% !important;
+    }
   }
 }
 
