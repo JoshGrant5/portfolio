@@ -95,11 +95,12 @@ $font: 'Montserrat', sans-serif;
     text-align: center;
   }
 
-  .tl-year {
+  .tl-date {
     border-top: 1px solid $highlight-color;
     border-bottom: 1px solid $highlight-color;
     margin-left: 25%;
     margin-right: 25%;
+    padding: 0.5em;
   }
 }
 
@@ -179,7 +180,7 @@ $font: 'Montserrat', sans-serif;
         margin-bottom: 5em;
       }
 
-      .tl-year {
+      .tl-date {
         margin-left: 10%;
       }
     }

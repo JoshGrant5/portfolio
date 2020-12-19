@@ -39,6 +39,9 @@ $focus-color: rgb(40, 215, 159);
             transform: translateX(0);
             transition: all 0.75s ease 0.5s;
           }
+          .tl-date {
+            opacity: 1;
+          }
         }
         
         .line-container > .project-img-container > .project-img {
@@ -77,6 +80,16 @@ $focus-color: rgb(40, 215, 159);
             border-top: none;
             border-bottom: none;
             text-align: start;
+          }
+
+          .tl-date {
+            z-index: 1;
+            border-top: 1px solid $highlight-color;
+            border-bottom: 1px solid $highlight-color;
+            padding: 0.5em;
+            width: max-content;
+            opacity: 0;
+            transition: opacity 1s;
           }
 
           .tl-content {
@@ -158,8 +171,22 @@ $focus-color: rgb(40, 215, 159);
     margin-top: 0 !important;
   }
 
-  #projects > #project-tl > .tl-item > .line-container {
-    grid-template-columns: 1fr !important;
+  #projects > #project-tl > .tl-item {
+    .line-container {
+      grid-template-columns: 1fr !important;
+
+      .text-container {
+        .tl-header {
+          text-align: center;
+        } 
+        .tl-content > p {
+          text-align: center;
+        } 
+        .tl-date {
+          margin: auto;
+        }
+      }
+    }
   }
 
   #projects > #project-tl > .tl-item {
@@ -169,8 +196,6 @@ $focus-color: rgb(40, 215, 159);
   }
 
   .project-icons { 
-    flex-direction: row !important;
-
     a {
       margin-right: 0 !important;
     }
@@ -187,10 +212,6 @@ $focus-color: rgb(40, 215, 159);
 
   .tl-content {
     font-size: 1em !important;
-
-    p {
-      margin-right: 10% !important;
-    }
   }
 }
 

@@ -10,7 +10,7 @@ export const projects = [
       testing: 'Mocha, Chai',
       other: ''
     },
-    date: 'OCT 2020',
+    date: 'October 2020',
     github: 'https://github.com/JoshGrant5/tinyapp',
     deployment: '',
     host: ''
@@ -26,7 +26,7 @@ export const projects = [
       testing: '',
       other: ''
     },
-    date: 'OCT 2020',
+    date: 'October 2020',
     github: 'https://github.com/JoshGrant5/tweeter',
     deployment: '',
     host: ''
@@ -42,7 +42,7 @@ export const projects = [
       testing: '',
       other: ''
     },
-    date: 'OCT 2020',
+    date: 'October 2020',
     github: 'https://github.com/JoshGrant5/quiz-app',
     deployment: 'https://quizandtell.herokuapp.com/',
     host: 'Heroku'
@@ -58,7 +58,7 @@ export const projects = [
       testing: 'Jest, Cypress, Storybook',
       other: 'WebSockets'
     },
-    date: 'OCT 2020',
+    date: 'October 2020',
     github: 'https://github.com/JoshGrant5/interview-scheduler',
     deployment: 'https://lhl-scheduler-jg.netlify.app/',
     host: 'Netlify'
@@ -74,7 +74,7 @@ export const projects = [
       testing: 'RSpec, Capybara',
       other: 'Stripe API'
     },
-    date: 'NOV 2020',
+    date: 'November 2020',
     github: 'https://github.com/JoshGrant5/jungle',
     deployment: '',
     host: ''
@@ -90,7 +90,7 @@ export const projects = [
       testing: 'Cypress',
       other: 'Socket.io, Simple-Peer, Itunes API'
     },
-    date: 'OCT 2020',
+    date: 'November 2020',
     github: 'https://github.com/JoshGrant5/symposium',
     deployment: 'https://the-symposium.herokuapp.com/',
     host: 'Heroku'
