@@ -11,7 +11,7 @@ import './styles/index.scss';
 
 export default function App() {
 
-  const otherColor = 'rgb(40, 215, 159)';
+  const color = 'rgb(40, 215, 159)';
 
   const [onHome, setOnHome] = useState(false);
   const [onLanding, setOnLanding] = useState(false);
@@ -24,9 +24,7 @@ export default function App() {
     ref.current = [];
     setItems([]);
     document.getElementById('view-bttn').style.opacity = 0;
-    // document.getElementById('view-bttn').style.top = '65vh';
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 2000));
-    // setTimeout(() => document.getElementById('view-bttn').style.visibility = 'visible', 2000);
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Baseball Lover', 'Full Stack Developer']), 4000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 6000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Fun Guy', 'Full Stack Developer']), 8000));
@@ -42,14 +40,13 @@ export default function App() {
   }, []);
 
   const colorFinal = () => {
-    // document.getElementById('view-bttn').style.top = '55vh';
     if (document.getElementById('view-bttn')) {
       document.getElementById('view-bttn').style.opacity = 1;
     }
     Array.from(document.getElementsByClassName('heading-item')).forEach(item => {
       if (item.innerHTML === 'Josh Grant') {
         item.style.transition = 'color 3s';
-        item.style.color = otherColor;
+        item.style.color = color;
       }
     });
   }
