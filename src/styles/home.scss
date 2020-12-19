@@ -30,6 +30,12 @@ $font: 'Montserrat', sans-serif;
     }
   }
 
+  .stack {
+    text-align: center;
+    border-top: 1px solid $highlight-color;
+    border-bottom: 1px solid $highlight-color;
+  }
+
   #skills {
     display: grid;
     grid-template-columns: 1fr;
@@ -39,7 +45,7 @@ $font: 'Montserrat', sans-serif;
     grid-gap: 0;
 
     .container {
-      h3 {
+      .tech-title {
         color: $highlight-color;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -72,8 +78,13 @@ $font: 'Montserrat', sans-serif;
 }
 // Responsive viewport adjustments
 @media (max-width: 1200px) {
-  #bio > section {
-    margin-top: 3em;
+  #bio {
+    section {
+      margin-top: 3em;
+    }
+    .summary {
+      margin-right: 1.5em;
+    }
   }
 }
 
@@ -87,15 +98,17 @@ $font: 'Montserrat', sans-serif;
 
       .summary {
         font-size: 1.5em;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
       }
     }
 
     #skills {
       font-size: 1em;
+      margin-bottom: 5vh;
     }
   }
-
 
   #bio-img-container {
     position: absolute;
