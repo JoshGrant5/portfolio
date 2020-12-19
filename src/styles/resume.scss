@@ -51,6 +51,15 @@ $focus-color: rgb(40, 215, 159);
       height: 450px !important;
     }
   }
+
+  #download {
+    margin-top: 70vh;
+    margin-left: 0 !important;
+  }
+
+  #canva {
+    margin-right: 0 !important;
+  }
 }
 
 @media (max-width: 750px) {
