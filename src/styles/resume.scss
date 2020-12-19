@@ -42,6 +42,8 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
+
+
 // Responsive viewport adjustments
 @media (max-width: 550px) {
   #cv {
@@ -53,7 +55,7 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   #cv {
     margin-top: 10em !important;
   }
