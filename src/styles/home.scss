@@ -94,7 +94,6 @@ $font: 'Montserrat', sans-serif;
   height: 30vw;
   border: 2px solid $focus-color;
   position: fixed;
-
   
   #bio-profile-pic {
     width: 100%;
@@ -105,35 +104,18 @@ $font: 'Montserrat', sans-serif;
     background-color: $background-color;
   }
 }
-// Responsive viewport adjustments
-@media (max-width: 1200px) {
-  #bio {
-    section {
-      margin-top: 3em;
-    }
-    .summary {
-      margin-right: 1.5em;
-    }
-    .home-bttns > a {
-      font-size: 1.5em;
-    }
-  }
-}
 
-@media (max-width: 750px) {
+// Responsive viewport adjustments
+@media (max-width: 780px) {
   #bio {
     grid-template-columns: 1fr;
-    margin-top: 22em;
+    margin-top: 20em;
 
-    section {
-      margin-top: 1em;
-
-      .summary {
-        font-size: 1.5em;
-        margin-bottom: 1vh;
-        margin-left: 2.5em;
-        margin-right: 2.5em;
-      }
+    section > .summary {
+      font-size: 1.5em;
+      margin-bottom: 1vh;
+      margin-left: 2.5em;
+      margin-right: 2.5em;
     }
 
     #skills {
@@ -148,13 +130,22 @@ $font: 'Montserrat', sans-serif;
     margin-right: 0;
     width: 20em;
     height: 20em;
-
     left: 45%;
     transform: translate(-50%, -50%);
 
     #bio-profile-pic {
       object-position: -1em -2em;
     }
-    
   }  
+}
+
+@media (max-width: 1200px) {
+  #bio {
+    .summary {
+      margin-right: 1.5em;
+    }
+    .home-bttns > a {
+      font-size: 1.5em;
+    }
+  }
 }

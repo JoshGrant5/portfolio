@@ -36,7 +36,6 @@ html {
     will-change: transform, opacity, height;
     white-space: nowrap;
     cursor: pointer;
-    // line-height: 80px;
   }
 
   #view-container {
@@ -125,20 +124,18 @@ html {
     }
   }
 }
-
-@media (max-width: 695px) {
-  #root > .media-icons {
-    top: 95em;
-  }
-  
-}
-
 @media (max-width: 780px) {
   #root {
     .media-icons {
       display: none;
     }
-    
+    #route-animations {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     .hidden {
       visibility: visible;
       z-index: 1;
@@ -156,15 +153,20 @@ html {
         }
       }
     }
-    #view-container > #logo1 {
-      visibility: visible;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      // top: -2em !important;
-      // right: 25% !important;
-      // left: 20%;
-      width: 25em !important ;
+    #view-container {
+      #logo1 {
+        position: initial !important;
+        visibility: visible;
+        width: 30em !important;
+      }
+      #view-bttn {
+        opacity: 1 !important;
+        margin-right: 10vw;
+
+        .MuiSvgIcon-root {
+          padding-left: 0 !important;
+        }
+      }
     }
     #heading {
       display: none;
@@ -174,19 +176,16 @@ html {
     }
   }
 }
-
 @media (max-width: 850px) {
   #heading {
     margin-left: 3vw !important;
   }
 }
-
 @media (max-width: 1050px) {
   #view-container > #logo1 {
     visibility: hidden;
   }
 }
-
 @media (max-width: 1350px) {
   .transitions-item {
     font-size: 4em !important;
@@ -195,7 +194,6 @@ html {
     font-size: 3em !important;
   }
 }
-
 @media (max-width: 1500px) {
   #view-container > #logo1 {
     top: 20vw !important;

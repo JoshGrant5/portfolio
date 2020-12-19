@@ -5,8 +5,6 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import jg from '../img/jg.svg';
 
-import '../styles/landing.scss';
-
 export default function Landing(props) {
 
   const textColor = '#c9d3c9';
@@ -27,7 +25,7 @@ export default function Landing(props) {
 
   const logoAnimation = useSpring({
     to: { opacity: 1, filter: 'grayscale(0)' },
-    from: { opacity: 0, filter: 'grayscale(100)', transition: '5s' },
+    from: { opacity: 0, filter: 'grayscale(100)', transition: '0.5s' },
     delay: 1900,
   });
 
