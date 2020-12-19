@@ -11,9 +11,15 @@ export default function Landing(props) {
   const otherColor = 'rgb(40, 215, 159)';
 
   const transitions = useTransition(props.items, null, {
-    from: { opacity: 0.5, height: 50, innerHeight: 50, transform: 'rotateX(0deg)', color: textColor },
+    from: { opacity: 0.5, height: 25, innerHeight: 25, transform: 'rotateX(0deg)', color: textColor },
     enter: [
-      { opacity: 1, height: 100, innerHeight: 100, color: otherColor }, { transform: 'rotateX(180deg)' },
+      { 
+        opacity: 1, 
+        height: document.documentElement.clientWidth < 525 ? 125 : 100, 
+        innerHeight: document.documentElement.clientWidth < 525 ? 125 : 100, 
+        color: otherColor 
+      }, 
+      { transform: 'rotateX(180deg)' },
       { transform: 'rotateX(0deg)', color: textColor }
     ],
     leave: [
