@@ -33,11 +33,11 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 5em;
+    font-size: 5vw;
     will-change: transform, opacity, height;
     white-space: nowrap;
     cursor: pointer;
-    line-height: 80px;
+    // line-height: 80px;
   }
 
   #view-container {
@@ -46,7 +46,7 @@ html {
       z-index: 1;
       top: 55vh;
       left: 10vw;
-      font-size: 4em;
+      font-size: 4vw;
       outline: none;
       text-decoration: none;
       color: $focus-color;
@@ -63,11 +63,10 @@ html {
     }
     #logo1 {
       position: fixed;
-      top: 15vh;
+      top: 11vw;
       right: 8vw;
       margin: 0;
       width: 30vw;
-      // filter: grayscale(100) ;
       transition: 2s;
     }
     #view-bttn:hover + #logo1 {
@@ -132,8 +131,6 @@ html {
     }
   }
 }
-
-
 
 @media (max-width: 750px) {
   #root {

@@ -1,0 +1,40 @@
+@media (max-width: 750px) {
+  #logo1 {
+    // top: 5vh !important;
+    // right: 30vw !important;
+    width: 25em !important;
+  
+  
+  }
+  // #view-bttn {
+  //   margin-top: 70vh !important;
+  //   margin-left: 25vw !important;
+  // }
+  // #view-bttn:hover + #logo1 {
+  //   // width: 35vw !important;
+  //   // top: 10vh !important;
+  //   // right: 5vw !important;
+  // }
+
+  
+
+  #heading {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  #heading {
+    margin-left: 5vw;
+  }
+
+  #view-container > #view-bttn {
+    left: 5vw ;
+
+    &:hover + #logo1 {
+      width: 25vw;
+      // top: 20vh;
+      // right: 5vw;
+    }
+  }
+}

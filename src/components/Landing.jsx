@@ -5,6 +5,8 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import jg from '../img/jg.svg';
 
+import '../styles/landing.scss';
+
 export default function Landing(props) {
 
   const textColor = '#c9d3c9';
