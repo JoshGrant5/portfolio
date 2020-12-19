@@ -55,10 +55,9 @@ nav {
 // Responsive view for mobile
 @media (max-width: 780px) {
   nav {
-    bottom: 0;
+    bottom: 0 !important;
     z-index: 2;
     background-color: $contrast-color;
-
 
     #left-nav {
       display: none;
