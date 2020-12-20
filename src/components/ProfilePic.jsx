@@ -1,4 +1,9 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+
 import { useSpring, animated } from 'react-spring';
+
 import me from '../img/me.png'
 
 export default function ProfilePic(props) {
@@ -9,8 +14,8 @@ export default function ProfilePic(props) {
   });
 
   return (
-    <animated.div id='bio-img-container' style={fade}>
-      <img src={me} alt='bio-profile-pic' id='bio-profile-pic' />
-    </animated.div>
+    <div id='bio-img-container'>
+      <LazyLoadImage effect='blur' width='100%' height='100%' style={fade} src={me} alt='bio-profile-pic' id='bio-profile-pic' />
+    </div>
   )
 };

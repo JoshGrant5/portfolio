@@ -1,17 +1,16 @@
-import { useSpring, animated } from 'react-spring';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { projects } from '../data/projects.js';
+
 import GitHubIcon from '@material-ui/icons/GitHub';
 import heroku from '../img/heroku.svg';
 import netlify from '../img/netlify.svg';
+
 import '../styles/about.scss';
 import '../styles/projects.scss';
 
 export default function Projects(props) {
-
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0, transition: 'opacity 2s' },
-  });
 
   const projectList = projects.map(project => {
     const image = require(`../img/${project.image}`);
@@ -25,7 +24,7 @@ export default function Projects(props) {
       <div id='project-tl' key={project.name}>
         <div className='tl-item'>
           <div className='tl-bg' >
-            <animated.img style={fade} src={image.default} alt={image.default} className='tl-bg-img' />
+            <LazyLoadImage effect='blur' src={image.default} alt={image.default} key={project.name} className='tl-bg-img' />
           </div>
           <div className='line-container'>
             <div className='text-container'>
@@ -41,7 +40,7 @@ export default function Projects(props) {
                     </a> 
                     <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment} target="_blank" rel="noopener noreferrer">
                       View Deployment 
-                      <animated.img style={fade} src={icon} alt='icon' />
+                      <img src={icon} alt='icon' />
                     </a> 
                   </div>
                 ) : 
@@ -55,7 +54,7 @@ export default function Projects(props) {
               </div>
             </div>
             <div className='project-img-container'>
-              <img src={image.default} alt='project' className='project-img' /> 
+              <LazyLoadImage  effect='blur'src={image.default} width='100%' height='100%' alt='project' key={project.image} className='project-img' /> 
             </div> 
           </div>
         </div>      

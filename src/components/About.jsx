@@ -1,23 +1,21 @@
-import { useSpring, animated } from 'react-spring';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import coding from '../img/coding.jpg';
 import lighthouse from '../img/lighthouse.jpg';
 import lumber from '../img/lumber.jpg';
 import ottawa from '../img/ottawa.jpg';
+
 import '../styles/about.scss';
 
 export default function About(props) {
-
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0, transition: 'opacity 2s' },
-  });
 
   return (
     //* Styles inspired by and modified off of design by Jeff Glen https://codepen.io/jeffglenn/pen/KNYoKa/
     <section id='about-tl'> 
       <div className='tl-item'>
         <div className='tl-bg' >
-          <animated.img style={fade} src={ottawa} alt='ottawa' className='tl-bg-img' />
+          <LazyLoadImage width='100%' height='100%' effect='blur' src={ottawa} alt='ottawa' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Carleton University</p>
@@ -30,7 +28,7 @@ export default function About(props) {
 
       <div className='tl-item'>
       <div className='tl-bg' >
-          <animated.img style={fade} src={lumber} alt='lumber' className='tl-bg-img' />
+          <LazyLoadImage width='100%' height='100%' effect='blur' src={lumber} alt='lumber' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Lumber Industry</p>
@@ -43,7 +41,7 @@ export default function About(props) {
 
       <div className='tl-item'>
         <div className='tl-bg' >
-          <animated.img style={fade} src={lighthouse} alt='lighthouse' className='tl-bg-img' />
+          <LazyLoadImage width='100%' height='100%' effect='blur' src={lighthouse} alt='lighthouse' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Web Dev Bootcamp</p>
@@ -56,7 +54,7 @@ export default function About(props) {
 
       <div className='tl-item'>
        <div className='tl-bg' >
-          <animated.img style={fade} src={coding} alt='coding' className='tl-bg-img' />
+          <LazyLoadImage width='100%' height='100%' effect='blur' src={coding} alt='coding' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Now The Fun Begins</p>

@@ -93,7 +93,7 @@ $focus-color: rgb(40, 215, 159);
   border: 2px solid $focus-color;
   position: fixed;
   
-  #bio-profile-pic {
+  span > #bio-profile-pic {
     width: 100%;
     height: 100%;
     object-fit: cover;

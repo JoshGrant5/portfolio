@@ -45,8 +45,8 @@ $focus-color: rgb(40, 215, 159);
           }
         }
         
-        .line-container > .project-img-container > .project-img {
-          opacity: 0.9;
+        .line-container > .project-img-container > span > .project-img {
+          opacity: 0.9 !important;
         }
 
         .tl-bg {
