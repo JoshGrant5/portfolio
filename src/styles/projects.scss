@@ -45,13 +45,14 @@ $focus-color: rgb(40, 215, 159);
           }
         }
         
-        .line-container > .project-img-container > .project-img {
-          opacity: 0.9;
+        .line-container > .project-img-container > span > .project-img {
+          opacity: 0.9 !important;
         }
 
         .tl-bg {
           .tl-bg-img {
-            opacity: 0;
+            opacity: 0 !important;
+            transition: 1s !important;
           }
         }
 

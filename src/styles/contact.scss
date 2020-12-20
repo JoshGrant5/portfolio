@@ -41,7 +41,7 @@ $focus-color: rgb(40, 215, 159);
 }
 
 // Responsive viewport adjustments
-@media (max-width: 725px) {
+@media only screen and (max-width: 725px) {
   #contact-info > #contact-container {
     margin-left: 8vw !important;
 
@@ -51,7 +51,7 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   #contact-info > #contact-container {
     margin-left: 8vw;
 

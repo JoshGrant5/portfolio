@@ -123,7 +123,7 @@ html {
   }
 }
 
-@media (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   #heading {
     word-wrap: break-word !important;
     justify-items: center;
@@ -132,7 +132,7 @@ html {
   }
   #view-container {
     #logo1 {
-      width: 55vh !important;
+      width: 50vh !important;
     }
     #view-bttn > .MuiSvgIcon-root {
       width: 2em !important;
@@ -141,13 +141,13 @@ html {
   }
 }
 
-@media (max-width: 690px) {
+@media only screen and (max-width: 690px) {
   #heading > .transitions-item {
     font-size: 3.5em !important;
   }
 }
 
-@media (max-width: 780px) {
+@media only screen and (max-width: 780px) {
   #root {
     .media-icons {
       display: none;
@@ -208,7 +208,7 @@ html {
   }
 }
 
-@media (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
   #landing-container {
     display: flex;
     justify-content: center;
@@ -237,7 +237,7 @@ html {
   }
 }
 
-@media (max-width: 1275px) {
+@media only screen and (max-width: 1275px) {
   #view-container > #logo1 {
     width: 25em;
     margin-left: 5vw;
@@ -247,7 +247,7 @@ html {
   }
 }
 
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1500px) {
   .transitions-item {
     font-size: 4em !important;
   }

@@ -41,7 +41,7 @@ $focus-color: rgb(40, 215, 159);
 }
 
 // Responsive viewport adjustments
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   #cv {
     margin-bottom: 15em !important;
   }
@@ -56,7 +56,7 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
-@media (max-width: 780px) {
+@media only screen and (max-width: 780px) {
   #resume { 
     height: 100vh !important;
   }
@@ -75,7 +75,7 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
-@media (max-width: 1050px) {
+@media only screen and (max-width: 1050px) {
   #resume {
     #cv {
       height: 700px;
@@ -99,7 +99,7 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
-@media (max-width: 1450px) {
+@media only screen and (max-width: 1450px) {
   #resume > #cv:hover {
     height: 100vh;
   }
