@@ -2,7 +2,7 @@
 
 Thanks for checking out my portfolio! 
 
-You can view the site at https://www.joshgrant.ca/. Take a look at my past projects, get to know me a bit, download my resume, and please feel free to contact me with any inquiries. I'd be happy to connect and chat.
+You can view the site at https://www.joshgrant.ca/. Take a look at my past projects, get to know me a bit, download my resume, and please feel free to contact me with any inquiries. I'd be happy to connect and chat!
 
 Built with React, react-spring, react-lazy-load-image-component, scss, and Material UI. 
 
@@ -10,16 +10,16 @@ Built with React, react-spring, react-lazy-load-image-component, scss, and Mater
 
 #### Welcome!
 
-!["Homepage"](https://github.com/AleksandarDmitrovic/symposium/blob/main/client/public/gifs/2020-12-01%2019.20.21.gif)
+!["Homepage"](https://github.com/JoshGrant5/portfolio/blob/updates/public/gifs/2020-12-20%2015.21.17.gif)
 
 #### View Past Projects
 
-!["Projects"](https://github.com/AleksandarDmitrovic/symposium/blob/main/client/public/gifs/2020-12-01%2019.21.14.gif)
+!["Projects"](https://github.com/JoshGrant5/portfolio/blob/updates/public/gifs/2020-12-20%2015.22.53.gif)
 
 #### Learn My Background
 
-!["About"](https://github.com/AleksandarDmitrovic/symposium/blob/main/client/public/gifs/2020-12-01%2019.23.40.gif)
+!["About"](https://github.com/JoshGrant5/portfolio/blob/updates/public/gifs/2020-12-20%2015.23.20.gif)
 
 #### Download My Resume
 
-!["Resume"](https://github.com/AleksandarDmitrovic/symposium/blob/main/client/public/gifs/2020-12-01%2019.29.32.gif)
+!["Resume"](https://github.com/JoshGrant5/portfolio/blob/updates/public/gifs/2020-12-20%2015.23.56.gif)
