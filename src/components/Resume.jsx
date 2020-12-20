@@ -12,7 +12,7 @@ export default function Resume(props) {
         <PageviewIcon />
       </a> 
       <img src={cv} alt='cv' id='cv' />
-      <a href={cv_download} download='Josh Grant CV' className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
+      <a href={cv_download} download='Josh_Grant_CV.pdf' className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
         Download as PDF 
         <GetAppIcon />
       </a> 
