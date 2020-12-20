@@ -18,7 +18,7 @@ export const projects = [
   {
     id: 2,
     name: 'Tweeter',
-    description: 'A single-page Twitter clone built with JQuery, Express, and Ajax. Creating this app simulated a real-world experience of designing a site based exactly off of given specs.',
+    description: 'A single-page Twitter clone. This project was built with a Node.js and Express back-end, and was also my first time using JQuery and Ajax.',
     image: 'tweeter.png',
     stack: {
       frontEnd: 'JQuery, EJS, Ajax, HTML5, CSS',
@@ -34,7 +34,7 @@ export const projects = [
   {
     id: 3,
     name: 'QuizAndTell',
-    description: 'Your standard quiz app, with a twist! Instead of just trivia quizzes, users can take and create Buzzfeed-style personality quizzes as well. Built with Node, Expess, JQuery, Ajax calls, and PSQL.',
+    description: 'Your standard quiz app, with a twist! Instead of just trivia quizzes, users can take and create Buzzfeed-style personality quizzes as well. Built with Node.js, Express, JQuery, Ajax, and PostgreSQL.',
     image: 'quizandtell.png',
     stack: {
       frontEnd: 'JQuery, EJS, Ajax, HTML5, SCSS, Bootstrap',
@@ -50,7 +50,7 @@ export const projects = [
   {
     id: 4,
     name: 'LHL Scheduler',
-    description: 'A single-page app for users to book and cancel interviews in a realtime experience. My first experience with WebSockets, and more excitingly, my first React app! Node and PSQL backend, with testing done with Jest, Cypress, and Storybook.',
+    description: 'A single-page app for users to book and cancel interviews in a realtime experience. My first experience with WebSockets, and more excitingly, my first React app! Node.js and PostgreSQL backend, with testing done with Jest, Cypress, and Storybook.',
     image: 'scheduler.png',
     stack: {
       frontEnd: 'React, Axios, HTML5, SCSS',
@@ -66,7 +66,7 @@ export const projects = [
   {
     id: 5,
     name: 'Jungle',
-    description: 'A mini e-commerce app for users to purchase obscure items. Built with Ruby on Rails, PSQL, and the Stripe API. Testing done in RSpec and Capybara.',
+    description: 'A mini e-commerce app for users to purchase obscure items. Built with Ruby on Rails, PostgreSQL, and the Stripe API. Testing done in RSpec and Capybara.',
     image: 'jungle.png',
     stack: {
       frontEnd: 'ERB, HTML5, SCSS',
@@ -82,7 +82,7 @@ export const projects = [
   {
     id: 6,
     name: 'Symposium',
-    description: 'A video-chat platform for like-minded people to listen to and discuss podcasts. Built with React, Node.js, Socket.io, Simple-Peer, PSQL, and the Itunes API, with a PSQL database. Testing done in Cypress.',
+    description: 'A video-chat platform for like-minded people to listen to and discuss podcasts. Built with React, Node.js, Socket.io, WebRTC, the Itunes API, and a PostgreSQL database. Testing done in Cypress.',
     image: 'symposium.png',
     fullStack: {
       frontEnd: 'React, Axios, HTML5, SCSS',
