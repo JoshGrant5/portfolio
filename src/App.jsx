@@ -25,11 +25,11 @@ export default function App() {
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 2000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Baseball Lover', 'Full Stack Developer']), 4000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 6000));
-    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Fun Guy', 'Full Stack Developer']), 8000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Blueberry Inhaler', 'Full Stack Developer']), 8000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 10000));
-    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Blueberry Addict', 'Full Stack Developer']), 12000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Canucks Fan', 'Full Stack Developer']), 12000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 14000));
-    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Canucks Diehard', 'Full Stack Developer']), 16000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Film Snob', 'Full Stack Developer']), 16000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 18000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Your Next Hire?', 'Full Stack Developer']), 20000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 22000));

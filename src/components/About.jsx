@@ -44,7 +44,7 @@ export default function about(props) {
         </div>
         <div className='tl-content'>
           <p className='tl-date'>2020</p>
-          <p className='about-description'>After years of thinking of coding through the lense of, "that's cool, I wonder if I'd be able to do that", I finally made the plunge. I dipped my toes in the water with a Udemy Python course, then completed the amazing HarvardX CS50, which made me fall in love with programming and dream of becoming a developer. Soon after finishing that course, I enrolled in Lighthouse Labs Web Development Bootcamp to make that dream a reality. 3 months of 12 to sometimes 14 hour days, and I loved every minute of it!</p>
+          <p className='about-description'>After years of thinking of coding through the lense of, "that's cool, I wonder if I'd be able to do that", I finally made the plunge. I dipped my toes in the water with an Udemy Python course, then completed the amazing HarvardX CS50, which made me fall in love with programming and dream of becoming a developer. Soon after finishing that course, I enrolled in Lighthouse Labs Web Development Bootcamp to make that dream a reality. 3 months of 12 to sometimes 14 hour days, and I loved every minute of it!</p>
         </div>
       </div>
 
