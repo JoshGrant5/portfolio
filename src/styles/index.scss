@@ -1,5 +1,5 @@
 $background-color: #10141a;
-$text-color: #c9d3c9;
+$text-color: white;
 $focus-color: rgb(40, 215, 159);
 $font: 'Montserrat', sans-serif;
 
@@ -184,11 +184,11 @@ html {
       #logo1 {
         position: initial !important;
         width: 30em;
+        margin-bottom: 0 !important;
       }
       #view-bttn {
         .MuiSvgIcon-root {
           padding-left: 0 !important;
-          // margin-top: 1em !important;
         }
       }
     }
