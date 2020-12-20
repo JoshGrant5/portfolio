@@ -46,7 +46,7 @@ $focus-color: rgb(40, 215, 159);
         }
         
         .line-container > .project-img-container > .project-img {
-          opacity: 90%;
+          opacity: 0.9;
         }
 
         .tl-bg {
@@ -155,14 +155,14 @@ $focus-color: rgb(40, 215, 159);
           .project-img {
             width: 100%;
             height: 100%;
-            opacity: 0%;
+            opacity: 0;
             transition: opacity 2s;
           }
         }
       }
   
       .tl-bg > .tl-bg-img {
-        opacity: 50%;
+        opacity: 0.5;
         transition: opacity 2s;
       }
     }
