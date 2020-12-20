@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react';
-import { useTransition, useSpring, animated } from 'react-spring'
+import { useTransition, animated } from 'react-spring'
 import { Route, Switch } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
@@ -9,7 +9,7 @@ import Resume from './components/Resume';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
-import GitHubIcon from '@material-ui/icons/GitHub';
+// import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Routes(props) {
 
@@ -26,10 +26,10 @@ export default function Routes(props) {
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
   });
 
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0, transition: 'opacity 1s' },
-  });
+  // const fade = useSpring({
+  //   opacity: 1,
+  //   from: { opacity: 0, transition: 'opacity 1s' },
+  // });
 
   const landingItems = props.items;
   const swap = props.swapOut;
@@ -52,10 +52,10 @@ export default function Routes(props) {
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
-        <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' style={fade}>
+        {/* <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' target="_blank" rel="noopener noreferrer" style={fade}>
           View Source Code 
           <GitHubIcon />
-        </animated.a>
+        </animated.a> */}
       </animated.div>
     ))
   );
