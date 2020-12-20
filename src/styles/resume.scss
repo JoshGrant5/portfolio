@@ -4,13 +4,12 @@ $focus-color: rgb(40, 215, 159);
 
 #resume {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
   #cv {
     height: 85vh;
     transition: height 2s;
-    margin: 4em;
     margin-top: 10vh;
 
     &:hover {
@@ -18,46 +17,41 @@ $focus-color: rgb(40, 215, 159);
     }
   }
 
-  .cv-bttn {
-    width: auto;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-    .MuiSvgIcon-root {
-      margin-left: 1em;
-      width: 2em;
-      height: 2em;
+    .cv-bttn {
+      width: auto;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+  
+      .MuiSvgIcon-root {
+        margin-left: 1em;
+        width: 2em;
+        height: 2em;
+      }
     }
-  }
 
-  #download {
-    color: $focus-color;
-  }
-
-  #canva {
-    color: $text-color;
-  }
+    #download {
+      color: $focus-color;
+    }
+    #canva {
+      color: $text-color;
+    }
 }
 
 // Responsive viewport adjustments
 @media (max-width: 550px) {
   #cv {
-    height: 450px !important;
-
-    &:hover {
-      height: 450px !important;
-    }
+    margin-bottom: 15em !important;
   }
-
   #download {
-    margin-top: 75vh;
+    margin-bottom: 5vh !important;
     margin-left: 0 !important;
   }
 
   #canva {
+    margin-bottom: 15vh !important;
     margin-right: 0 !important;
   }
 }
@@ -67,10 +61,17 @@ $focus-color: rgb(40, 215, 159);
     height: 100vh !important;
   }
   #cv {
-    margin: 5em !important;
+    height: 55vh !important;
+    margin-top: 0 !important;
+    margin-bottom: 8em;
+
+    &:hover {
+      height: 55vh !important;
+    }
   }
   .cv-bttn {
-    top: 3em !important;
+    bottom: 3em !important;
+    font-size: 1em !important;
   }
 }
 
@@ -80,43 +81,33 @@ $focus-color: rgb(40, 215, 159);
       height: 700px;
       margin-left: 0.5em;
       margin-right: 0.5em;
-      margin-top: 12em;
   
       &:hover {
         height: 85vh;
       }
     }
-
     .cv-bttn {
       position: absolute;
-      top: 6em;
+      bottom: -4em;
     }
     #canva {
-      margin-right: 50vw;
+      margin-right: 15em;
     }
     #download {
-      margin-left: 50vw;
+      margin-left: 15em;
     }
   }
 }
 
-@media (max-width: 1430px) {
-  #resume {
-    #cv {
-      margin-left: 2em;
-      margin-right: 2em;
-  
-      &:hover {
-        height: 100vh;
-      }
-    }
+@media (max-width: 1450px) {
+  #resume > #cv:hover {
+    height: 100vh;
+  }
+  .cv-bttn {
+    font-size: 1.25em;
 
-    .cv-bttn {
-      font-size: 1.25em;
-
-      .MuiSvgIcon-root {
-        margin-left: 0;
-      }
+    .MuiSvgIcon-root {
+      margin-left: 0;
     }
   }
 }
