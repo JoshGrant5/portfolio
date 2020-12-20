@@ -132,7 +132,7 @@ $focus-color: rgb(40, 215, 159);
   }
 }
 
-@media (max-width: 780px) {
+@media only screen and (max-width: 780px) {
   #about-tl {
     display: grid;
     grid-template-columns: 1fr;

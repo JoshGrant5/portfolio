@@ -51,7 +51,8 @@ $focus-color: rgb(40, 215, 159);
 
         .tl-bg {
           .tl-bg-img {
-            opacity: 0;
+            opacity: 0 !important;
+            transition: 1s !important;
           }
         }
 
