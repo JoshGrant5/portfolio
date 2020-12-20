@@ -14,8 +14,8 @@ export default function Landing(props) {
     enter: [
       { 
         opacity: 1, 
-        height: document.documentElement.clientWidth < 575 ? 130 : 100, 
-        innerHeight: document.documentElement.clientWidth < 575 ? 130 : 100, 
+        height: document.documentElement.clientWidth < 575 ? 125 : 100, 
+        innerHeight: document.documentElement.clientWidth < 575 ? 125 : 100, 
         color: otherColor 
       }, 
       { transform: 'rotateX(180deg)' },
@@ -49,7 +49,7 @@ export default function Landing(props) {
               style={
                 { 
                   overflow: 'hidden', 
-                  height: item.length < 12 && document.documentElement.clientWidth < 575 ? 60 : innerHeight,
+                  height: item.length < 15 && document.documentElement.clientWidth < 575 ? 60 : innerHeight,
                   textAlign: document.documentElement.clientWidth < 525 ? 'center' : 'start'
                 }
               }

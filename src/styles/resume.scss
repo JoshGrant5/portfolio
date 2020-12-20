@@ -63,8 +63,8 @@ $focus-color: rgb(40, 215, 159);
 }
 
 @media (max-width: 780px) {
-  #root > #route-animations {
-    height: 100% !important;
+  #resume { 
+    height: 100vh !important;
   }
   #cv {
     margin: 5em !important;
