@@ -132,7 +132,7 @@ html {
   }
   #view-container {
     #logo1 {
-      width: 25em !important;
+      width: 55vh !important;
     }
     #view-bttn > .MuiSvgIcon-root {
       width: 2em !important;
@@ -176,17 +176,27 @@ html {
         }
       }
     }
+    #landing-container {
+      height: 100% !important;
+      overflow-y: hidden !important;
+    }
     #heading {
       margin-left: 0 !important;
       margin-top: 5vh !important;
     }
     #view-container {
+      // height: 40em !important;
+      margin-top: 0 !important;
+
       #logo1 {
-        position: initial !important;
+        position: fixed !important;
         width: 30em;
-        margin-bottom: 0 !important;
+        bottom: 0 !important;
+        margin-bottom: -2em !important;
       }
       #view-bttn {
+        margin-bottom: 1em !important;
+
         .MuiSvgIcon-root {
           padding-left: 0 !important;
         }
