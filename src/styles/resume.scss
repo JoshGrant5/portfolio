@@ -53,7 +53,7 @@ $focus-color: rgb(40, 215, 159);
   }
 
   #download {
-    margin-top: 70vh;
+    margin-top: 75vh;
     margin-left: 0 !important;
   }
 
@@ -63,9 +63,11 @@ $focus-color: rgb(40, 215, 159);
 }
 
 @media (max-width: 780px) {
+  #root > #route-animations {
+    height: 100% !important;
+  }
   #cv {
-    margin-top: 10em !important;
-    margin-bottom: 10em !important;
+    margin: 5em !important;
   }
   .cv-bttn {
     top: 3em !important;

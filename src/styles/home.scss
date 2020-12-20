@@ -14,7 +14,6 @@ $focus-color: rgb(40, 215, 159);
     align-items: center;
     margin-top: 1em;
     padding: 6vw;
-    padding-right: 7vw;
   }
 
   .summary {
@@ -86,7 +85,7 @@ $focus-color: rgb(40, 215, 159);
 }
 
 #bio-img-container {
-  margin-top: 20vh;
+  margin-top: 12em !important;
   margin-left: 4vw;
   border-radius: 50%;
   width: 30vw;
