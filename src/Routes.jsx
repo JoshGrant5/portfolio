@@ -52,7 +52,7 @@ export default function Routes(props) {
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
-        <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' style={fade}>
+        <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' target="_blank" rel="noopener noreferrer" style={fade}>
           View Source Code 
           <GitHubIcon />
         </animated.a>

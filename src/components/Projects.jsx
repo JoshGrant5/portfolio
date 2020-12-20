@@ -29,12 +29,21 @@ export default function Projects(props) {
                 <p>{project.description}</p>
                 { project.host ? (
                   <div className='project-icons'>
-                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
-                    <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment}>View Deployment <img src={icon} alt='icon' /></a> 
+                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github} target="_blank" rel="noopener noreferrer">
+                      View Repository 
+                      <GitHubIcon />
+                    </a> 
+                    <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment} target="_blank" rel="noopener noreferrer">
+                      View Deployment 
+                      <img src={icon} alt='icon' />
+                    </a> 
                   </div>
                 ) : 
                   <div className='project-icons'>
-                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github}>View Repository <GitHubIcon /></a> 
+                    <a className='bttn-stretch bttn-md bttn-success repo-bttn' href={project.github} target="_blank" rel="noopener noreferrer">
+                      View Repository 
+                      <GitHubIcon />
+                    </a> 
                   </div>
                 }   
               </div>

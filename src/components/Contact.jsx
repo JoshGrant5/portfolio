@@ -8,11 +8,11 @@ export default function Contact(props) {
     <section id='contact-info'>
       <div id='contact-container'>
         <h1>I'd love to connect!</h1>
-        <a href='https://github.com/JoshGrant5'> 
+        <a href='https://github.com/JoshGrant5' target="_blank" rel="noopener noreferrer"> 
           <GitHubIcon /> 
           https://github.com/JoshGrant5
         </a> 
-        <a href='https://www.linkedin.com/in/josh-grant-44240a151/'> 
+        <a href='https://www.linkedin.com/in/josh-grant-44240a151/' target="_blank" rel="noopener noreferrer"> 
           <LinkedInIcon /> 
           https://www.linkedin.com/in/josh-grant-44240a151/
         </a> 
