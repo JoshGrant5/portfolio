@@ -1,3 +1,4 @@
+import { useSpring, animated } from 'react-spring';
 import { projects } from '../data/projects.js';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import heroku from '../img/heroku.svg';
@@ -6,6 +7,11 @@ import '../styles/about.scss';
 import '../styles/projects.scss';
 
 export default function Projects(props) {
+
+  const fade = useSpring({
+    opacity: 1,
+    from: { opacity: 0, transition: 'opacity 2s' },
+  });
 
   const projectList = projects.map(project => {
     const image = require(`../img/${project.image}`);
@@ -19,7 +25,7 @@ export default function Projects(props) {
       <div id='project-tl' key={project.name}>
         <div className='tl-item'>
           <div className='tl-bg' >
-            <img src={image.default} alt={image.default} className='tl-bg-img' />
+            <animated.img style={fade} src={image.default} alt={image.default} className='tl-bg-img' />
           </div>
           <div className='line-container'>
             <div className='text-container'>
@@ -35,7 +41,7 @@ export default function Projects(props) {
                     </a> 
                     <a className='bttn-stretch bttn-md bttn-success host-bttn' href={project.deployment} target="_blank" rel="noopener noreferrer">
                       View Deployment 
-                      <img src={icon} alt='icon' />
+                      <animated.img style={fade} src={icon} alt='icon' />
                     </a> 
                   </div>
                 ) : 
