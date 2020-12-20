@@ -132,7 +132,7 @@ $focus-color: rgb(40, 215, 159);
     transform: translate(-50%, -50%);
 
     #bio-profile-pic {
-      object-position: -1em -2em;
+      object-position: -1em -2em !important;
     }
   }  
 }
