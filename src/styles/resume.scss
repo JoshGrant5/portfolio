@@ -55,15 +55,15 @@ $focus-color: rgb(40, 215, 159);
     }
   }
   .cv-bttn {
-    top: 50vh !important;
     font-size: 1em !important;
     bottom: 0 !important;
+    
   }
   #canva {
+    margin-bottom: 5em;
     margin-right: 0 !important;
   }
   #download {
-    margin-top: 20vh;
     margin-left: 0 !important;
   }
 }
