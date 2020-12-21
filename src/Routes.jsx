@@ -37,7 +37,7 @@ export default function Routes(props) {
         <Switch location={item}>
           <Route path="/" exact 
             render={() => (
-              <Landing items={landingItems} swapOut={swap} />
+              <Landing items={landingItems} swapOut={swap} fade={props.fade} />
             )}
           />
           <Route path="/home" exact component={Home} />

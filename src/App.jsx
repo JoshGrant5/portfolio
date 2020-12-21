@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom';
+import { useSpring } from 'react-spring';
 
 import Nav from './components/Nav';
 import ProfilePic from './components/ProfilePic';
@@ -52,18 +53,23 @@ export default function App() {
     });
   }
 
+  const fade = useSpring({
+    opacity: 1,
+    from: { opacity: 0, transition: 'opacity 1.25s' },
+  });
+
   return (
     <BrowserRouter>
       <Nav animations={animations} />
       { onHome && (
         <div>
           <NavLink to="/" className='logo2 hidden'> <img src={jg} alt='svg' /> </NavLink>
-          <ProfilePic /> 
-          <MediaIcons />
+          <ProfilePic fade={fade} /> 
+          <MediaIcons fade={fade} />
         </div>
       )}
       { onLanding && <MediaIcons /> }
-      <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} items={items} swapOut={swapOut} />
+      <Routes setOnHome={setOnHome} setOnLanding={setOnLanding} items={items} swapOut={swapOut} fade={fade} />
     </BrowserRouter>
   );
 }

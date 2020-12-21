@@ -38,11 +38,6 @@ export default function Landing(props) {
     delay: 1900,
   });
 
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0, transition: 'opacity 1s' },
-  });
-
   return (
     <div id='landing-container'>
       <div id='heading'>
@@ -75,7 +70,7 @@ export default function Landing(props) {
         </NavLink>
         <animated.img src={jg} alt='svg' id='logo1' style={logoAnimation} />
       </div>
-      <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' target="_blank" rel="noopener noreferrer" style={fade}>
+      <animated.a id='footer' href='https://github.com/JoshGrant5/portfolio' target="_blank" rel="noopener noreferrer" style={props.fade}>
           View Source Code 
           <GitHubIcon />
         </animated.a>

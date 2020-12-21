@@ -1,19 +1,12 @@
-import { useSpring, animated } from 'react-spring';
+import { animated } from 'react-spring';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 
-export default function MediaIcons() {
-
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0, transition: 'opacity 1s' },
-    delay: 500
-  });
-
+export default function MediaIcons(props) {
   return (
-    <animated.div className='media-icons' style={fade}>
+    <animated.div className='media-icons' style={props.fade}>
       <a href='https://github.com/JoshGrant5' target="_blank" rel="noopener noreferrer"> 
         <GitHubIcon /> 
       </a> 

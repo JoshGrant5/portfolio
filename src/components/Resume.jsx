@@ -1,3 +1,5 @@
+import { animated } from 'react-spring';
+
 import GetAppIcon from '@material-ui/icons/GetApp';
 import PageviewIcon from '@material-ui/icons/Pageview';
 
@@ -12,7 +14,7 @@ export default function Resume(props) {
         View on Canva
         <PageviewIcon />
       </a> 
-      <img src={cv} alt='cv' id='cv' />
+      <animated.img style={props.fade} src={cv} alt='cv' id='cv' />
       <a href='https://joshgrant.netlify.app/cvDownload.pdf' download target="_blank" rel="noopener noreferrer" className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
         Download as PDF 
         <GetAppIcon />
