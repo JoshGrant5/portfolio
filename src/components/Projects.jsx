@@ -13,6 +13,10 @@ import '../styles/projects.scss';
 
 export default function Projects(props) {
 
+  if (document.getElementById('navbar')) { 
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? '#0d121a' : '#273442';
+  }
+
   // Scroll to top of page on render (specific problem for mobile viewports)
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -7,6 +7,10 @@ import '../styles/home.scss';
 
 export default function Home() {
 
+  if (document.getElementById('navbar')) { 
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? '#0d121a' : '#273442';
+  }
+  
   return (
     <div id='bio'>
       {/* This div placement below allows for grid positioning of section */}

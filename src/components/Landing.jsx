@@ -9,8 +9,12 @@ import jg from '../img/jg.svg';
 
 export default function Landing(props) {
 
-  const textColor = '#c9d3c9';
+  const textColor = 'white';
   const otherColor = 'rgb(40, 215, 159)';
+
+  if (document.getElementById('navbar')) { 
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? '#0d121a' : '#273442';
+  }
 
   // react-spring animations for landing page titles. Rotates middle item before exiting
   const transitions = useTransition(props.items, null, {

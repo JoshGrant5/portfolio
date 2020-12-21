@@ -1,4 +1,4 @@
-$background-color: #10141a;
+$background-color: #0d121a;
 $text-color: white;
 $highlight-color: rgb(162, 216, 162);
 $focus-color: rgb(40, 215, 159);
@@ -86,7 +86,7 @@ $focus-color: rgb(40, 215, 159);
 
 #bio-img-container {
   margin-top: 12em !important;
-  margin-left: 4vw;
+  margin-left: 5vw;
   border-radius: 50%;
   width: 30vw;
   height: 30vw;
@@ -109,11 +109,16 @@ $focus-color: rgb(40, 215, 159);
     grid-template-columns: 1fr;
     margin-top: 20em;
 
-    section > .summary {
-      font-size: 1.5em;
-      margin-bottom: 1vh;
-      margin-left: 2.5em;
-      margin-right: 2.5em;
+    section {
+      .summary {
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        width: 90%;
+      }
+
+      .stack {
+        margin-left: 6vw;
+      }
     }
 
     #skills {
@@ -126,8 +131,8 @@ $focus-color: rgb(40, 215, 159);
     position: absolute;
     margin-top: 21vh;
     margin-right: 0;
-    width: 20em;
-    height: 20em;
+    width: 17em;
+    height: 17em;
     left: 45%;
     transform: translate(-50%, -50%);
 
