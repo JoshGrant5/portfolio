@@ -15,6 +15,10 @@ export default function About(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (document.getElementById('navbar')) { 
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? 'transparent' : '#273442';
+  }
   
   return (
     //* Styles inspired by and modified off of design by Jeff Glen https://codepen.io/jeffglenn/pen/KNYoKa/

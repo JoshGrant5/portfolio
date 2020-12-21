@@ -13,7 +13,7 @@ export default function Nav(props) {
   };
 
   return (
-    <nav>
+    <nav id='navbar'>
         <div id='left-nav'>
           <NavLink to="/home" className='logo2' onClick={clearAnimations}> <img src={jg} alt='svg' /> </NavLink>
         </div>

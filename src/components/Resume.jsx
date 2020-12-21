@@ -8,6 +8,11 @@ import cv from '../img/cv.png';
 import '../styles/resume.scss';
 
 export default function Resume(props) {
+
+  if (document.getElementById('navbar')) { 
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? '#0d121a' : '#273442';
+  }
+
   return (
     <div id="resume">
       <a href='https://www.canva.com/design/DAEKsksAqk0/6UMd6TfyRqQwsOdEp5ZX8A/view?utm_content=DAEKsksAqk0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink' target="_blank" rel="noopener noreferrer" className="bttn-stretch bttn-md bttn-success cv-bttn" id='canva'>
