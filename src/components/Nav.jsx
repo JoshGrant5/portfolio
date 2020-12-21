@@ -15,7 +15,7 @@ export default function Nav(props) {
   return (
     <nav>
         <div id='left-nav'>
-          <NavLink to="/" className='logo2' onClick={clearAnimations}> <img src={jg} alt='svg' /> </NavLink>
+          <NavLink to="/home" className='logo2' onClick={clearAnimations}> <img src={jg} alt='svg' /> </NavLink>
         </div>
         <div id="right-nav">
           <NavLink to="/home" activeClassName='is-selected' className='nav-item' onClick={clearAnimations}>Home</NavLink>
