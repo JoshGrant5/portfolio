@@ -14,7 +14,7 @@ export default function Resume(props) {
         <PageviewIcon />
       </a> 
       <img src={cv} alt='cv' id='cv' />
-      <a href={process.env.PUBLIC_URL + '/cvDownload.pdf'} download className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
+      <a href='/cvDownloadx.pdf' download className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
         Download as PDF 
         <GetAppIcon />
       </a> 
