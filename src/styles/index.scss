@@ -64,7 +64,7 @@ html {
       }
     }
     #logo1 {
-      margin-bottom: 5em;
+      margin-bottom: 3em;
     }
   }
 
@@ -124,21 +124,9 @@ html {
   }
 }
 
-@media only screen and (max-width: 575px) {
-  #heading {
-    word-wrap: break-word !important;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-  }
-  #view-container {
-    #logo1 {
-      width: 35vh !important;
-    }
-    #view-bttn > .MuiSvgIcon-root {
-      width: 2em !important;
-      height: 2em !important;
-    }
+@media only screen and (max-width: 450px) {
+  #view-bttn {
+    margin-bottom: 250px !important;
   }
 }
 
@@ -179,23 +167,32 @@ html {
       overflow-y: hidden !important;
     }
     #heading {
+      word-wrap: break-word !important;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
       margin-left: 0 !important;
       margin-top: 5vh !important;
     }
     #view-container {
       height: 80vh !important;
+      
 
       #logo1 {
         position: fixed !important;
-        width: 30em;
+        width: 35vh !important;
         bottom: 2em !important;
         margin-bottom: 0 !important;
       }
       #view-bttn {
-        margin-bottom: 250px !important;
+        margin-bottom: 12em;
 
         .MuiSvgIcon-root {
           padding-left: 0 !important;
+
+          width: 2em !important;
+          height: 2em !important;
+          
         }
       }
     }

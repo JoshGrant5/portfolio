@@ -41,19 +41,6 @@ $focus-color: rgb(40, 215, 159);
 }
 
 // Responsive viewport adjustments
-@media only screen and (max-width: 550px) {
-  #cv {
-    margin-bottom: 20vh !important;
-  }
-  #download {
-    margin-left: 0 !important;
-  }
-
-  #canva {
-    margin-right: 0 !important;
-  }
-}
-
 @media only screen and (max-width: 780px) {
   #resume { 
     max-height: 100vh !important;
@@ -61,7 +48,7 @@ $focus-color: rgb(40, 215, 159);
   #cv {
     height: 55vh !important;
     margin-top: 5vh !important;
-    margin-bottom: 8em;
+    margin-bottom: 20vh !important;
 
     &:hover {
       height: 55vh !important;
@@ -72,8 +59,12 @@ $focus-color: rgb(40, 215, 159);
     font-size: 1em !important;
     bottom: 0 !important;
   }
+  #canva {
+    margin-right: 0 !important;
+  }
   #download {
     margin-top: 20vh;
+    margin-left: 0 !important;
   }
 }
 
