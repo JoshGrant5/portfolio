@@ -14,7 +14,7 @@ import '../styles/projects.scss';
 export default function Projects(props) {
 
   if (document.getElementById('navbar')) { 
-    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? 'transparent' : '#273442';
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? '#0d121a' : '#273442';
   }
 
   // Scroll to top of page on render (specific problem for mobile viewports)
