@@ -15,8 +15,8 @@ export default function Landing(props) {
     enter: [
       { 
         opacity: 1, 
-        height: document.documentElement.clientWidth < 575 ? 125 : 100, 
-        innerHeight: document.documentElement.clientWidth < 575 ? 125 : 100, 
+        height: document.documentElement.clientWidth < 575 ? 110 : 100, 
+        innerHeight: document.documentElement.clientWidth < 575 ? 110 : 100, 
         color: otherColor 
       }, 
       { transform: 'rotateX(180deg)' },
