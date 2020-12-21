@@ -1,10 +1,10 @@
 import GetAppIcon from '@material-ui/icons/GetApp';
 import PageviewIcon from '@material-ui/icons/Pageview';
 import cv from '../img/cv.png';
-import cvDownload from '../img/cvDownload.pdf';
+// import cvDownload from '/./../public/cvDownload.pdf';
 import '../styles/resume.scss';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function Resume(props) {
   return (
@@ -14,17 +14,17 @@ export default function Resume(props) {
         <PageviewIcon />
       </a> 
       <img src={cv} alt='cv' id='cv' />
-      {/* <a href='/src/img/cvDownload.pdf' download className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
+      <a href={process.env.PUBLIC_URL + '/cvDownload.pdf'} download className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
         Download as PDF 
         <GetAppIcon />
-      </a>  */}
+      </a> 
 
-      <Link
-        to="route"
+      {/* <Link
+        to="https://www.joshgrant.ca/"
         className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'
         onClick={(event) => { event.preventDefault(); window.open(cvDownload); }}>
             Click to download
-      </Link>
+      </Link> */}
     </div>
   )
 };
