@@ -1,10 +1,13 @@
 import { useState, useCallback, useRef } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom';
+
 import Nav from './components/Nav';
 import ProfilePic from './components/ProfilePic';
 import MediaIcons from './components/MediaIcons';
 import Routes from './Routes';
+
 import jg from './img/jg.svg';
+
 import './styles/index.scss';
 
 export default function App() {

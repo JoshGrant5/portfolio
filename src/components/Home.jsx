@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
+
 import Skills from './Skills';
 import TouchAppIcon from '@material-ui/icons/TouchApp';
+
 import '../styles/home.scss';
 
 export default function Home() {

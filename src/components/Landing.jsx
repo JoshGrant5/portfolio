@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTransition, useSpring, animated } from 'react-spring'
+
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import GitHubIcon from '@material-ui/icons/GitHub';
+
 import jg from '../img/jg.svg';
 
 export default function Landing(props) {
@@ -10,6 +12,7 @@ export default function Landing(props) {
   const textColor = '#c9d3c9';
   const otherColor = 'rgb(40, 215, 159)';
 
+  // react-spring animations for landing page titles. Rotates middle item before exiting
   const transitions = useTransition(props.items, null, {
     from: { opacity: 0.5, height: 25, innerHeight: 25, transform: 'rotateX(0deg)', color: textColor },
     enter: [

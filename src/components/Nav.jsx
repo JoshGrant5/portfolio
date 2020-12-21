@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
+
 import jg from '../img/jg.svg';
+
 import '../styles/nav.scss';
 
 export default function Nav(props) {
