@@ -1,12 +1,7 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-
 import GetAppIcon from '@material-ui/icons/GetApp';
 import PageviewIcon from '@material-ui/icons/Pageview';
-
 import cv from '../img/cv.png';
-import cv_download from '../img/cv_download.pdf';
-
+import cvDownload from '../img/cvDownload.pdf';
 import '../styles/resume.scss';
 
 export default function Resume(props) {
@@ -16,8 +11,8 @@ export default function Resume(props) {
         View on Canva
         <PageviewIcon />
       </a> 
-      <LazyLoadImage src={cv} alt='cv' effect='blur' id='cv' />
-      <a href={cv_download} download='Josh_Grant_CV' className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
+      <img src={cv} alt='cv' id='cv' />
+      <a href={cvDownload} download='josh-grant-cv' className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
         Download as PDF 
         <GetAppIcon />
       </a> 
