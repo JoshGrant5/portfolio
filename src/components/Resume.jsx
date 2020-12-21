@@ -10,7 +10,7 @@ import '../styles/resume.scss';
 export default function Resume(props) {
 
   if (document.getElementById('navbar')) { 
-    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? '#0d121a' : '#273442';
+    document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? 'transparent' : '#273442';
   }
 
   return (
