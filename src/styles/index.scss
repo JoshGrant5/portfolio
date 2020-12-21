@@ -132,7 +132,7 @@ html {
   }
   #view-container {
     #logo1 {
-      width: 50vh !important;
+      width: 35vh !important;
     }
     #view-bttn > .MuiSvgIcon-root {
       width: 2em !important;
@@ -188,7 +188,8 @@ html {
       margin-top: 5vh !important;
     }
     #view-container {
-      margin-top: 0 !important;
+      // margin-top: 0 !important;
+      height: 80vh !important;
 
       #logo1 {
         position: fixed !important;
