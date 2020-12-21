@@ -55,7 +55,7 @@ export default function Landing(props) {
               style={
                 { 
                   overflow: 'hidden', 
-                  height: item.length < 15 && document.documentElement.clientWidth < 575 ? 60 : innerHeight,
+                  height: item.length < 14 && document.documentElement.clientWidth < 575 ? 60 : innerHeight,
                   textAlign: document.documentElement.clientWidth < 525 ? 'center' : 'start'
                 }
               }
