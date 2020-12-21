@@ -130,7 +130,13 @@ html {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-height: 850px) {
+  #logo1 {
+    width: 25vh !important;
+  }
+}
+
+@media only screen and (max-width: 825px) {
   #root {
     .media-icons {
       display: none;
@@ -145,6 +151,9 @@ html {
     .hidden {
       visibility: visible;
       z-index: 1;
+      margin-left: 3vw;
+      margin-top: 2vw;
+
       img {
         width: 5em;
         filter: grayscale(100);
@@ -163,7 +172,7 @@ html {
       font-size: 3.5em !important;
     }
     #landing-container {
-      max-height: 700px !important;
+      max-height: 650px !important;
       overflow-y: hidden !important;
     }
     #heading {
