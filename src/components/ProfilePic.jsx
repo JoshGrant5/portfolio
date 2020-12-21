@@ -14,8 +14,8 @@ export default function ProfilePic(props) {
   });
 
   return (
-    <div id='bio-img-container'>
-      <LazyLoadImage effect='blur' width='100%' height='100%' style={fade} src={me} alt='bio-profile-pic' id='bio-profile-pic' />
-    </div>
+    <animated.div style={fade} id='bio-img-container'>
+      <LazyLoadImage effect='blur' width='100%' height='100%' src={me} alt='bio-profile-pic' id='bio-profile-pic' />
+    </animated.div>
   )
 };
