@@ -55,7 +55,7 @@ nav {
   nav {
     bottom: 0 !important;
     z-index: 2;
-    background-color: $contrast-color;
+    background-color: $contrast-color !important;
     height: 7vh;
 
     #left-nav {

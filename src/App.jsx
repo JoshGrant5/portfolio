@@ -63,7 +63,7 @@ export default function App() {
       <Nav animations={animations} />
       { onHome && (
         <div>
-          <NavLink to="/" className='logo2 hidden'> <img src={jg} alt='svg' /> </NavLink>
+          <NavLink to="/home" className='logo2 hidden'> <img src={jg} alt='svg' /> </NavLink>
           <ProfilePic fade={fade} /> 
           <MediaIcons fade={fade} />
         </div>
