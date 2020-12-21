@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -10,6 +11,11 @@ import '../styles/about.scss';
 
 export default function About(props) {
 
+  // Scroll to top of page on render (specific problem for mobile viewports)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     //* Styles inspired by and modified off of design by Jeff Glen https://codepen.io/jeffglenn/pen/KNYoKa/
     <section id='about-tl'> 

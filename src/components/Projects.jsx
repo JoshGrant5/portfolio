@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -11,6 +12,11 @@ import '../styles/about.scss';
 import '../styles/projects.scss';
 
 export default function Projects(props) {
+
+  // Scroll to top of page on render (specific problem for mobile viewports)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const projectList = projects.map(project => {
     const image = require(`../img/${project.image}`);

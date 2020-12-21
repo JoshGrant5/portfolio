@@ -1,10 +1,9 @@
 import GetAppIcon from '@material-ui/icons/GetApp';
 import PageviewIcon from '@material-ui/icons/Pageview';
-import cv from '../img/cv.png';
-// import cvDownload from '/./../public/cvDownload.pdf';
-import '../styles/resume.scss';
 
-// import { Link } from 'react-router-dom';
+import cv from '../img/cv.png';
+
+import '../styles/resume.scss';
 
 export default function Resume(props) {
   return (
@@ -18,13 +17,6 @@ export default function Resume(props) {
         Download as PDF 
         <GetAppIcon />
       </a> 
-
-      {/* <Link
-        to="https://www.joshgrant.ca/"
-        className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'
-        onClick={(event) => { event.preventDefault(); window.open(cvDownload); }}>
-            Click to download
-      </Link> */}
     </div>
   )
 };
