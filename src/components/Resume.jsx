@@ -4,6 +4,8 @@ import cv from '../img/cv.png';
 import cvDownload from '../img/cvDownload.pdf';
 import '../styles/resume.scss';
 
+import { Link } from 'react-router-dom';
+
 export default function Resume(props) {
   return (
     <div id="resume">
@@ -12,10 +14,17 @@ export default function Resume(props) {
         <PageviewIcon />
       </a> 
       <img src={cv} alt='cv' id='cv' />
-      <a href={cvDownload} download className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
+      {/* <a href='/src/img/cvDownload.pdf' download className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'>
         Download as PDF 
         <GetAppIcon />
-      </a> 
+      </a>  */}
+
+      <Link
+        to="route"
+        className="bttn-stretch bttn-md bttn-success cv-bttn" id='download'
+        onClick={(event) => { event.preventDefault(); window.open(cvDownload); }}>
+            Click to download
+      </Link>
     </div>
   )
 };
