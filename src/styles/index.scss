@@ -176,6 +176,9 @@ html {
         }
       }
     }
+    .transitions-item {
+      font-size: 3em !important;
+    }
     #landing-container {
       height: 100% !important;
       overflow-y: hidden !important;
@@ -185,17 +188,15 @@ html {
       margin-top: 5vh !important;
     }
     #view-container {
-      // height: 40em !important;
       margin-top: 0 !important;
 
       #logo1 {
         position: fixed !important;
         width: 30em;
         bottom: 0 !important;
-        margin-bottom: -2em !important;
       }
       #view-bttn {
-        margin-bottom: 1em !important;
+        margin-bottom: 1.5em !important;
 
         .MuiSvgIcon-root {
           padding-left: 0 !important;
