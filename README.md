@@ -9,7 +9,7 @@ You can view the site at https://www.joshgrant.ca/. Take a look at my past proje
 - react-spring
 - react-lazy-load-image-component
 - SCSS
-- Material UI. 
+- Material UI
 
 ## Walkthrough
 
