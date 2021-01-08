@@ -4,9 +4,14 @@ Thanks for checking out my portfolio!
 
 You can view the site at https://www.joshgrant.ca/. Take a look at my past projects, get to know me a bit, download my resume, and please feel free to contact me with any inquiries. I'd be happy to connect and chat!
 
-Built with React, react-spring, react-lazy-load-image-component, scss, and Material UI. 
+## Tech Stack
+- React
+- react-spring
+- react-lazy-load-image-component
+- SCSS
+- Material UI. 
 
-# Walkthrough
+## Walkthrough
 
 #### Welcome!
 
