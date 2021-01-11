@@ -7,6 +7,7 @@ import { projects } from '../data/projects.js';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import heroku from '../img/heroku.svg';
 import netlify from '../img/netlify.svg';
+import firebase from '../img/firebase.svg';
 
 import '../styles/about.scss';
 import '../styles/projects.scss';
@@ -27,7 +28,11 @@ export default function Projects(props) {
 
     let icon;
     if (project.host) {
-      icon = project.host === 'Netlify' ? netlify : heroku;
+      if (project.host === 'Firebase') {
+        icon = firebase;
+      } else {
+        icon = project.host === 'Netlify' ? netlify : heroku;
+      }
     }
 
     return (      
@@ -38,8 +43,8 @@ export default function Projects(props) {
           </div>
           <div className='line-container'>
             <div className='text-container'>
-              <p className='tl-header'>{project.name}</p>
-              <p className='tl-date'>{project.date}</p>
+              <p className='tl-header'>{project.name} <span className='tl-date'>{project.date}</span> </p>
+              <p className="responsive-date">{project.date}</p>
               <div className='tl-content'>
                 <p>{project.description}</p>
                 { project.host ? (

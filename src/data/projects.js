@@ -95,4 +95,20 @@ export const projects = [
     deployment: 'https://the-symposium.herokuapp.com/',
     host: 'Heroku'
   },
+  {
+    id: 7,
+    name: 'Cooking Papa',
+    description: 'A simple recipe-storing app for users to add and edit recipes and shopping lists. The goal of this project was to become familiar with the Angular framework and NgRx and RxJS libraries. Built with Angular, TypeScript, NgRx, RxJS, and Bootstrap, with a Firebase Realtime Database.',
+    image: 'cooking-papa.png',
+    fullStack: {
+      frontEnd: 'Angular, TypeScript, NgRx, RxJS, Bootstrap',
+      backEnd: 'Firebase Realtime Database',
+      testing: '',
+      other: ''
+    },
+    date: 'January 2021',
+    github: 'https://github.com/JoshGrant5/cooking-papa',
+    deployment: 'https://cooking-papa.web.app/',
+    host: 'Firebase'
+  }
 ];
