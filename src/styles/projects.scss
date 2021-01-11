@@ -39,9 +39,6 @@ $focus-color: rgb(40, 215, 159);
             transform: translateX(0);
             transition: all 0.75s ease 0.5s;
           }
-          .tl-date {
-            opacity: 1;
-          }
         }   
         .line-container > .project-img-container > span > .project-img {
           opacity: 0.9 !important;
@@ -80,13 +77,32 @@ $focus-color: rgb(40, 215, 159);
             text-align: start;
           }
           .tl-date {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 0.4em;
+            padding: 0.5em;
+            color: white;
             z-index: 1;
             border-top: 1px solid $highlight-color;
             border-bottom: 1px solid $highlight-color;
-            padding: 0.5em;
-            width: max-content;
-            opacity: 0;
-            transition: opacity 1s;
+            width: 200px;
+            text-align: center;
+            opacity: 1;
+          }
+          .responsive-date {
+            visibility: hidden;
+            padding: 0;
+            color: white;
+            z-index: 2;
+            font-size: 0;
+            padding: 0;
+            border-top: 1px solid $highlight-color;
+            border-bottom: 1px solid $highlight-color;
+            width: 0;
+            height: 0;
+            text-align: center;
+            opacity: 1;
           }
           .tl-content {
             transform: translate3d(0, 0, 0) translateX(0);
@@ -173,11 +189,12 @@ $focus-color: rgb(40, 215, 159);
           text-align: center;
         } 
         .tl-content > p {
-          text-align: center;
-          margin-right: 0;
+          margin-left: 5%;
+          margin-right: 5%;
         } 
-        .tl-date {
+        .responsive-date {
           margin: auto;
+          width: 75% !important;
         }
       }
     }
@@ -189,6 +206,8 @@ $focus-color: rgb(40, 215, 159);
     }
   }
   .project-icons { 
+    justify-content: center !important;
+    align-items: center !important;
     a {
       margin-right: 0 !important;
     }
@@ -221,5 +240,15 @@ $focus-color: rgb(40, 215, 159);
     .project-img {
       object-fit: contain;
     }
+  }
+  .tl-date {
+    display: none;
+  }
+  .responsive-date {
+    visibility: visible !important;
+    font-size: 1em !important;
+    padding: 0.5em !important;
+    width: 250px !important;
+    height: auto !important;
   }
 }
