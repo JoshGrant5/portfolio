@@ -194,7 +194,7 @@ $focus-color: rgb(40, 215, 159);
         } 
         .responsive-date {
           margin: auto;
-          width: 80% !important;
+          width: 75% !important;
         }
       }
     }
@@ -230,7 +230,6 @@ $focus-color: rgb(40, 215, 159);
   }
   .project-icons { 
     flex-direction: column;
-    align-items: flex-start;
 
     .host-bttn {
       margin-left: 0 !important;
