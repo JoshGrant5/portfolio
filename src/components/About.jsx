@@ -25,7 +25,7 @@ export default function About(props) {
     <section id='about-tl'> 
       <div className='tl-item'>
         <div className='tl-bg' >
-          <LazyLoadImage width='100%' height='100%' effect='blur' src={ottawa} alt='ottawa' className='tl-bg-img' />
+          <img width='100%' height='100%' effect='blur' src={ottawa} alt='ottawa' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Carleton University</p>
@@ -38,7 +38,7 @@ export default function About(props) {
 
       <div className='tl-item'>
       <div className='tl-bg' >
-          <LazyLoadImage width='100%' height='100%' effect='blur' src={lumber} alt='lumber' className='tl-bg-img' />
+          <img width='100%' height='100%' effect='blur' src={lumber} alt='lumber' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Lumber Industry</p>
@@ -51,7 +51,7 @@ export default function About(props) {
 
       <div className='tl-item'>
         <div className='tl-bg' >
-          <LazyLoadImage width='100%' height='100%' effect='blur' src={lighthouse} alt='lighthouse' className='tl-bg-img' />
+          <img width='100%' height='100%' effect='blur' src={lighthouse} alt='lighthouse' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Web Dev Bootcamp</p>
@@ -64,7 +64,7 @@ export default function About(props) {
 
       <div className='tl-item'>
        <div className='tl-bg' >
-          <LazyLoadImage width='100%' height='100%' effect='blur' src={coding} alt='coding' className='tl-bg-img' />
+          <img width='100%' height='100%' effect='blur' src={coding} alt='coding' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
           <p>Now The Fun Begins</p>
