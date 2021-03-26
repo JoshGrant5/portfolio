@@ -1,7 +1,7 @@
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTransition, animated } from 'react-spring'
 import { Route, Switch } from 'react-router-dom';
-import { __RouterContext } from 'react-router';
+import { useLocation } from 'react-router';
 
 import Landing from './components/Landing';
 import Home from './components/Home';
@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 
 export default function Routes(props) {
 
-  const { location } = useContext(__RouterContext);
+  const location = useLocation();
 
   useEffect(() => {
     location.pathname === '/home' ? props.setOnHome(true) : props.setOnHome(false);
@@ -20,16 +20,17 @@ export default function Routes(props) {
   }, [location.pathname]);
   
   const transitions = useTransition(location, location => location.pathname, {
-    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { duration: 10 }
   });
 
   const landingItems = props.items;
   const swap = props.swapOut;
     
   return (
-    transitions.map(({ item, props, key}) => (
+    transitions.map(({ item, props, key }) => (
       <animated.div
         id='route-animations' 
         style={{...props, position: 'absolute', width: '100%' }}
