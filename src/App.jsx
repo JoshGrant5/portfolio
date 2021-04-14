@@ -31,7 +31,7 @@ export default function App() {
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 6000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Film Snob', 'Full Stack Developer']), 8000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 10000));
-    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Canucks Fan', 'Full Stack Developer']), 12000));
+    ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Canucks Diehard', 'Full Stack Developer']), 12000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 14000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Caffeine Enthusiast', 'Full Stack Developer']), 16000));
     ref.current.push(setTimeout(() => setItems(['Josh Grant', 'Full Stack Developer']), 18000));
