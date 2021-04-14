@@ -21,7 +21,9 @@ export const downloadCV = () => {
       link.href = window.URL.createObjectURL(blob);
       link.download='Josh-Grant-CV';
       link.click();
-    } 
+    } else {
+      console.log(err)
+    }
   });
 };
 
