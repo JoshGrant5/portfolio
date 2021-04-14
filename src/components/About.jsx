@@ -54,11 +54,11 @@ export default function About(props) {
           <img width='100%' height='100%' effect='blur' src={lighthouse} alt='lighthouse' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
-          <p>Web Dev Bootcamp</p>
+          <p>Lighthouse Labs</p>
         </div>
         <div className='tl-content'>
           <p className='tl-date'>2020</p>
-          <p className='about-description'>After years of thinking of coding through the lense of, "that's cool, I wonder if I'd be able to do that", I finally made the plunge. I dipped my toes in the water with an Udemy Python course, then completed the amazing HarvardX CS50, which made me fall in love with programming and dream of becoming a developer. Soon after finishing that course, I enrolled in Lighthouse Labs Web Development Bootcamp to make that dream a reality. 3 months of 12 to sometimes 14 hour days, and I loved every minute of it!</p>
+          <p className='about-description'>After years of thinking of coding through the lense of, "that's cool, I wonder if I'd be able to do that", I finally made the plunge. I dipped my toes in the water with an Udemy Python course, then completed the amazing HarvardX CS50, which made me fall in love with programming and dream of becoming a developer. Soon after finishing that course, I enrolled in Lighthouse Labs Web Development Bootcamp to make that dream a reality. 3 months of 12 - 14 hour days, and I loved every minute of it!</p>
         </div>
       </div>
 
@@ -67,11 +67,12 @@ export default function About(props) {
           <img width='100%' height='100%' effect='blur' src={coding} alt='coding' className='tl-bg-img' />
         </div>
         <div className='tl-header'>
-          <p>Now The Fun Begins</p>
+          <p>Software Development</p>
         </div>
         <div className='tl-content'>
           <p className='tl-date'>2021 & Beyond</p>
-          <p className='about-description'>Post-Lighthouse, my love for programming has only grown. I could spend all day coding without it feeling like work. When I sit down at my desk to work on a project, I have the ability to build something unique, something exciting, and something I am proud of. That's pretty damn cool. I'm just getting started and I can't wait to see where my career takes me!</p>
+          <p className='about-description'>I am currently working as a software developer at Advisor Flow, a Fintech startup providing intuitive technology to financial advisors looking to serve clients with a better user experience.</p>
+          <p>I could spend all day coding without it feeling like work. When I sit down at my desk to work, I have the ability to build something unique, something exciting, and something I am proud of. That's pretty damn cool. I'm just getting started and I can't wait to see where my career takes me!</p>
         </div>
       </div>
     </section>

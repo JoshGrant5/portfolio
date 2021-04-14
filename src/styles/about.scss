@@ -75,7 +75,6 @@ $focus-color: rgb(40, 215, 159);
   transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
   z-index: 1;
-  text-align: center;
   top: 55%;
   opacity: 0;
   
@@ -90,7 +89,6 @@ $focus-color: rgb(40, 215, 159);
   p {
     margin-left: 5%;
     margin-right: 5%;
-    text-align: center;
   }
 
   .tl-date {
@@ -99,6 +97,7 @@ $focus-color: rgb(40, 215, 159);
     margin-left: 25%;
     margin-right: 25%;
     padding: 0.5em;
+    text-align: center;
   }
 }
 
