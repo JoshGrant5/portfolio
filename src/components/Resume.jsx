@@ -6,12 +6,15 @@ import PageviewIcon from '@material-ui/icons/Pageview';
 import cv from '../img/cv.png';
 
 import '../styles/resume.scss';
+import getCV from '../helpers/s3';
 
 export default function Resume(props) {
 
   if (document.getElementById('navbar')) { 
     document.getElementById('navbar').style.backgroundColor = document.documentElement.clientWidth > 780 ? 'transparent' : '#273442';
   }
+
+  getCV();
 
   return (
     <div id="resume">
