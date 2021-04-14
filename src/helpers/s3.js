@@ -13,10 +13,16 @@ const params = {
   Key: 'joshgrant-cv.pdf'
 };
 
-export const getCV = () => {
+export const downloadCV = () => {
   s3.getObject(params, (err, data) => {
-    err ? console.log(err) : console.log(data)
+    if (!err) {
+      let blob = new Blob([data.Body], {type: data.ContentType});
+      let link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.download='Josh-Grant-CV';
+      link.click();
+    } 
   });
 };
 
-export default getCV;
+export default downloadCV;

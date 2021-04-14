@@ -34,9 +34,11 @@ $focus-color: rgb(40, 215, 159);
 
     #download {
       color: $focus-color;
+      outline: none;
     }
     #canva {
       color: $text-color;
+      outline: none;
     }
 }
 
