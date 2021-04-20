@@ -13,9 +13,9 @@ export default function Contact(props) {
           <GitHubIcon /> 
           https://github.com/JoshGrant5
         </a> 
-        <a href='https://www.linkedin.com/in/josh-grant-44240a151/' target="_blank" rel="noopener noreferrer"> 
+        <a href='https://www.linkedin.com/in/joshggrant/' target="_blank" rel="noopener noreferrer"> 
           <LinkedInIcon /> 
-          https://www.linkedin.com/in/josh-grant-44240a151/
+          https://www.linkedin.com/in/joshggrant/
         </a> 
         <a href='mailto: joshgg@icloud.com'>
           <EmailIcon /> 

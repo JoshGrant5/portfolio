@@ -10,7 +10,7 @@ export default function MediaIcons(props) {
       <a href='https://github.com/JoshGrant5' target="_blank" rel="noopener noreferrer"> 
         <GitHubIcon /> 
       </a> 
-      <a href='https://www.linkedin.com/in/josh-grant-44240a151/' target="_blank" rel="noopener noreferrer"> 
+      <a href='https://www.linkedin.com/in/joshggrant/' target="_blank" rel="noopener noreferrer"> 
         <LinkedInIcon /> 
       </a> 
       <a href='mailto: joshgg@icloud.com'>
